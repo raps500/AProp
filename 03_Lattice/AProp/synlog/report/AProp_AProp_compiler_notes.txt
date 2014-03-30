@@ -1,0 +1,25 @@
+@N|Running in 32-bit mode
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_mem.v":201:7:201:21|Synthesizing module memblock_dp_x32
+@N: CL134 :"X:\ACog\03_Lattice\..\01_Verilog\acog_mem.v":215:0:215:5|Found RAM mem, depth=512, width=32
+@N: CL134 :"X:\ACog\03_Lattice\..\01_Verilog\acog_mem.v":215:0:215:5|Found RAM mem, depth=512, width=32
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_mem.v":7:7:7:14|Synthesizing module acog_mem
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_seq.v":8:7:8:14|Synthesizing module acog_seq
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_if.v":8:7:8:13|Synthesizing module acog_if
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_id.v":8:7:8:13|Synthesizing module acog_id
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_wback.v":8:7:8:16|Synthesizing module acog_wback
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":258:7:258:17|Synthesizing module acog_addsub
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":344:7:344:16|Synthesizing module acog_cmpsx
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":222:7:222:16|Synthesizing module acog_logic
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":441:7:441:16|Synthesizing module barrel_rcl
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":491:7:491:16|Synthesizing module barrel_rcr
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":540:7:540:16|Synthesizing module barrel_rol
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":588:7:588:16|Synthesizing module barrel_ror
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":636:7:636:16|Synthesizing module barrel_shl
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":710:7:710:16|Synthesizing module barrel_shr
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":389:7:389:16|Synthesizing module barrel_rev
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":182:7:182:14|Synthesizing module acog_sum
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog_alu.v":8:7:8:14|Synthesizing module acog_alu
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\acog.v":7:7:7:10|Synthesizing module ACog
+@N: CG793 :"X:\ACog\03_Lattice\..\01_Verilog\acog.v":152:4:152:11|Ignoring system task $display
+@N: CG364 :"X:\ACog\03_Lattice\..\01_Verilog\aprop.v":7:7:7:11|Synthesizing module AProp
+

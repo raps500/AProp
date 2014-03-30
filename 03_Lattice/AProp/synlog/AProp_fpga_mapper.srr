@@ -1,0 +1,739 @@
+Synopsys Lattice Technology Mapper, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: MT462 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":58:3:66:9|Net cog0.idecode.un1_execute30 appears to be an unidentified clock source. Assuming default frequency. 
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+
+@N:"f:\02_elektronik\033_aprop\01_verilog\acog_mem.v":47:0:47:5|Found counter in view:work.acog_mem(verilog) inst CNT[31:0]
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 84MB peak: 85MB)
+
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 81MB peak: 85MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 81MB peak: 89MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 81MB peak: 89MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 91MB peak: 91MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 91MB peak: 92MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 91MB peak: 92MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 100MB peak: 131MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:12s		    -6.31ns		1567 /       274
+   2		0h:00m:12s		    -5.65ns		1568 /       274
+   3		0h:00m:12s		    -5.93ns		1568 /       274
+------------------------------------------------------------
+
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[5]" with 8 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[6]" with 7 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[1]" with 20 loads replicated 2 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[2]" with 18 loads replicated 2 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[0]" with 15 loads replicated 1 times to improve timing 
+Timing driven replication report
+Added 7 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[7]" with 9 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[22]" with 101 loads replicated 3 times to improve timing 
+Added 4 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[3]" with 7 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[8]" with 7 loads replicated 1 times to improve timing 
+@N: FX271 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[4]" with 9 loads replicated 1 times to improve timing 
+Added 3 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:14s		    -4.06ns		1593 /       288
+   2		0h:00m:14s		    -4.38ns		1594 /       288
+   3		0h:00m:14s		    -4.06ns		1595 /       288
+------------------------------------------------------------
+
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:14s		    -4.07ns		1608 /       288
+   2		0h:00m:14s		    -4.07ns		1608 /       288
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 91MB peak: 131MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 92MB peak: 131MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 296 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 1 clock pin(s) of sequential element(s)
+0 instances converted, 1 sequential instance remains driven by gated/generated clocks
+
+=================================== Non-Gated/Non-Generated Clocks ===================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance               
+------------------------------------------------------------------------------------------------------
+@K:CKID0002       clk_in              port                   296        cog0_acog_mem_DIRA_rep0_iio[0]
+======================================================================================================
+====================================================================================== Gated/Generated Clocks =======================================================================================
+Clock Tree ID     Driving Element                  Drive Element Type     Fanout     Sample Instance          Explanation                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       cog0.idecode.un1_execute30_0     ORCALUT4               1          cog0.idecode.execute     Multiple clocks on instance from nets acog_opcode[19], acog_opcode[20], acog_opcode[21]
+=====================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:15s; Memory used current: 93MB peak: 131MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09L-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 97MB peak: 131MB)
+
+@W: MT420 |Found inferred clock AProp|clk_in with period 16.08ns. Please declare a user-defined clock on object "p:clk_in"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 05 10:24:02 2014
+#
+
+
+Top view:               AProp
+Requested Frequency:    62.2 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -1.124
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+AProp|clk_in       62.2 MHz      58.1 MHz      16.078        17.202        -1.124     inferred     Autoconstr_clkgroup_0
+System             1.0 MHz       1.0 MHz       1000.000      987.727       12.273     system       system_clkgroup      
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------
+System        AProp|clk_in  |  16.078      12.273  |  No paths    -      |  No paths    -      |  No paths    -    
+AProp|clk_in  System        |  16.078      9.380   |  No paths    -      |  No paths    -      |  No paths    -    
+AProp|clk_in  AProp|clk_in  |  16.078      -1.124  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: AProp|clk_in
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                     Starting                                                              Arrival           
+Instance                             Reference        Type        Pin      Net                             Time        Slack 
+                                     Clock                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.mem.cog0_mem_0_0_3     AProp|clk_in     DP8KC       DOA4     acog_opcode[4]                  4.481       -1.124
+cog0.idecode.opcode_o_fast[6]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[6]                1.148       -1.107
+cog0.idecode.opcode_o_fast[7]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[7]                1.148       -1.107
+cog0.idecode.opcode_o_fast[0]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[0]                1.220       -1.087
+cog0.idecode.opcode_o_fast[1]        AProp|clk_in     FD1P3AX     Q        acog_latched_opcode_fast[1]     1.148       -1.015
+cog0.idecode.opcode_o_fast[4]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[4]                1.148       -1.015
+cog0.idecode.opcode_o_fast[2]        AProp|clk_in     FD1P3AX     Q        acog_latched_opcode_fast[2]     1.108       -0.991
+cog0.idecode.opcode_o_fast[3]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[3]                1.108       -0.991
+cog0.idecode.opcode_o_fast[8]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[8]                1.108       -0.991
+cog0.idecode.opcode_o_fast[5]        AProp|clk_in     FD1P3AX     Q        opcode_o_fast[5]                1.108       -0.975
+=============================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                     Starting                                            Required           
+Instance                             Reference        Type        Pin      Net           Time         Slack 
+                                     Clock                                                                  
+------------------------------------------------------------------------------------------------------------
+cog0.wback.flag_z                    AProp|clk_in     FD1P3AX     D        alu_z         16.167       -1.124
+cog0.acog_mem.mem.cog0_mem_0_0_3     AProp|clk_in     DP8KC       DIB5     alu_q[5]      14.326       -0.483
+cog0.acog_mem.mem.cog0_mem_0_1_2     AProp|clk_in     DP8KC       DIB3     alu_q[12]     14.326       -0.315
+cog0.acog_mem.mem.cog0_mem_0_0_3     AProp|clk_in     DP8KC       DIB4     alu_q[4]      14.326       -0.216
+cog0.acog_mem.mem.cog0_mem_0_2_1     AProp|clk_in     DP8KC       DIB2     alu_q[20]     14.326       -0.171
+cog0.acog_mem.mem.cog0_mem_0_1_2     AProp|clk_in     DP8KC       DIB8     alu_q[17]     14.326       -0.112
+cog0.acog_mem.mem.cog0_mem_0_1_2     AProp|clk_in     DP8KC       DIB7     alu_q[16]     14.326       -0.094
+cog0.acog_mem.mem.cog0_mem_0_2_1     AProp|clk_in     DP8KC       DIB7     alu_q[25]     14.326       -0.085
+cog0.acog_mem.mem.cog0_mem_0_1_2     AProp|clk_in     DP8KC       DIB5     alu_q[14]     14.326       -0.081
+cog0.acog_mem.mem.cog0_mem_0_3_0     AProp|clk_in     DP8KC       DIB4     alu_q[31]     14.326       -0.070
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      17.291
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.124
+
+    Number of logic level(s):                14
+    Starting point:                          cog0.acog_mem.mem.cog0_mem_0_0_3 / DOA4
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CLKA
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of     
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s) 
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.mem.cog0_mem_0_0_3              DP8KC        DOA4     Out     4.481     4.481       -          
+acog_opcode[4]                                Net          -        -       -         -           4          
+cog0.acog_mem.mem.cog0_mem_0_0_3_RNI6C7G3     ORCALUT4     C        In      0.000     4.481       -          
+cog0.acog_mem.mem.cog0_mem_0_0_3_RNI6C7G3     ORCALUT4     Z        Out     0.449     4.929       -          
+acog_s_from_mux_0_mb_sn[4]                    Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB         PFUMX        C0       In      0.000     4.929       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB         PFUMX        Z        Out     1.485     6.414       -          
+acog_s_from_mux[4]                            Net          -        -       -         -           169        
+cog0.alu.rol.q_12[5]                          ORCALUT4     C        In      0.000     6.414       -          
+cog0.alu.rol.q_12[5]                          ORCALUT4     Z        Out     1.225     7.639       -          
+N_422                                         Net          -        -       -         -           5          
+cog0.alu.rol.q_10[1]                          ORCALUT4     C        In      0.000     7.639       -          
+cog0.alu.rol.q_10[1]                          ORCALUT4     Z        Out     1.193     8.832       -          
+N_354                                         Net          -        -       -         -           4          
+cog0.alu.rol.q_14[5]                          ORCALUT4     C        In      0.000     8.832       -          
+cog0.alu.rol.q_14[5]                          ORCALUT4     Z        Out     1.193     10.025      -          
+N_486                                         Net          -        -       -         -           4          
+cog0.alu.rol.q_31_am[5]                       ORCALUT4     B        In      0.000     10.025      -          
+cog0.alu.rol.q_31_am[5]                       ORCALUT4     Z        Out     1.017     11.042      -          
+q_31_am[5]                                    Net          -        -       -         -           1          
+cog0.alu.rol.q_31[5]                          PFUMX        BLUT     In      0.000     11.042      -          
+cog0.alu.rol.q_31[5]                          PFUMX        Z        Out     0.214     11.256      -          
+q_rol[5]                                      Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0_1[5]                  ORCALUT4     C        In      0.000     11.256      -          
+cog0.alu.alogic.q_o_1_0_1[5]                  ORCALUT4     Z        Out     1.017     12.273      -          
+q_o_1_0_1[5]                                  Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0[5]                    ORCALUT4     B        In      0.000     12.273      -          
+cog0.alu.alogic.q_o_1_0[5]                    ORCALUT4     Z        Out     1.089     13.361      -          
+N_610                                         Net          -        -       -         -           2          
+cog0.alu.alogic.q_o_am[5]                     ORCALUT4     C        In      0.000     13.361      -          
+cog0.alu.alogic.q_o_am[5]                     ORCALUT4     Z        Out     1.017     14.378      -          
+q_o_am[5]                                     Net          -        -       -         -           1          
+cog0.alu.alogic.q_o[5]                        PFUMX        BLUT     In      0.000     14.378      -          
+cog0.alu.alogic.q_o[5]                        PFUMX        Z        Out     0.430     14.808      -          
+alu_q[5]                                      Net          -        -       -         -           6(16777222)
+cog0.alu.alogic.flag_z_o_25_1                 ORCALUT4     B        In      0.000     14.808      -          
+cog0.alu.alogic.flag_z_o_25_1                 ORCALUT4     Z        Out     1.017     15.825      -          
+flag_z_o_25_1                                 Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_1                    ORCALUT4     C        In      0.000     15.825      -          
+cog0.alu.alogic.flag_z_o_1                    ORCALUT4     Z        Out     1.017     16.842      -          
+flag_z_o_1                                    Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o                      ORCALUT4     A        In      0.000     16.842      -          
+cog0.alu.alogic.flag_z_o                      ORCALUT4     Z        Out     0.449     17.291      -          
+alu_z                                         Net          -        -       -         -           1          
+cog0.wback.flag_z                             FD1P3AX      D        In      0.000     17.291      -          
+=============================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      17.274
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.106
+
+    Number of logic level(s):                17
+    Starting point:                          cog0.idecode.opcode_o_fast[6] / Q
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of     
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s) 
+---------------------------------------------------------------------------------------------------------
+cog0.idecode.opcode_o_fast[6]             FD1P3AX      Q        Out     1.148     1.148       -          
+opcode_o_fast[6]                          Net          -        -       -         -           4          
+cog0.acog_mem.s_mux11_2_i_o4              ORCALUT4     A        In      0.000     1.148       -          
+cog0.acog_mem.s_mux11_2_i_o4              ORCALUT4     Z        Out     1.341     2.489       -          
+N_67                                      Net          -        -       -         -           24         
+cog0.acog_mem.CNT_RNI2QA41[4]             ORCALUT4     A        In      0.000     2.489       -          
+cog0.acog_mem.CNT_RNI2QA41[4]             ORCALUT4     Z        Out     1.089     3.577       -          
+s_m3_0_2                                  Net          -        -       -         -           2          
+cog0.acog_mem.CNT_RNI5JJP1[4]             ORCALUT4     A        In      0.000     3.577       -          
+cog0.acog_mem.CNT_RNI5JJP1[4]             ORCALUT4     Z        Out     1.017     4.594       -          
+s_m3_1                                    Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5     ORCALUT4     C        In      0.000     4.594       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5     ORCALUT4     Z        Out     1.017     5.611       -          
+s_mux13_0_a2_1_RNI6BJS5                   Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB     PFUMX        ALUT     In      0.000     5.611       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB     PFUMX        Z        Out     0.786     6.397       -          
+acog_s_from_mux[4]                        Net          -        -       -         -           169        
+cog0.alu.rol.q_12[5]                      ORCALUT4     C        In      0.000     6.397       -          
+cog0.alu.rol.q_12[5]                      ORCALUT4     Z        Out     1.225     7.622       -          
+N_422                                     Net          -        -       -         -           5          
+cog0.alu.rol.q_10[1]                      ORCALUT4     C        In      0.000     7.622       -          
+cog0.alu.rol.q_10[1]                      ORCALUT4     Z        Out     1.193     8.815       -          
+N_354                                     Net          -        -       -         -           4          
+cog0.alu.rol.q_14[5]                      ORCALUT4     C        In      0.000     8.815       -          
+cog0.alu.rol.q_14[5]                      ORCALUT4     Z        Out     1.193     10.008      -          
+N_486                                     Net          -        -       -         -           4          
+cog0.alu.rol.q_31_am[5]                   ORCALUT4     B        In      0.000     10.008      -          
+cog0.alu.rol.q_31_am[5]                   ORCALUT4     Z        Out     1.017     11.024      -          
+q_31_am[5]                                Net          -        -       -         -           1          
+cog0.alu.rol.q_31[5]                      PFUMX        BLUT     In      0.000     11.024      -          
+cog0.alu.rol.q_31[5]                      PFUMX        Z        Out     0.214     11.239      -          
+q_rol[5]                                  Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0_1[5]              ORCALUT4     C        In      0.000     11.239      -          
+cog0.alu.alogic.q_o_1_0_1[5]              ORCALUT4     Z        Out     1.017     12.255      -          
+q_o_1_0_1[5]                              Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0[5]                ORCALUT4     B        In      0.000     12.255      -          
+cog0.alu.alogic.q_o_1_0[5]                ORCALUT4     Z        Out     1.089     13.344      -          
+N_610                                     Net          -        -       -         -           2          
+cog0.alu.alogic.q_o_am[5]                 ORCALUT4     C        In      0.000     13.344      -          
+cog0.alu.alogic.q_o_am[5]                 ORCALUT4     Z        Out     1.017     14.361      -          
+q_o_am[5]                                 Net          -        -       -         -           1          
+cog0.alu.alogic.q_o[5]                    PFUMX        BLUT     In      0.000     14.361      -          
+cog0.alu.alogic.q_o[5]                    PFUMX        Z        Out     0.430     14.791      -          
+alu_q[5]                                  Net          -        -       -         -           6(16777222)
+cog0.alu.alogic.flag_z_o_25_1             ORCALUT4     B        In      0.000     14.791      -          
+cog0.alu.alogic.flag_z_o_25_1             ORCALUT4     Z        Out     1.017     15.808      -          
+flag_z_o_25_1                             Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_1                ORCALUT4     C        In      0.000     15.808      -          
+cog0.alu.alogic.flag_z_o_1                ORCALUT4     Z        Out     1.017     16.825      -          
+flag_z_o_1                                Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o                  ORCALUT4     A        In      0.000     16.825      -          
+cog0.alu.alogic.flag_z_o                  ORCALUT4     Z        Out     0.449     17.274      -          
+alu_z                                     Net          -        -       -         -           1          
+cog0.wback.flag_z                         FD1P3AX      D        In      0.000     17.274      -          
+=========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      17.274
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.106
+
+    Number of logic level(s):                17
+    Starting point:                          cog0.idecode.opcode_o_fast[7] / Q
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                         Pin      Pin               Arrival     No. of     
+Name                                      Type         Name     Dir     Delay     Time        Fan Out(s) 
+---------------------------------------------------------------------------------------------------------
+cog0.idecode.opcode_o_fast[7]             FD1P3AX      Q        Out     1.148     1.148       -          
+opcode_o_fast[7]                          Net          -        -       -         -           4          
+cog0.acog_mem.s_mux11_2_i_o4              ORCALUT4     B        In      0.000     1.148       -          
+cog0.acog_mem.s_mux11_2_i_o4              ORCALUT4     Z        Out     1.341     2.489       -          
+N_67                                      Net          -        -       -         -           24         
+cog0.acog_mem.CNT_RNI2QA41[4]             ORCALUT4     A        In      0.000     2.489       -          
+cog0.acog_mem.CNT_RNI2QA41[4]             ORCALUT4     Z        Out     1.089     3.577       -          
+s_m3_0_2                                  Net          -        -       -         -           2          
+cog0.acog_mem.CNT_RNI5JJP1[4]             ORCALUT4     A        In      0.000     3.577       -          
+cog0.acog_mem.CNT_RNI5JJP1[4]             ORCALUT4     Z        Out     1.017     4.594       -          
+s_m3_1                                    Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5     ORCALUT4     C        In      0.000     4.594       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5     ORCALUT4     Z        Out     1.017     5.611       -          
+s_mux13_0_a2_1_RNI6BJS5                   Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB     PFUMX        ALUT     In      0.000     5.611       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB     PFUMX        Z        Out     0.786     6.397       -          
+acog_s_from_mux[4]                        Net          -        -       -         -           169        
+cog0.alu.rol.q_12[5]                      ORCALUT4     C        In      0.000     6.397       -          
+cog0.alu.rol.q_12[5]                      ORCALUT4     Z        Out     1.225     7.622       -          
+N_422                                     Net          -        -       -         -           5          
+cog0.alu.rol.q_10[1]                      ORCALUT4     C        In      0.000     7.622       -          
+cog0.alu.rol.q_10[1]                      ORCALUT4     Z        Out     1.193     8.815       -          
+N_354                                     Net          -        -       -         -           4          
+cog0.alu.rol.q_14[5]                      ORCALUT4     C        In      0.000     8.815       -          
+cog0.alu.rol.q_14[5]                      ORCALUT4     Z        Out     1.193     10.008      -          
+N_486                                     Net          -        -       -         -           4          
+cog0.alu.rol.q_31_am[5]                   ORCALUT4     B        In      0.000     10.008      -          
+cog0.alu.rol.q_31_am[5]                   ORCALUT4     Z        Out     1.017     11.024      -          
+q_31_am[5]                                Net          -        -       -         -           1          
+cog0.alu.rol.q_31[5]                      PFUMX        BLUT     In      0.000     11.024      -          
+cog0.alu.rol.q_31[5]                      PFUMX        Z        Out     0.214     11.239      -          
+q_rol[5]                                  Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0_1[5]              ORCALUT4     C        In      0.000     11.239      -          
+cog0.alu.alogic.q_o_1_0_1[5]              ORCALUT4     Z        Out     1.017     12.255      -          
+q_o_1_0_1[5]                              Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0[5]                ORCALUT4     B        In      0.000     12.255      -          
+cog0.alu.alogic.q_o_1_0[5]                ORCALUT4     Z        Out     1.089     13.344      -          
+N_610                                     Net          -        -       -         -           2          
+cog0.alu.alogic.q_o_am[5]                 ORCALUT4     C        In      0.000     13.344      -          
+cog0.alu.alogic.q_o_am[5]                 ORCALUT4     Z        Out     1.017     14.361      -          
+q_o_am[5]                                 Net          -        -       -         -           1          
+cog0.alu.alogic.q_o[5]                    PFUMX        BLUT     In      0.000     14.361      -          
+cog0.alu.alogic.q_o[5]                    PFUMX        Z        Out     0.430     14.791      -          
+alu_q[5]                                  Net          -        -       -         -           6(16777222)
+cog0.alu.alogic.flag_z_o_25_1             ORCALUT4     B        In      0.000     14.791      -          
+cog0.alu.alogic.flag_z_o_25_1             ORCALUT4     Z        Out     1.017     15.808      -          
+flag_z_o_25_1                             Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_1                ORCALUT4     C        In      0.000     15.808      -          
+cog0.alu.alogic.flag_z_o_1                ORCALUT4     Z        Out     1.017     16.825      -          
+flag_z_o_1                                Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o                  ORCALUT4     A        In      0.000     16.825      -          
+cog0.alu.alogic.flag_z_o                  ORCALUT4     Z        Out     0.449     17.274      -          
+alu_z                                     Net          -        -       -         -           1          
+cog0.wback.flag_z                         FD1P3AX      D        In      0.000     17.274      -          
+=========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      17.259
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.092
+
+    Number of logic level(s):                14
+    Starting point:                          cog0.acog_mem.mem.cog0_mem_0_0_3 / DOA4
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CLKA
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of     
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s) 
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.mem.cog0_mem_0_0_3              DP8KC        DOA4     Out     4.481     4.481       -          
+acog_opcode[4]                                Net          -        -       -         -           4          
+cog0.acog_mem.mem.cog0_mem_0_0_3_RNI6C7G3     ORCALUT4     C        In      0.000     4.481       -          
+cog0.acog_mem.mem.cog0_mem_0_0_3_RNI6C7G3     ORCALUT4     Z        Out     0.449     4.929       -          
+acog_s_from_mux_0_mb_sn[4]                    Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB         PFUMX        C0       In      0.000     4.929       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB         PFUMX        Z        Out     1.485     6.414       -          
+acog_s_from_mux[4]                            Net          -        -       -         -           169        
+cog0.alu.rol.q_11[5]                          ORCALUT4     C        In      0.000     6.414       -          
+cog0.alu.rol.q_11[5]                          ORCALUT4     Z        Out     1.193     7.607       -          
+N_390_0                                       Net          -        -       -         -           4          
+cog0.alu.rol.q_10[1]                          ORCALUT4     B        In      0.000     7.607       -          
+cog0.alu.rol.q_10[1]                          ORCALUT4     Z        Out     1.193     8.800       -          
+N_354                                         Net          -        -       -         -           4          
+cog0.alu.rol.q_14[5]                          ORCALUT4     C        In      0.000     8.800       -          
+cog0.alu.rol.q_14[5]                          ORCALUT4     Z        Out     1.193     9.993       -          
+N_486                                         Net          -        -       -         -           4          
+cog0.alu.rol.q_31_am[5]                       ORCALUT4     B        In      0.000     9.993       -          
+cog0.alu.rol.q_31_am[5]                       ORCALUT4     Z        Out     1.017     11.010      -          
+q_31_am[5]                                    Net          -        -       -         -           1          
+cog0.alu.rol.q_31[5]                          PFUMX        BLUT     In      0.000     11.010      -          
+cog0.alu.rol.q_31[5]                          PFUMX        Z        Out     0.214     11.224      -          
+q_rol[5]                                      Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0_1[5]                  ORCALUT4     C        In      0.000     11.224      -          
+cog0.alu.alogic.q_o_1_0_1[5]                  ORCALUT4     Z        Out     1.017     12.241      -          
+q_o_1_0_1[5]                                  Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0[5]                    ORCALUT4     B        In      0.000     12.241      -          
+cog0.alu.alogic.q_o_1_0[5]                    ORCALUT4     Z        Out     1.089     13.329      -          
+N_610                                         Net          -        -       -         -           2          
+cog0.alu.alogic.q_o_am[5]                     ORCALUT4     C        In      0.000     13.329      -          
+cog0.alu.alogic.q_o_am[5]                     ORCALUT4     Z        Out     1.017     14.346      -          
+q_o_am[5]                                     Net          -        -       -         -           1          
+cog0.alu.alogic.q_o[5]                        PFUMX        BLUT     In      0.000     14.346      -          
+cog0.alu.alogic.q_o[5]                        PFUMX        Z        Out     0.430     14.776      -          
+alu_q[5]                                      Net          -        -       -         -           6(16777222)
+cog0.alu.alogic.flag_z_o_25_1                 ORCALUT4     B        In      0.000     14.776      -          
+cog0.alu.alogic.flag_z_o_25_1                 ORCALUT4     Z        Out     1.017     15.793      -          
+flag_z_o_25_1                                 Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_1                    ORCALUT4     C        In      0.000     15.793      -          
+cog0.alu.alogic.flag_z_o_1                    ORCALUT4     Z        Out     1.017     16.810      -          
+flag_z_o_1                                    Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o                      ORCALUT4     A        In      0.000     16.810      -          
+cog0.alu.alogic.flag_z_o                      ORCALUT4     Z        Out     0.449     17.259      -          
+alu_z                                         Net          -        -       -         -           1          
+cog0.wback.flag_z                             FD1P3AX      D        In      0.000     17.259      -          
+=============================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      17.254
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.086
+
+    Number of logic level(s):                17
+    Starting point:                          cog0.idecode.opcode_o_fast[0] / Q
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of     
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s) 
+--------------------------------------------------------------------------------------------------------------
+cog0.idecode.opcode_o_fast[0]                  FD1P3AX      Q        Out     1.220     1.220       -          
+opcode_o_fast[0]                               Net          -        -       -         -           8          
+cog0.acog_mem.s_mux14_0_a4_2                   ORCALUT4     B        In      0.000     1.220       -          
+cog0.acog_mem.s_mux14_0_a4_2                   ORCALUT4     Z        Out     1.249     2.469       -          
+s_mux14_0_a4_2                                 Net          -        -       -         -           7          
+cog0.acog_mem.s_mux14_0_a4_2_RNIGMFS           ORCALUT4     B        In      0.000     2.469       -          
+cog0.acog_mem.s_mux14_0_a4_2_RNIGMFS           ORCALUT4     Z        Out     1.089     3.557       -          
+s_m4_i_0_1_0                                   Net          -        -       -         -           2          
+cog0.acog_mem.s_mux16_0_a4_5_RNIURHQ2          ORCALUT4     C        In      0.000     3.557       -          
+cog0.acog_mem.s_mux16_0_a4_5_RNIURHQ2          ORCALUT4     Z        Out     1.017     4.574       -          
+acog_s_from_mux_0_mb_mb_mb_mb_mb_1_0_sx[4]     Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5          ORCALUT4     A        In      0.000     4.574       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNI6BJS5          ORCALUT4     Z        Out     1.017     5.591       -          
+s_mux13_0_a2_1_RNI6BJS5                        Net          -        -       -         -           1          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB          PFUMX        ALUT     In      0.000     5.591       -          
+cog0.acog_mem.s_mux13_0_a2_1_RNIGOKTB          PFUMX        Z        Out     0.786     6.377       -          
+acog_s_from_mux[4]                             Net          -        -       -         -           169        
+cog0.alu.rol.q_12[5]                           ORCALUT4     C        In      0.000     6.377       -          
+cog0.alu.rol.q_12[5]                           ORCALUT4     Z        Out     1.225     7.602       -          
+N_422                                          Net          -        -       -         -           5          
+cog0.alu.rol.q_10[1]                           ORCALUT4     C        In      0.000     7.602       -          
+cog0.alu.rol.q_10[1]                           ORCALUT4     Z        Out     1.193     8.795       -          
+N_354                                          Net          -        -       -         -           4          
+cog0.alu.rol.q_14[5]                           ORCALUT4     C        In      0.000     8.795       -          
+cog0.alu.rol.q_14[5]                           ORCALUT4     Z        Out     1.193     9.988       -          
+N_486                                          Net          -        -       -         -           4          
+cog0.alu.rol.q_31_am[5]                        ORCALUT4     B        In      0.000     9.988       -          
+cog0.alu.rol.q_31_am[5]                        ORCALUT4     Z        Out     1.017     11.004      -          
+q_31_am[5]                                     Net          -        -       -         -           1          
+cog0.alu.rol.q_31[5]                           PFUMX        BLUT     In      0.000     11.004      -          
+cog0.alu.rol.q_31[5]                           PFUMX        Z        Out     0.214     11.219      -          
+q_rol[5]                                       Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0_1[5]                   ORCALUT4     C        In      0.000     11.219      -          
+cog0.alu.alogic.q_o_1_0_1[5]                   ORCALUT4     Z        Out     1.017     12.235      -          
+q_o_1_0_1[5]                                   Net          -        -       -         -           1          
+cog0.alu.alogic.q_o_1_0[5]                     ORCALUT4     B        In      0.000     12.235      -          
+cog0.alu.alogic.q_o_1_0[5]                     ORCALUT4     Z        Out     1.089     13.324      -          
+N_610                                          Net          -        -       -         -           2          
+cog0.alu.alogic.q_o_am[5]                      ORCALUT4     C        In      0.000     13.324      -          
+cog0.alu.alogic.q_o_am[5]                      ORCALUT4     Z        Out     1.017     14.341      -          
+q_o_am[5]                                      Net          -        -       -         -           1          
+cog0.alu.alogic.q_o[5]                         PFUMX        BLUT     In      0.000     14.341      -          
+cog0.alu.alogic.q_o[5]                         PFUMX        Z        Out     0.430     14.771      -          
+alu_q[5]                                       Net          -        -       -         -           6(16777222)
+cog0.alu.alogic.flag_z_o_25_1                  ORCALUT4     B        In      0.000     14.771      -          
+cog0.alu.alogic.flag_z_o_25_1                  ORCALUT4     Z        Out     1.017     15.788      -          
+flag_z_o_25_1                                  Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_1                     ORCALUT4     C        In      0.000     15.788      -          
+cog0.alu.alogic.flag_z_o_1                     ORCALUT4     Z        Out     1.017     16.805      -          
+flag_z_o_1                                     Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o                       ORCALUT4     A        In      0.000     16.805      -          
+cog0.alu.alogic.flag_z_o                       ORCALUT4     Z        Out     0.449     17.254      -          
+alu_z                                          Net          -        -       -         -           1          
+cog0.wback.flag_z                              FD1P3AX      D        In      0.000     17.254      -          
+==============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                         Starting                                     Arrival           
+Instance                 Reference     Type       Pin     Net         Time        Slack 
+                         Clock                                                          
+----------------------------------------------------------------------------------------
+cog0.idecode.execute     System        FD1S1D     Q       execute     1.108       12.273
+========================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                          Starting                                                  Required           
+Instance                                  Reference     Type        Pin     Net                     Time         Slack 
+                                          Clock                                                                        
+-----------------------------------------------------------------------------------------------------------------------
+cog0.idecode.save_pc_from_pc_plus_1_o     System        FD1S3IX     D       fb_0_0                  16.167       12.273
+cog0.idecode.save_d_from_pc_plus_1_o      System        FD1P3IX     SP      N_15                    15.607       12.729
+cog0.idecode.save_pc_from_s_o             System        FD1S3IX     D       fb_0                    16.167       13.290
+cog0.idecode.save_c_o                     System        FD1P3IX     SP      un1_state_in_1_i_a4     15.607       13.346
+cog0.idecode.save_d_from_alu_o            System        FD1P3IX     SP      un1_state_in_1_i_a4     15.607       13.346
+cog0.idecode.save_z_o                     System        FD1P3IX     SP      un1_state_in_1_i_a4     15.607       13.346
+cog0.idecode.execute_o                    System        FD1P3AX     D       execute_i               15.973       14.297
+=======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      16.078
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         16.167
+
+    - Propagation time:                      3.894
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 12.273
+
+    Number of logic level(s):                3
+    Starting point:                          cog0.idecode.execute / Q
+    Ending point:                            cog0.idecode.save_pc_from_pc_plus_1_o / D
+    The start point is clocked by            System [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+cog0.idecode.execute                           FD1S1D       Q        Out     1.108     1.108       -         
+execute                                        Net          -        -       -         -           3         
+cog0.idecode.un1_state_in_5_0_a2               ORCALUT4     C        In      0.000     1.108       -         
+cog0.idecode.un1_state_in_5_0_a2               ORCALUT4     Z        Out     1.153     2.261       -         
+N_22                                           Net          -        -       -         -           3         
+cog0.idecode.un1_state_in_5_0_a4_1_RNIG6DL     ORCALUT4     A        In      0.000     2.261       -         
+cog0.idecode.un1_state_in_5_0_a4_1_RNIG6DL     ORCALUT4     Z        Out     1.017     3.277       -         
+un1_state_in_5_i                               Net          -        -       -         -           1         
+cog0.idecode.save_pc_from_pc_plus_1_o.fb       ORCALUT4     A        In      0.000     3.277       -         
+cog0.idecode.save_pc_from_pc_plus_1_o.fb       ORCALUT4     Z        Out     0.617     3.894       -         
+fb_0_0                                         Net          -        -       -         -           1         
+cog0.idecode.save_pc_from_pc_plus_1_o          FD1S3IX      D        In      0.000     3.894       -         
+=============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 288 of 6864 (4%)
+Latch bits:      1
+PIC Latch:       0
+I/O cells:       66
+
+
+Details:
+BB:             64
+CCU2D:          56
+DP8KC:          4
+FD1P3AX:        184
+FD1P3IX:        4
+FD1S1D:         1
+FD1S3AX:        32
+FD1S3IX:        4
+GSR:            1
+IB:             2
+IFS1P3DX:       59
+INV:            61
+L6MUX21:        17
+OFS1P3DX:       5
+ORCALUT4:       1541
+PFUMX:          268
+PUR:            1
+VHI:            7
+VLO:            14
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:16s; Memory used current: 28MB peak: 131MB)
+
+Process took 0h:00m:18s realtime, 0h:00m:16s cputime
+# Wed Mar 05 10:24:02 2014
+
+###########################################################]

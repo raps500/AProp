@@ -1,0 +1,1 @@
+@W: MT529 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":215:0:215:5|Found inferred clock AProp|clk_in which controls 1174 sequential elements including cog0.acog_mem.mem.mem_1[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

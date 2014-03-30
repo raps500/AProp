@@ -1,0 +1,2 @@
+CKID0001:@|S:cog0.idecode.un1_execute30_0@|E:cog0.idecode.execute@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001
+CKID0002:@|S:clk_in@|E:cog0_acog_mem_DIRA_rep0_iio[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002

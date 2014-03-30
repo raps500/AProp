@@ -1,0 +1,116 @@
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":60:25:60:40|Found 32 bit by 32 bit '==' comparator, 'port_cnt_eq_d_o'
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":61:25:61:53|Found 32 bit by 32 bit '==' comparator, 'port_peq_pina_o'
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog1.alu.addsub.q_o_0[31:0] from cog1.alu.addsub.un1_d_in[31:0] 
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog0.alu.addsub.q_o_0[31:0] from cog0.alu.addsub.un1_d_in[31:0] 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[3]" with "319" loads has been replicated "3" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[3]" with "297" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[2]" with "285" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[2]" with "281" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[0]" with "248" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[26]" with "240" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[0]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[1]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[26]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[1]" with "237" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[28]" with "220" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[28]" with "217" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[4]" with "213" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[4]" with "200" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog1.wback.flag_c" with "153" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog0.wback.flag_c" with "152" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[27]" with "124" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[27]" with "123" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

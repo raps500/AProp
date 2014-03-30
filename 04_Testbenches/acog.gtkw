@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Wed Mar 19 14:14:50 2014
+[*]
+[dumpfile] "D:\tmp\ACog\01_Verilog\acog.vcd"
+[dumpfile_mtime] "Wed Mar 19 12:08:46 2014"
+[dumpfile_size] 18466747
+[savefile] "D:\tmp\ACog\01_Verilog\acog.gtkw"
+[timestart] 0
+[size] 1813 600
+[pos] -1 -1
+*-6.000000 13 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.cog0.
+[sst_width] 197
+[signals_width] 230
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+tb.cog0.acog_state[1:0]
+tb.cog0.clk_in
+@22
+tb.cog0.acog_pc[8:0]
+tb.cog0.acog_latched_opcode[31:0]
+@2022
+^1 D:\tmp\ACog\01_Verilog\gtkwave_opcodes.txt
+tb.cog0.alu.opcode_in[5:0]
+@29
+tb.cog0.acog_execute
+@22
+tb.cog0.acog_d_from_mem[31:0]
+tb.cog0.acog_s_from_mem[31:0]
+@28
+tb.cog0.alu_c
+tb.cog0.alu_z
+tb.cog0.save_d_from_alu
+@22
+tb.cog0.acog_mem.d_data_in[31:0]
+tb.cog0.acog_mem.d_addr_in[8:0]
+[pattern_trace] 1
+[pattern_trace] 0

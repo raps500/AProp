@@ -1,0 +1,194 @@
+/* 
+ * ACog
+ * A verilog implementation of a COG
+ * 
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                   TERMS OF USE: MIT License                                                  │                                                            
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation    │ 
+│files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy,    │
+│modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software│
+│is furnished to do so, subject to the following conditions:                                                                   │
+│                                                                                                                              │
+│The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.│
+│                                                                                                                              │
+│THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE          │
+│WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR         │
+│COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,   │
+│ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                         │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+ */
+`include "acog_defs.v"  
+module ACog(
+	input wire 			clk_in,
+	input wire 			reset_in,	
+	// Ports access 
+	input wire [31:0] 	port_a_in,
+	input wire [31:0] 	port_b_in,
+	output wire [31:0] 	port_a_o,
+	output wire [31:0] 	port_b_o,
+	output wire [31:0] 	port_a_dir_o,
+	output wire [31:0] 	port_b_dir_o,
+	// HUB access 
+	output wire [`HUB_MEM_WIDTH-1:0] hub_addr_o,
+	input wire [31:0] 	hub_data_in,
+	output wire 		hub_read_o,
+	output wire 		hub_write_o,
+	output wire [1:0] 	hub_sz_o,
+	output wire [31:0] 	hub_data_o,
+	input wire 			hub_ack_in
+	
+	);
+	
+wire [1:0] acog_state;
+wire reg_z, reg_c, alu_c, alu_z;
+wire [`MEM_WIDTH-1:0] acog_pc, acog_pc_plus_1;
+wire [31:0] acog_opcode, acog_s_from_mem, acog_s_from_mem_negative, acog_d_from_mem;
+wire [31:0] acog_d_lshift_mem, acog_d_rshift_mem;
+wire [31:0] alu_q;
+wire acog_d_is_zero, acog_d_is_one;
+wire save_d_from_alu, save_d_from_pc_plus_1;
+wire save_pc_from_pc_plus_1;
+wire save_pc_from_s;
+wire save_d_from_hub;
+wire save_c, save_z;
+wire acog_execute; // asserted when the condition codes of the instruction allow it
+wire [31:0] acog_latched_opcode;
+// port & S equality
+wire acog_port_peq_pina, acog_port_pne_pina, acog_port_peq_pinb, acog_port_pne_pinb;
+wire acog_cnt_eq_d; // CNT == D
+
+
+/* Hub io */
+assign hub_addr_o = acog_s_from_mem[`HUB_MEM_WIDTH-1:0];
+assign hub_data_o = acog_d_from_mem;
+
+acog_mem acog_mem(
+	.clk_in(clk_in),
+	.reset_in(reset_in),
+	.state_in(acog_state),
+	// fetch channel
+	.f_addr_in(acog_pc),
+	.f_data_o(acog_opcode),
+	// s channel
+	.s_addr_in(acog_latched_opcode[8:0]),
+	//.s_data_in(32'h0),
+	.s_data_o(acog_s_from_mem),
+	.s_data_neg_o(acog_s_from_mem_negative),
+	// d channel
+	.d_addr_in(acog_latched_opcode[17:9]),
+	.d_write_in(save_d_from_alu | save_d_from_pc_plus_1 | save_d_from_hub),
+	.d_data_in(alu_q),
+	.d_data_o(acog_d_from_mem),
+	.d_data_is_zero_o(acog_d_is_zero),
+	.d_data_is_one_o(acog_d_is_one),
+	.d_lshift_o(acog_d_lshift_mem),
+	.d_rshift_o(acog_d_rshift_mem),
+	// ports
+	.port_a_o(port_a_o),
+	.port_a_dir_o(port_a_dir_o),
+	.port_a_in(port_a_in),
+	.port_b_o(port_b_o),
+	.port_b_dir_o(port_b_dir_o),
+	.port_b_in(port_b_in),
+	// port functions
+	.port_pne_pina_o(acog_port_pne_pina),
+	.port_peq_pina_o(acog_port_peq_pina),
+	.port_pne_pinb_o(acog_port_pne_pinb),
+	.port_peq_pinb_o(acog_port_peq_pinb),
+	.port_cnt_eq_d_o(acog_cnt_eq_d) // asserted when CNT equals D
+	);
+	
+acog_seq seq(
+	.clk_in(clk_in),
+	.reset_in(reset_in),
+	.state_o(acog_state),
+	.opcode_in(acog_latched_opcode),
+	.flag_c_in(reg_c),
+	.port_pne_pina_in(acog_port_pne_pina),
+	.port_peq_pina_in(acog_port_peq_pina),
+	.port_pne_pinb_in(acog_port_pne_pinb),
+	.port_peq_pinb_in(acog_port_peq_pinb),
+	.port_cnt_eq_d_in(acog_cnt_eq_d), // CNT equals D
+	.execute_in(acog_execute),
+	.hub_ack_in(hub_ack_in),
+	.hub_read_o(hub_read_o),
+	.hub_write_o(hub_write_o),
+	.hub_tfr_sz_o(hub_sz_o)
+	);
+
+acog_if ifetch(
+	.clk_in(clk_in),
+	.state_in(acog_state)
+	);
+	
+acog_id idecode(
+	.clk_in(clk_in),
+	.state_in(acog_state),
+	.opcode_in(acog_opcode),
+	.flag_c_i(reg_c), /* we check condition codes here */
+	.flag_z_i(reg_z), /* we check condition codes here */
+	.save_c_o(save_c),
+	.save_z_o(save_z),
+	.save_d_from_alu_o(save_d_from_alu),       /* ALU update */
+	.save_d_from_pc_plus_1_o(save_d_from_pc_plus_1), /* ret */
+	.save_pc_from_pc_plus_1_o(save_pc_from_pc_plus_1),   /* next opcode */
+	.save_pc_from_s_o(save_pc_from_s),         /* jump taken */
+	.opcode_o(acog_latched_opcode),
+	.execute_o(acog_execute),
+	.save_d_from_hub_o(save_d_from_hub)
+	);
+
+acog_wback wback(
+	.clk_in(clk_in),
+	.state_in(acog_state),
+	.reset_in(reset_in),
+	.opcode_in(acog_latched_opcode),
+	.d_is_zero_in(acog_d_is_zero),
+	.d_is_one_in(acog_d_is_one),
+	.execute_in(acog_execute),
+	.save_c_in(save_c),
+	.save_z_in(save_z),
+	.save_pc_from_s_in(save_pc_from_s),
+	.save_pc_from_pc_plus_1_in(save_pc_from_pc_plus_1),
+	.flag_c_in(alu_c),
+	.flag_z_in(alu_z),
+	.flag_c_o(reg_c),
+	.flag_z_o(reg_z),
+	.pc_o(acog_pc),
+	.pc_plus_1_o(acog_pc_plus_1),
+	.s_data_in(acog_s_from_mem)
+	);
+
+acog_alu alu(
+	.clk_in(clk_in),
+	.opcode_in(acog_latched_opcode[31:26]),
+	.flag_c_in(reg_c),
+	.flag_z_in(reg_z),
+	.s_in(acog_s_from_mem),
+	.s_negative_in(acog_s_from_mem_negative),
+	.d_in(acog_d_from_mem),
+	.d_lshift_in(acog_d_lshift_mem),
+	.d_rshift_in(acog_d_rshift_mem),
+	.hub_data_in(hub_data_in),
+	.pc_plus_1_in(acog_pc_plus_1),
+	.flag_c_o(alu_c),
+	.flag_z_o(alu_z),
+	.q_o(alu_q)
+	);
+
+always @(posedge clk_in)
+	case (acog_state)
+		`ST_WBACK:
+				$display("%03x %08x : %08x %08x %1x%1x = %08x %1x%1x", acog_pc, acog_latched_opcode, 
+						 acog_s_from_mem, acog_d_from_mem, reg_c, reg_z, alu_q, alu_c, alu_z);
+	endcase
+
+initial
+	begin
+	#1
+		$display("PC. .OPCODE. : ...D.... ...S.... CZ = ...Q.... CZ");
+	end
+	
+endmodule

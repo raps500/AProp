@@ -1,0 +1,38 @@
+@P:  Worst Slack : -1.124
+@P:  AProp|clk_in - Estimated Frequency : 58.1 MHz
+@P:  AProp|clk_in - Requested Frequency : 62.2 MHz
+@P:  AProp|clk_in - Estimated Period : 17.202
+@P:  AProp|clk_in - Requested Period : 16.078
+@P:  AProp|clk_in - Slack : -1.124
+@P:  System - Estimated Frequency : 1.0 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 987.727
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 12.273
+@P:  Worst Slack(min analysis) : -0.352
+@P:  AProp|clk_in - Estimated Frequency(min analysis) : 58.1 MHz
+@P:  AProp|clk_in - Requested Frequency(min analysis) : 62.2 MHz
+@P:  AProp|clk_in - Estimated Period(min analysis) : 17.202
+@P:  AProp|clk_in - Requested Period(min analysis) : 16.078
+@P:  AProp|clk_in - Slack(min analysis) : -1.124
+@P:  System - Estimated Frequency(min analysis) : 1.0 MHz
+@P:  System - Requested Frequency(min analysis) : 1.0 MHz
+@P:  System - Estimated Period(min analysis) : 998.901
+@P:  System - Requested Period(min analysis) : 1000.000
+@P:  System - Slack(min analysis) : 1.099
+@P:  Total Area : 1602.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:16s

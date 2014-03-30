@@ -1,0 +1,23 @@
+@N|Running in 32-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1291:7:1291:11|Synthesizing module DP8KC
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1120:7:1120:9|Synthesizing module VHI
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1124:7:1124:9|Synthesizing module VLO
+@N: CG364 :"F:\02_Elektronik\033_AProp\03_Lattice\cog0_mem.v":8:7:8:14|Synthesizing module cog0_mem
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":7:7:7:14|Synthesizing module acog_mem
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_seq.v":8:7:8:14|Synthesizing module acog_seq
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_if.v":8:7:8:13|Synthesizing module acog_if
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":8:7:8:13|Synthesizing module acog_id
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":8:7:8:16|Synthesizing module acog_wback
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":128:7:128:17|Synthesizing module acog_addsub
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":99:7:99:16|Synthesizing module acog_logic
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":168:7:168:16|Synthesizing module barrel_rol
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":216:7:216:16|Synthesizing module barrel_ror
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":264:7:264:16|Synthesizing module barrel_shl
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":312:7:312:16|Synthesizing module barrel_shr
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":360:7:360:16|Synthesizing module barrel_sar
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":8:7:8:14|Synthesizing module acog_alu
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":7:7:7:10|Synthesizing module ACog
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":7:7:7:11|Synthesizing module AProp
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="cog0_mem" module="RAM_DP_TRUE" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2014 03 05 09:53:31.022" version="7.1" type="Module" synthesis="synplify" source_format="Verilog">
+  <Package>
+		<File name="cog0_mem.lpc" type="lpc" modified="2014 03 05 09:53:28.000"/>
+		<File name="cog0_mem.v" type="top_level_verilog" modified="2014 03 05 09:53:28.000"/>
+		<File name="cog0_mem_tmpl.v" type="template_verilog" modified="2014 03 05 09:53:28.000"/>
+		<File name="f:/02_elektronik/033_aprop/01_verilog/cog_mem.mem" type="mem" modified="2014 03 05 09:52:53.000"/>
+		<File name="tb_cog0_mem_tmpl.v" type="testbench_verilog" modified="2014 03 05 09:53:28.000"/>
+  </Package>
+</DiamondModule>

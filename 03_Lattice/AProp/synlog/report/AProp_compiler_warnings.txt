@@ -1,0 +1,23 @@
+@W: CS141 :"C:\lscc\diamond\2.1\synpbase\lib\vlog\umr_capim.v":438:58:438:68|Unrecognized synthesis directive mustconnect
+@W: CS141 :"C:\lscc\diamond\2.1\synpbase\lib\vlog\umr_capim.v":441:62:441:72|Unrecognized synthesis directive mustconnect
+@W: CG781 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":107:9:107:9|Undriven input DataInA on instance mem, tying to 0
+@W: CG133 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":31:11:31:13|No assignment to PAR
+@W: CG146 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_if.v":8:7:8:13|Creating black box for empty module acog_if
+@W: CG532 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":117:0:117:6|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@W: CL118 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":51:2:51:5|Latch generated from always block for signal execute; possible missing assignment in an if or case statement.
+@W: CG532 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":71:0:71:6|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":22:57:22:61|No assignment to wire q_rev
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":23:21:23:25|No assignment to wire q_mux
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":23:28:23:32|No assignment to wire q_sum
+@W: CG781 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":116:9:116:11|Undriven input flag_z_in on instance alu, tying to 0
+@W: CL168 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":70:8:70:13|Pruning instance ifetch -- not in use ...
+@W: CL159 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":9:12:9:17|Input clk_in is unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":100:19:100:27|Input port bits 31 to 28 of opcode_in[31:0] are unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":100:19:100:27|Input port bits 25 to 0 of opcode_in[31:0] are unused
+@W: CL247 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bit 31 of opcode_in[31:0] is unused
+@W: CL247 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bit 29 of opcode_in[31:0] is unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bits 25 to 0 of opcode_in[31:0] are unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":11:19:11:27|Input port bits 25 to 23 of opcode_in[31:0] are unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":11:19:11:27|Input port bits 21 to 9 of opcode_in[31:0] are unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":24:19:24:27|Input port bits 31 to 9 of s_data_in[31:0] are unused
+

@@ -1,0 +1,237 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 19 11:19:04 2014
+#
+
+
+Top view:               AProp
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.133
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+AProp|clk_in       1.0 MHz       53.7 MHz      1000.000      18.626        981.374     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------
+AProp|clk_in  AProp|clk_in  |  0.000       -0.133  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: AProp|clk_in
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                         Arrival           
+Instance                      Reference        Type        Pin     Net                         Time        Slack 
+                              Clock                                                                              
+-----------------------------------------------------------------------------------------------------------------
+cog1.wback.pc[1]              AProp|clk_in     FD1P3AX     Q       acog_pc[1]                  0.731       -0.133
+cog1.wback.pc[2]              AProp|clk_in     FD1P3AX     Q       acog_pc[2]                  0.731       -0.133
+cog1.wback.pc[3]              AProp|clk_in     FD1P3AX     Q       acog_pc[3]                  0.731       -0.133
+cog1.wback.pc[4]              AProp|clk_in     FD1P3AX     Q       acog_pc[4]                  0.731       -0.133
+cog1.wback.pc[5]              AProp|clk_in     FD1P3AX     Q       acog_pc[5]                  0.731       -0.133
+cog1.wback.pc[6]              AProp|clk_in     FD1P3AX     Q       acog_pc[6]                  0.731       -0.133
+cog1.wback.pc[7]              AProp|clk_in     FD1P3AX     Q       acog_pc[7]                  0.731       -0.133
+cog1.wback.pc[8]              AProp|clk_in     FD1P3AX     Q       acog_pc[8]                  0.731       -0.133
+cog1.idecode.opcode_o[15]     AProp|clk_in     FD1P3AX     Q       acog_latched_opcode[15]     0.775       -0.088
+cog1.idecode.opcode_o[16]     AProp|clk_in     FD1P3AX     Q       acog_latched_opcode[16]     0.775       -0.088
+=================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                  Required           
+Instance                            Reference        Type      Pin       Net                  Time         Slack 
+                                    Clock                                                                        
+-----------------------------------------------------------------------------------------------------------------
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA4      N_102                1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA5      left_addr_mux[2]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA6      left_addr_mux[3]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA7      left_addr_mux[4]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA8      N_62                 1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA9      left_addr_mux[6]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA10     left_addr_mux[7]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC     ADA11     left_addr_mux[8]     1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_1     AProp|clk_in     DP8KC     ADA4      N_102                1.178        -0.133
+cog1.acog_mem.mem.mem_1_mem_0_1     AProp|clk_in     DP8KC     ADA5      left_addr_mux[2]     1.178        -0.133
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        1.045
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.178
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.133
+
+    Number of logic level(s):                1
+    Starting point:                          cog1.wback.pc[1] / Q
+    Ending point:                            cog1.acog_mem.mem.mem_1_mem_0_0 / ADA4
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CLKA
+
+Instance / Net                                            Pin      Pin               Arrival     No. of    
+Name                                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------
+cog1.wback.pc[1]                             FD1P3AX      Q        Out     0.731     0.731       -         
+acog_pc[1]                                   Net          -        -       -         -           2         
+cog1.acog_mem.left_addr_mux_i_m2_i_m2[1]     ORCALUT4     A        In      0.000     0.731       -         
+cog1.acog_mem.left_addr_mux_i_m2_i_m2[1]     ORCALUT4     Z        Out     0.314     1.045       -         
+N_102                                        Net          -        -       -         -           4         
+cog1.acog_mem.mem.mem_1_mem_0_0              DP8KC        ADA4     In      0.000     1.045       -         
+===========================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        1.045
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.178
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.133
+
+    Number of logic level(s):                1
+    Starting point:                          cog1.wback.pc[2] / Q
+    Ending point:                            cog1.acog_mem.mem.mem_1_mem_0_0 / ADA5
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CLKA
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+cog1.wback.pc[2]                    FD1P3AX      Q        Out     0.731     0.731       -         
+acog_pc[2]                          Net          -        -       -         -           2         
+cog1.acog_mem.left_addr_mux[2]      ORCALUT4     A        In      0.000     0.731       -         
+cog1.acog_mem.left_addr_mux[2]      ORCALUT4     Z        Out     0.314     1.045       -         
+left_addr_mux[2]                    Net          -        -       -         -           4         
+cog1.acog_mem.mem.mem_1_mem_0_0     DP8KC        ADA5     In      0.000     1.045       -         
+==================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        1.045
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.178
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.133
+
+    Number of logic level(s):                1
+    Starting point:                          cog1.wback.pc[3] / Q
+    Ending point:                            cog1.acog_mem.mem.mem_1_mem_0_0 / ADA6
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CLKA
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+cog1.wback.pc[3]                    FD1P3AX      Q        Out     0.731     0.731       -         
+acog_pc[3]                          Net          -        -       -         -           2         
+cog1.acog_mem.left_addr_mux[3]      ORCALUT4     A        In      0.000     0.731       -         
+cog1.acog_mem.left_addr_mux[3]      ORCALUT4     Z        Out     0.314     1.045       -         
+left_addr_mux[3]                    Net          -        -       -         -           4         
+cog1.acog_mem.mem.mem_1_mem_0_0     DP8KC        ADA6     In      0.000     1.045       -         
+==================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        1.045
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.178
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.133
+
+    Number of logic level(s):                1
+    Starting point:                          cog1.wback.pc[4] / Q
+    Ending point:                            cog1.acog_mem.mem.mem_1_mem_0_0 / ADA7
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CLKA
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+cog1.wback.pc[4]                    FD1P3AX      Q        Out     0.731     0.731       -         
+acog_pc[4]                          Net          -        -       -         -           2         
+cog1.acog_mem.left_addr_mux[4]      ORCALUT4     A        In      0.000     0.731       -         
+cog1.acog_mem.left_addr_mux[4]      ORCALUT4     Z        Out     0.314     1.045       -         
+left_addr_mux[4]                    Net          -        -       -         -           4         
+cog1.acog_mem.mem.mem_1_mem_0_0     DP8KC        ADA7     In      0.000     1.045       -         
+==================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        1.045
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Hold time:                             1.178
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (critical) :                     -0.133
+
+    Number of logic level(s):                1
+    Starting point:                          cog1.wback.pc[5] / Q
+    Ending point:                            cog1.acog_mem.mem.mem_1_mem_0_0 / ADA8
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CLKA
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cog1.wback.pc[5]                        FD1P3AX      Q        Out     0.731     0.731       -         
+acog_pc[5]                              Net          -        -       -         -           2         
+cog1.acog_mem.left_addr_mux_i_m2[5]     ORCALUT4     A        In      0.000     0.731       -         
+cog1.acog_mem.left_addr_mux_i_m2[5]     ORCALUT4     Z        Out     0.314     1.045       -         
+N_62                                    Net          -        -       -         -           4         
+cog1.acog_mem.mem.mem_1_mem_0_0         DP8KC        ADA8     In      0.000     1.045       -         
+======================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

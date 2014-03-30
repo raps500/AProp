@@ -1,0 +1,609 @@
+#Build: Synplify Pro G-2012.09L-1 , Build 035R, Nov 16 2012
+#install: C:\lscc\diamond\2.1\synpbase
+#OS: Windows 7 6.0
+#Hostname: PACITO-PC
+
+#Implementation: AProp
+
+$ Start of Compile
+#Wed Mar 05 10:20:52 2014
+
+Synopsys Verilog Compiler, version comp201209rcp1, Build 100R, built Nov 12 2012
+@N|Running in 32-bit mode
+Copyright (C) 1994-2012 Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\lscc\diamond\2.1\synpbase\lib\lucent\machxo2.v"
+@I::"C:\lscc\diamond\2.1\synpbase\lib\lucent\pmi_def.v"
+@I::"C:\lscc\diamond\2.1\synpbase\lib\vlog\umr_capim.v"
+@W: CS141 :"C:\lscc\diamond\2.1\synpbase\lib\vlog\umr_capim.v":438:58:438:68|Unrecognized synthesis directive mustconnect
+@W: CS141 :"C:\lscc\diamond\2.1\synpbase\lib\vlog\umr_capim.v":441:62:441:72|Unrecognized synthesis directive mustconnect
+@I::"C:\lscc\diamond\2.1\synpbase\lib\vlog\scemi_objects.v"
+@I::"C:\lscc\diamond\2.1\synpbase\lib\vlog\scemi_pipes.svh"
+@I::"C:\lscc\diamond\2.1\synpbase\lib\vlog\hypermods.v"
+@I::"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog.v"
+@I:"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":"F:\02_Elektronik\033_AProp\01_Verilog\acog_defs.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_if.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_seq.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v"
+@I::"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v"
+@I::"F:\02_Elektronik\033_AProp\03_Lattice\cog0_mem.v"
+Verilog syntax check successful!
+Selecting top level module AProp
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1291:7:1291:11|Synthesizing module DP8KC
+
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1120:7:1120:9|Synthesizing module VHI
+
+@N: CG364 :"C:\lscc\diamond\2.1\cae_library\synthesis\verilog\machxo2.v":1124:7:1124:9|Synthesizing module VLO
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\03_Lattice\cog0_mem.v":8:7:8:14|Synthesizing module cog0_mem
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":7:7:7:14|Synthesizing module acog_mem
+
+@W: CG781 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":103:9:103:9|Undriven input DataInA on instance mem, tying to 0
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":24:20:24:27|No assignment to wire port_a_o
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":25:20:25:31|No assignment to wire port_a_dir_o
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":27:20:27:27|No assignment to wire port_b_o
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":28:20:28:31|No assignment to wire port_b_dir_o
+
+@W: CG133 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":31:11:31:13|No assignment to PAR
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_seq.v":8:7:8:14|Synthesizing module acog_seq
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_if.v":8:7:8:13|Synthesizing module acog_if
+
+@W: CG146 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_if.v":8:7:8:13|Creating black box for empty module acog_if
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":8:7:8:13|Synthesizing module acog_id
+
+@W: CG532 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":117:0:117:6|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@W: CL118 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_id.v":51:2:51:5|Latch generated from always block for signal execute; possible missing assignment in an if or case statement.
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":8:7:8:16|Synthesizing module acog_wback
+
+@W: CG532 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":71:0:71:6|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":128:7:128:17|Synthesizing module acog_addsub
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":99:7:99:16|Synthesizing module acog_logic
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":168:7:168:16|Synthesizing module barrel_rol
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":216:7:216:16|Synthesizing module barrel_ror
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":264:7:264:16|Synthesizing module barrel_shl
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":312:7:312:16|Synthesizing module barrel_shr
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":360:7:360:16|Synthesizing module barrel_sar
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":8:7:8:14|Synthesizing module acog_alu
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":22:57:22:61|No assignment to wire q_rev
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":23:21:23:25|No assignment to wire q_mux
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":23:28:23:32|No assignment to wire q_sum
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":7:7:7:10|Synthesizing module ACog
+
+@W: CG781 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":116:9:116:11|Undriven input flag_z_in on instance alu, tying to 0
+@W: CL168 :"F:\02_Elektronik\033_AProp\01_Verilog\acog.v":70:8:70:13|Pruning instance ifetch -- not in use ...
+
+@N: CG364 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":7:7:7:11|Synthesizing module AProp
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|No assignment to wire port_a_dir
+
+@W: CG360 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|No assignment to wire port_b_dir
+
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[1] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[2] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[3] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[4] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[5] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[6] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[7] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[8] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[9] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[10] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[11] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[12] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[13] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[14] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[15] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[16] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[17] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[18] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[19] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[20] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[21] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[22] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[23] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[24] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[25] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[26] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[27] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[28] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[29] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[30] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:12:16:21|*Input port_a_dir[31] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[0] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[1] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[2] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[3] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[4] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[5] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[6] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[7] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[8] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[9] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[10] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[11] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[12] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[13] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[14] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[15] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[16] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[17] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[18] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[19] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[20] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[21] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[22] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[23] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[24] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[25] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[26] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[27] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[28] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[29] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[30] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL156 :"F:\02_Elektronik\033_AProp\01_Verilog\aprop.v":16:24:16:33|*Input port_b_dir[31] to expression [not] has undriven bits that are tied to 0 -- simulation mismatch possible.
+@W: CL159 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":9:12:9:17|Input clk_in is unused
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":100:19:100:27|Input port bits 31 to 28 of opcode_in[31:0] are unused
+
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":100:19:100:27|Input port bits 25 to 0 of opcode_in[31:0] are unused
+
+@W: CL247 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bit 31 of opcode_in[31:0] is unused
+
+@W: CL247 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bit 29 of opcode_in[31:0] is unused
+
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_alu.v":129:19:129:27|Input port bits 25 to 0 of opcode_in[31:0] are unused
+
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":11:19:11:27|Input port bits 25 to 23 of opcode_in[31:0] are unused
+
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":11:19:11:27|Input port bits 21 to 9 of opcode_in[31:0] are unused
+
+@W: CL246 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_wback.v":24:19:24:27|Input port bits 31 to 9 of s_data_in[31:0] are unused
+
+@A: CL153 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":31:11:31:13|*Unassigned bits of PAR[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL157 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":24:20:24:27|*Output port_a_o has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":25:20:25:31|*Output port_a_dir_o has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":27:20:27:27|*Output port_b_o has undriven bits -- simulation mismatch possible.
+@W: CL157 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":28:20:28:31|*Output port_b_dir_o has undriven bits -- simulation mismatch possible.
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 05 10:20:53 2014
+
+###########################################################]
+Premap Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@L: F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp_scck.rpt 
+Printing clock  summary report in "F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 51MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 51MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 60MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 62MB)
+
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\acog.v":116:9:116:11|Removing instance alu of view:work.acog_alu(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\acog.v":91:11:91:15|Removing instance wback of view:work.acog_wback(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\acog.v":75:8:75:14|Removing instance idecode of view:work.acog_id(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\acog.v":64:9:64:11|Removing instance seq of view:work.acog_seq(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\acog.v":41:9:41:16|Removing instance acog_mem of view:work.acog_mem(verilog) because there are no references to its outputs 
+@N: BN115 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":91:5:91:8|Removing instance cog0 of view:work.ACog(verilog) because there are no references to its outputs 
+
+
+Clock Summary
+**************
+
+Start     Requested     Requested     Clock     Clock
+Clock     Frequency     Period        Type      Group
+-----------------------------------------------------
+=====================================================
+
+syn_allowed_resources : blockrams=26  set on top level netlist AProp
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 42MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 05 10:20:55 2014
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":24:20:24:60|Tristate driver un4_port_a on net port_a[0] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":25:20:25:60|Tristate driver un11_port_a on net port_a[1] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":26:20:26:60|Tristate driver un19_port_a on net port_a[2] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":27:20:27:60|Tristate driver un27_port_a on net port_a[3] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":28:20:28:60|Tristate driver un35_port_a on net port_a[4] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":29:20:29:60|Tristate driver un43_port_a on net port_a[5] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":30:20:30:60|Tristate driver un51_port_a on net port_a[6] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":31:20:31:60|Tristate driver un59_port_a on net port_a[7] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":32:20:32:60|Tristate driver un67_port_a on net port_a[8] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":33:20:33:60|Tristate driver un75_port_a on net port_a[9] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":34:21:34:63|Tristate driver un83_port_a on net port_a[10] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":35:21:35:63|Tristate driver un91_port_a on net port_a[11] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":36:21:36:63|Tristate driver un99_port_a on net port_a[12] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":37:21:37:63|Tristate driver un107_port_a on net port_a[13] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":38:21:38:63|Tristate driver un115_port_a on net port_a[14] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":39:21:39:63|Tristate driver un123_port_a on net port_a[15] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":40:21:40:63|Tristate driver un131_port_a on net port_a[16] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":41:21:41:63|Tristate driver un139_port_a on net port_a[17] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":42:21:42:63|Tristate driver un147_port_a on net port_a[18] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":43:21:43:63|Tristate driver un155_port_a on net port_a[19] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":44:21:44:63|Tristate driver un163_port_a on net port_a[20] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":45:21:45:63|Tristate driver un171_port_a on net port_a[21] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":46:21:46:63|Tristate driver un179_port_a on net port_a[22] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":47:21:47:63|Tristate driver un187_port_a on net port_a[23] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":48:21:48:63|Tristate driver un195_port_a on net port_a[24] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":49:21:49:63|Tristate driver un203_port_a on net port_a[25] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":50:21:50:63|Tristate driver un211_port_a on net port_a[26] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":51:21:51:63|Tristate driver un219_port_a on net port_a[27] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":52:21:52:63|Tristate driver un227_port_a on net port_a[28] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":53:21:53:63|Tristate driver un235_port_a on net port_a[29] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":54:20:54:60|Tristate driver un243_port_a on net port_a[30] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":55:20:55:60|Tristate driver un251_port_a on net port_a[31] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":58:20:58:60|Tristate driver un3_port_b on net port_b[0] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":59:20:59:60|Tristate driver un10_port_b on net port_b[1] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":60:20:60:60|Tristate driver un18_port_b on net port_b[2] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":61:20:61:60|Tristate driver un26_port_b on net port_b[3] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":62:20:62:60|Tristate driver un34_port_b on net port_b[4] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":63:20:63:60|Tristate driver un42_port_b on net port_b[5] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":64:20:64:60|Tristate driver un50_port_b on net port_b[6] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":65:20:65:60|Tristate driver un58_port_b on net port_b[7] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":66:20:66:60|Tristate driver un66_port_b on net port_b[8] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":67:20:67:60|Tristate driver un74_port_b on net port_b[9] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":68:21:68:63|Tristate driver un82_port_b on net port_b[10] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":69:21:69:63|Tristate driver un90_port_b on net port_b[11] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":70:21:70:63|Tristate driver un98_port_b on net port_b[12] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":71:21:71:63|Tristate driver un106_port_b on net port_b[13] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":72:21:72:63|Tristate driver un114_port_b on net port_b[14] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":73:21:73:63|Tristate driver un122_port_b on net port_b[15] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":74:21:74:63|Tristate driver un130_port_b on net port_b[16] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":75:21:75:63|Tristate driver un138_port_b on net port_b[17] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":76:21:76:63|Tristate driver un146_port_b on net port_b[18] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":77:21:77:63|Tristate driver un154_port_b on net port_b[19] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":78:21:78:63|Tristate driver un162_port_b on net port_b[20] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":79:21:79:63|Tristate driver un170_port_b on net port_b[21] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":80:21:80:63|Tristate driver un178_port_b on net port_b[22] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":81:21:81:63|Tristate driver un186_port_b on net port_b[23] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":82:21:82:63|Tristate driver un194_port_b on net port_b[24] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":83:21:83:63|Tristate driver un202_port_b on net port_b[25] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":84:21:84:63|Tristate driver un210_port_b on net port_b[26] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":85:21:85:63|Tristate driver un218_port_b on net port_b[27] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":86:21:86:63|Tristate driver un226_port_b on net port_b[28] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":87:21:87:63|Tristate driver un234_port_b on net port_b[29] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":88:20:88:60|Tristate driver un242_port_b on net port_b[30] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":89:20:89:60|Tristate driver un250_port_b on net port_b[31] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[0] on net port_a_o_0[0] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[1] on net port_a_o_0[1] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[2] on net port_a_o_0[2] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[3] on net port_a_o_0[3] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[4] on net port_a_o_0[4] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[5] on net port_a_o_0[5] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[6] on net port_a_o_0[6] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[7] on net port_a_o_0[7] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[8] on net port_a_o_0[8] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[9] on net port_a_o_0[9] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[10] on net port_a_o_0[10] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[11] on net port_a_o_0[11] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[12] on net port_a_o_0[12] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[13] on net port_a_o_0[13] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[14] on net port_a_o_0[14] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[15] on net port_a_o_0[15] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[16] on net port_a_o_0[16] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[17] on net port_a_o_0[17] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[18] on net port_a_o_0[18] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[19] on net port_a_o_0[19] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[20] on net port_a_o_0[20] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[21] on net port_a_o_0[21] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[22] on net port_a_o_0[22] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[23] on net port_a_o_0[23] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[24] on net port_a_o_0[24] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[25] on net port_a_o_0[25] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[26] on net port_a_o_0[26] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[27] on net port_a_o_0[27] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[28] on net port_a_o_0[28] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[29] on net port_a_o_0[29] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[30] on net port_a_o_0[30] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_a_o_0_t[31] on net port_a_o_0[31] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[0] on net port_b_o_0[0] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[1] on net port_b_o_0[1] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[2] on net port_b_o_0[2] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[3] on net port_b_o_0[3] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[4] on net port_b_o_0[4] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[5] on net port_b_o_0[5] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[6] on net port_b_o_0[6] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[7] on net port_b_o_0[7] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[8] on net port_b_o_0[8] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[9] on net port_b_o_0[9] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[10] on net port_b_o_0[10] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[11] on net port_b_o_0[11] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[12] on net port_b_o_0[12] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[13] on net port_b_o_0[13] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[14] on net port_b_o_0[14] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[15] on net port_b_o_0[15] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[16] on net port_b_o_0[16] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[17] on net port_b_o_0[17] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[18] on net port_b_o_0[18] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[19] on net port_b_o_0[19] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[20] on net port_b_o_0[20] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[21] on net port_b_o_0[21] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[22] on net port_b_o_0[22] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[23] on net port_b_o_0[23] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[24] on net port_b_o_0[24] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[25] on net port_b_o_0[25] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[26] on net port_b_o_0[26] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[27] on net port_b_o_0[27] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[28] on net port_b_o_0[28] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[29] on net port_b_o_0[29] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[30] on net port_b_o_0[30] has its enable tied to GND (module AProp) 
+@W: MO111 :|Tristate driver port_b_o_0_t[31] on net port_b_o_0[31] has its enable tied to GND (module AProp) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 73MB peak: 76MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_31_.un1[0] on net port_b[31] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_30_.un1[0] on net port_b[30] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_29_.un1[0] on net port_b[29] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_28_.un1[0] on net port_b[28] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_27_.un1[0] on net port_b[27] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_26_.un1[0] on net port_b[26] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_25_.un1[0] on net port_b[25] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_24_.un1[0] on net port_b[24] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_23_.un1[0] on net port_b[23] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_22_.un1[0] on net port_b[22] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_21_.un1[0] on net port_b[21] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_20_.un1[0] on net port_b[20] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_19_.un1[0] on net port_b[19] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_18_.un1[0] on net port_b[18] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_17_.un1[0] on net port_b[17] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_16_.un1[0] on net port_b[16] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_15_.un1[0] on net port_b[15] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_14_.un1[0] on net port_b[14] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_13_.un1[0] on net port_b[13] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_12_.un1[0] on net port_b[12] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_11_.un1[0] on net port_b[11] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_10_.un1[0] on net port_b[10] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_9_.un1[0] on net port_b[9] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_8_.un1[0] on net port_b[8] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_7_.un1[0] on net port_b[7] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_6_.un1[0] on net port_b[6] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_5_.un1[0] on net port_b[5] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_4_.un1[0] on net port_b[4] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_3_.un1[0] on net port_b[3] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_2_.un1[0] on net port_b[2] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_1_.un1[0] on net port_b[1] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":12:19:12:24|Tristate driver port_b_obuft_0_.un1[0] on net port_b[0] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_31_.un1[0] on net port_a[31] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_30_.un1[0] on net port_a[30] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_29_.un1[0] on net port_a[29] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_28_.un1[0] on net port_a[28] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_27_.un1[0] on net port_a[27] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_26_.un1[0] on net port_a[26] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_25_.un1[0] on net port_a[25] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_24_.un1[0] on net port_a[24] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_23_.un1[0] on net port_a[23] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_22_.un1[0] on net port_a[22] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_21_.un1[0] on net port_a[21] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_20_.un1[0] on net port_a[20] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_19_.un1[0] on net port_a[19] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_18_.un1[0] on net port_a[18] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_17_.un1[0] on net port_a[17] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_16_.un1[0] on net port_a[16] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_15_.un1[0] on net port_a[15] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_14_.un1[0] on net port_a[14] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_13_.un1[0] on net port_a[13] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_12_.un1[0] on net port_a[12] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_11_.un1[0] on net port_a[11] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_10_.un1[0] on net port_a[10] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_9_.un1[0] on net port_a[9] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_8_.un1[0] on net port_a[8] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_7_.un1[0] on net port_a[7] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_6_.un1[0] on net port_a[6] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_5_.un1[0] on net port_a[5] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_4_.un1[0] on net port_a[4] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_3_.un1[0] on net port_a[3] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_2_.un1[0] on net port_a[2] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_1_.un1[0] on net port_a[1] has its enable tied to GND (module AProp) 
+@W: MO111 :"f:\02_elektronik\033_aprop\01_verilog\aprop.v":11:19:11:24|Tristate driver port_a_obuft_0_.un1[0] on net port_a[0] has its enable tied to GND (module AProp) 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+= Non-Gated/Non-Generated Clocks =
+************** None **************
+----------------------------------
+==================================
+===== Gated/Generated Clocks =====
+************** None **************
+----------------------------------
+==================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 74MB peak: 76MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09L-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 05 10:20:56 2014
+#
+
+
+Top view:               AProp
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 0 of 6864 (0%)
+PIC Latch:       0
+I/O cells:       64
+
+
+Details:
+GSR:            1
+OBZ:            64
+PUR:            1
+VHI:            1
+VLO:            1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 78MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 05 10:20:56 2014
+
+###########################################################]

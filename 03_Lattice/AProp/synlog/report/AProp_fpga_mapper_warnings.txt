@@ -1,0 +1,2 @@
+@W: MT462 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":58:3:66:9|Net cog0.idecode.un1_execute30 appears to be an unidentified clock source. Assuming default frequency. 
+@W: MT420 |Found inferred clock AProp|clk_in with period 16.08ns. Please declare a user-defined clock on object "p:clk_in"

@@ -1,0 +1,998 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>            Lattice Mapping Report File for Design Module 'AProp'
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial
+     AProp_AProp.ngd -o AProp_AProp_map.ncd -pr AProp_AProp.prf -mp
+     AProp_AProp.mrp X:/ACog/03_Lattice/AProp.lpf -c 0
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-7000HETQFP144
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond Version 2.1.0.103
+Mapped on:  03/19/14  11:19:17
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    836
+      PFU registers:    804
+      PIO registers:    32
+   Number of SLICEs:          2852 out of  3432 (83%)
+      SLICEs(logic/ROM):       858 out of   858 (100%)
+      SLICEs(logic/ROM/RAM):  1994 out of  2574 (77%)
+          As RAM:            0 out of  2574 (0%)
+          As Logic/ROM:   1994 out of  2574 (77%)
+   Number of logic LUT4s:     4724
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:    489 (978 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     5702
+   Number of PIO sites used: 34 out of 115 (30%)
+   Number of block RAMs:  8 out of 26 (31%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  1
+     Net clk_in_c: 525 loads, 525 rising, 0 falling (Driver: PIO clk_in )
+   Number of Clock Enables:  51
+     Net cog0.idecode.save_d_from_alu_o7: 32 loads, 0 LSLICEs
+     Net cog1/wback/un1_flag_c7_i: 5 loads, 5 LSLICEs
+
+     Net cog1/wback/N_32_i: 1 loads, 1 LSLICEs
+     Net cog1/wback/N_30_i: 2 loads, 2 LSLICEs
+     Net cog1/un1_state_in_1: 22 loads, 22 LSLICEs
+     Net cog1/idecode/N_159: 1 loads, 1 LSLICEs
+     Net cog1/idecode/N_152: 3 loads, 3 LSLICEs
+     Net cog1/save_d_from_alu_o7: 16 loads, 16 LSLICEs
+     Net reset_in_c: 2 loads, 2 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r9: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r8: 10 loads, 10 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r7: 12 loads, 12 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r6: 11 loads, 11 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r5: 5 loads, 5 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r4: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r3: 4 loads, 4 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r2: 4 loads, 4 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r1: 2 loads, 2 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r0: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_1: 48 loads, 48 LSLICEs
+     Net cog1/acog_mem/un3_left_addr_mux_i: 1 loads, 1 LSLICEs
+     Net cog1/acog_mem/OUTB_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog1/acog_mem/OUTA_0_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog1/acog_mem/DIRB_1_sqmuxa: 26 loads, 26 LSLICEs
+     Net cog1/acog_mem/DIRA_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/wback/flag_c_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net cog0/wback/flag_z_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net cog0/wback/un1_flag_c7_i: 5 loads, 5 LSLICEs
+     Net cog0/idecode/un1_state_in_1_i: 2 loads, 2 LSLICEs
+     Net cog0/save_d_from_alu_o8: 17 loads, 17 LSLICEs
+     Net cog0/idecode/un1_state_in_3_i: 1 loads, 1 LSLICEs
+     Net cog0/acog_mem/DIRA_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r13: 11 loads, 11 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r12: 5 loads, 5 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r11: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r10: 5 loads, 5 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r9: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r8: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r7: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r6: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r5: 17 loads, 17 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r4: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r3: 2 loads, 2 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r2: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r1: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r0: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/DIRB_1_sqmuxa: 26 loads, 26 LSLICEs
+     Net cog0/acog_mem/OUTB_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/acog_mem/N_1055_i_1: 48 loads, 48 LSLICEs
+     Net cog0/acog_mem/un3_left_addr_mux_i: 1 loads, 1 LSLICEs
+     Net cog0/acog_mem/OUTA_0_sqmuxa: 16 loads, 16 LSLICEs
+   Number of LSRs:  3
+     Net cog0.idecode.save_d_from_alu_o7: 5 loads, 5 LSLICEs
+     Net cog1/save_d_from_alu_o7: 6 loads, 6 LSLICEs
+     Net reset_in_c: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net cog0/acog_s_from_mem[2]: 99 loads
+
+     Net cog1/acog_s_from_mem[3]: 99 loads
+     Net cog1/acog_s_from_mem_1[3]: 99 loads
+     Net cog0/acog_latched_opcode_2[26]: 98 loads
+     Net cog1/acog_s_from_mem_1[2]: 97 loads
+     Net cog0/acog_s_from_mem_1[2]: 95 loads
+     Net cog1/acog_s_from_mem[2]: 94 loads
+     Net cog0/acog_s_from_mem_2[1]: 91 loads
+     Net cog1/acog_s_from_mem_2[1]: 91 loads
+     Net cog0/acog_s_from_mem_2[0]: 88 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| port_a[0]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| clk_in              | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| port_a[31]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[30]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[29]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[28]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[27]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[26]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[25]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[24]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[23]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[22]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[21]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[20]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+
+| port_a[19]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[18]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[17]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[16]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[15]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[14]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[13]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[12]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[11]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[10]          | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[9]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[8]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[7]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[6]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[5]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[4]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[3]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[2]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| port_a[1]           | BIDIR     | LVCMOS25  | IN         |
++---------------------+-----------+-----------+------------+
+| reset_in            | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block VCC undriven or does not drive anything - clipped.
+Block GSR_INST undriven or does not drive anything - clipped.
+Block GND undriven or does not drive anything - clipped.
+Block cog0/seq/GND undriven or does not drive anything - clipped.
+Block cog0/seq/VCC undriven or does not drive anything - clipped.
+Block cog0/idecode/VCC undriven or does not drive anything - clipped.
+Block cog0/idecode/GND undriven or does not drive anything - clipped.
+Block cog0/alu/alogic/GND undriven or does not drive anything - clipped.
+Block cog0/alu/rcl/GND undriven or does not drive anything - clipped.
+Block cog0/alu/rcr/GND undriven or does not drive anything - clipped.
+Block cog0/alu/rol/GND undriven or does not drive anything - clipped.
+Block cog0/alu/ror/GND undriven or does not drive anything - clipped.
+
+Block cog0/alu/shl/GND undriven or does not drive anything - clipped.
+Block cog0/alu/shr/GND undriven or does not drive anything - clipped.
+Block cog0/alu/rev/GND undriven or does not drive anything - clipped.
+Block cog1/seq/GND undriven or does not drive anything - clipped.
+Block cog1/seq/VCC undriven or does not drive anything - clipped.
+Block cog1/idecode/GND undriven or does not drive anything - clipped.
+Block cog1/idecode/VCC undriven or does not drive anything - clipped.
+Block cog1/alu/alogic/GND undriven or does not drive anything - clipped.
+Block cog1/alu/rcl/GND undriven or does not drive anything - clipped.
+Block cog1/alu/rcr/GND undriven or does not drive anything - clipped.
+Block cog1/alu/rol/GND undriven or does not drive anything - clipped.
+Block cog1/alu/ror/GND undriven or does not drive anything - clipped.
+Block cog1/alu/shl/GND undriven or does not drive anything - clipped.
+Block cog1/alu/shr/GND undriven or does not drive anything - clipped.
+Block cog1/alu/rev/GND undriven or does not drive anything - clipped.
+Signal reset_in_c_i was merged into signal reset_in_c
+Signal cog0/acog_mem/GND undriven or does not drive anything - clipped.
+Signal cog0/acog_mem/mem/VCC undriven or does not drive anything - clipped.
+Signal cog0/acog_mem/mem/GND undriven or does not drive anything - clipped.
+Signal cog0/wback/GND undriven or does not drive anything - clipped.
+Signal cog0/alu/GND undriven or does not drive anything - clipped.
+Signal cog0/alu/addsub/GND undriven or does not drive anything - clipped.
+Signal cog0/alu/cmpsx/GND undriven or does not drive anything - clipped.
+Signal cog0/alu/sumxx/GND undriven or does not drive anything - clipped.
+Signal cog1/acog_mem/GND undriven or does not drive anything - clipped.
+Signal cog1/acog_mem/mem/VCC undriven or does not drive anything - clipped.
+Signal cog1/acog_mem/mem/GND undriven or does not drive anything - clipped.
+Signal cog1/wback/GND undriven or does not drive anything - clipped.
+Signal cog1/alu/GND undriven or does not drive anything - clipped.
+Signal cog1/alu/addsub/GND undriven or does not drive anything - clipped.
+Signal cog1/alu/cmpsx/GND undriven or does not drive anything - clipped.
+Signal cog1/alu/sumxx/GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal cog0/acog_mem/CNT_s_0_S1[31] undriven or does not drive anything -
+     clipped.
+Signal cog0/acog_mem/CNT_s_0_COUT[31] undriven or does not drive anything -
+     clipped.
+Signal cog0/acog_mem/s_data_neg_o_1_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/s_data_neg_o_1_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/s_data_neg_o_1_s_31_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/s_data_neg_o_1_s_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/N_1049_i undriven or does not drive anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_51_0_S0 undriven or does not drive
+
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_peq_pina_o_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/N_1048_i undriven or does not drive anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_51_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_51_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_33_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_33_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_27_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_57_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_57_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_81_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_81_0_S0 undriven or does not drive
+     anything - clipped.
+
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_45_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/port_cnt_eq_d_o_0_I_45_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOB8_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOB7_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOB6_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOB5_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOA8_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOA7_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOA6_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/mem/mem_1_mem_0_3_DOA5_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/acog_mem/CNT_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/wback/pc_plus_1_o_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/wback/pc_plus_1_o_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/wback/pc_plus_1_o_cry_7_0_COUT_0 undriven or does not drive anything
+     - clipped.
+Signal cog0/alu/acog_d_from_mem_i[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/q_djnz_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/q_djnz_cry_31_0_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[1] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[1] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[3] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[3] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[5] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[7] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[9] undriven or does not drive anything -
+     clipped.
+
+Signal cog0/alu/un29_q_o_cry_0_S0[9] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[11] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[11] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[13] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[13] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[15] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[15] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[18] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[18] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[22] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[22] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S1[26] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[26] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_S0[30] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/un29_q_o_cry_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[0] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[1] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[1] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[3] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[3] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[5] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[5] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[7] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[9] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[9] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[11] undriven or does not drive anything -
+     clipped.
+
+Signal cog0/alu/flag_c_o_8_cry_0_S0[11] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[13] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[13] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[15] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[15] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[18] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[18] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[22] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[22] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S1[26] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[26] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_S0[30] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/flag_c_o_8_cry_0_COUT[30] undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/addsub/q_o_0_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/addsub/q_o_0_s_31_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/addsub/q_o_0_s_31_0_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/addsub/partial_add_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_add_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_add_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_add_x_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_add_x_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_x_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_x_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/addsub/partial_sub_x_cry_31_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/cmpsx/partial_d_minus_s_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+
+Signal cog0/alu/cmpsx/partial_d_minus_s_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog0/alu/cmpsx/partial_d_minus_s_cry_31_0_COUT_0 undriven or does not
+     drive anything - clipped.
+Signal cog0/alu/cmpsx/q_o_1_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/cmpsx/q_o_1_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/cmpsx/q_o_1_cry_31_0_COUT_0 undriven or does not drive anything
+     - clipped.
+Signal cog0/alu/sumxx/q_sum_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_s_31_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_s_31_0_COUT_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_n_cry_0_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_n_cry_0_0_S0_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_n_s_31_0_S1_0 undriven or does not drive anything -
+     clipped.
+Signal cog0/alu/sumxx/q_sum_n_s_31_0_COUT_0 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/s_data_neg_o_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/s_data_neg_o_1_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/s_data_neg_o_1_s_31_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/s_data_neg_o_1_s_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/N_1049_i undriven or does not drive anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_9_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_9_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_51_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_51_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_33_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_33_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_27_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_27_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_57_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_57_0_S0_0 undriven or does not drive
+
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_21_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_21_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_81_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_81_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_45_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_peq_pina_o_0_I_45_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/N_1048_i undriven or does not drive anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_9_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_9_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_51_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_51_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_33_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_33_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_27_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_27_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_57_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_57_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_21_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_21_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_81_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_81_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_45_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/port_cnt_eq_d_o_0_I_45_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOB8 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOB7 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOB6 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOB5 undriven or does not drive anything
+     - clipped.
+
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOA8 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOA7 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOA6 undriven or does not drive anything
+     - clipped.
+Signal cog1/acog_mem/mem/mem_1_mem_0_3_DOA5 undriven or does not drive anything
+     - clipped.
+Signal cog1/wback/pc_plus_1_o_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/wback/pc_plus_1_o_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal cog1/wback/pc_plus_1_o_cry_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/acog_d_from_mem_i[0] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/q_djnz_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal cog1/alu/q_djnz_cry_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[0] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[0] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[1] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[1] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[3] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[3] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[5] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[5] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[7] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[7] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[9] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[9] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[11] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[11] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[13] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[13] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[15] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[15] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[18] undriven or does not drive anything -
+
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[18] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[22] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[22] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S1_0[26] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[26] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_S0_0[30] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/un29_q_o_cry_0_COUT_0[30] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[0] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[0] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[1] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[1] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[3] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[3] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[5] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[5] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[7] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[7] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[9] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[9] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[11] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[11] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[13] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[13] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[15] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[15] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[18] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[18] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[22] undriven or does not drive anything -
+
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[22] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S1_0[26] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[26] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_S0_0[30] undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/flag_c_o_8_cry_0_COUT_0[30] undriven or does not drive anything
+     - clipped.
+Signal cog1/alu/addsub/q_o_0_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/addsub/q_o_0_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/addsub/q_o_0_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/addsub/partial_add_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_add_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_add_cry_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_cry_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_add_x_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_add_x_cry_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_x_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_x_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/addsub/partial_sub_x_cry_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/cmpsx/partial_d_minus_s_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/cmpsx/partial_d_minus_s_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/cmpsx/partial_d_minus_s_cry_31_0_COUT undriven or does not drive
+     anything - clipped.
+Signal cog1/alu/cmpsx/q_o_1_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/cmpsx/q_o_1_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/cmpsx/q_o_1_cry_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_s_31_0_S1 undriven or does not drive anything -
+
+     clipped.
+Signal cog1/alu/sumxx/q_sum_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_n_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_n_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_n_s_31_0_S1 undriven or does not drive anything -
+     clipped.
+Signal cog1/alu/sumxx/q_sum_n_s_31_0_COUT undriven or does not drive anything -
+     clipped.
+Block reset_in_pad_RNIDR4C was optimized away.
+Block cog0/acog_mem/GND was optimized away.
+Block cog0/acog_mem/mem/VCC was optimized away.
+Block cog0/acog_mem/mem/GND was optimized away.
+Block cog0/wback/GND was optimized away.
+Block cog0/alu/GND was optimized away.
+Block cog0/alu/addsub/GND was optimized away.
+Block cog0/alu/cmpsx/GND was optimized away.
+Block cog0/alu/sumxx/GND was optimized away.
+Block cog1/acog_mem/GND was optimized away.
+Block cog1/acog_mem/mem/VCC was optimized away.
+Block cog1/acog_mem/mem/GND was optimized away.
+Block cog1/wback/GND was optimized away.
+Block cog1/alu/GND was optimized away.
+Block cog1/alu/addsub/GND was optimized away.
+Block cog1/alu/cmpsx/GND was optimized away.
+Block cog1/alu/sumxx/GND was optimized away.
+
+
+
+<A name="mrp_mem"></A><B><U><big>Memory Usage</big></U></B>
+
+/cog0/acog_mem/mem:
+    EBRs: 4
+    RAM SLICEs: 0
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR mem_1_mem_0_3:  TYPE= DP8KC,  Width_A= 5,  Width_B= 5,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_0:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_1:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_2:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+/cog1/acog_mem/mem:
+    EBRs: 4
+    RAM SLICEs: 0
+
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR mem_1_mem_0_0:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_1:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_2:  TYPE= DP8KC,  Width_A= 9,  Width_B= 9,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+    -Contains EBR mem_1_mem_0_3:  TYPE= DP8KC,  Width_A= 5,  Width_B= 5,
+         Depth_A= 512,  Depth_B= 512,  REGMODE_A= NOREG,  REGMODE_B= NOREG,
+         RESETMODE= SYNC,  WRITEMODE_A= WRITETHROUGH,  WRITEMODE_B=
+         READBEFOREWRITE,  GSR= DISABLED
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: cog1/acog_mem/mem/mem_1_mem_0_0
+         Type: DP8KC
+Instance Name: cog1/acog_mem/mem/mem_1_mem_0_1
+         Type: DP8KC
+Instance Name: cog1/acog_mem/mem/mem_1_mem_0_2
+         Type: DP8KC
+Instance Name: cog1/acog_mem/mem/mem_1_mem_0_3
+         Type: DP8KC
+Instance Name: cog0/acog_mem/mem/mem_1_mem_0_3
+         Type: DP8KC
+Instance Name: cog0/acog_mem/mem/mem_1_mem_0_0
+         Type: DP8KC
+Instance Name: cog0/acog_mem/mem/mem_1_mem_0_1
+         Type: DP8KC
+Instance Name: cog0/acog_mem/mem/mem_1_mem_0_2
+         Type: DP8KC
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 4 secs
+   Total REAL Time: 6 secs
+   Peak Memory Usage: 65 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor
+     Corporation,  All rights reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

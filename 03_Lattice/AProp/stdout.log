@@ -1,0 +1,63 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\2.1\synpbase\bin\mbin\synbatch.exe
+Install:     C:\lscc\diamond\2.1\synpbase
+Date:        Wed Mar 19 11:18:01 2014
+Version:     G-2012.09L-1 
+
+Arguments:   -product synplify_pro  -batch AProp_AProp_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+
+log file: "X:\ACog\03_Lattice\AProp\AProp_AProp.srf"
+
+
+Running proj_1|AProp
+
+Running Compile on proj_1|AProp
+
+Running Compile Process on proj_1|AProp
+
+Running Compile Input on proj_1|AProp
+
+Copied X:\ACog\03_Lattice\AProp\synwork\AProp_AProp_compiler.srs to X:\ACog\03_Lattice\AProp\AProp_AProp.srs
+
+compiler Completed with warnings
+Return Code: 1
+Run Time:0h:00m:15s
+
+
+Job Compile Process completed on proj_1|AProp
+
+Running Premap on proj_1|AProp
+
+premap Completed with warnings
+Return Code: 1
+Run Time:0h:00m:01s
+
+
+Job Compile completed on proj_1|AProp
+
+Running Map on proj_1|AProp
+
+Running Map & Optimize on proj_1|AProp
+
+fpga_mapper Completed with warnings
+Return Code: 1
+Run Time:0h:00m:48s
+
+
+Job Map completed on proj_1|AProp
+
+Job Logic Synthesis completed on proj_1|AProp
+
+TCL script complete: "AProp_AProp_synplify.tcl"
+
+exit status=0
+
+

@@ -1,0 +1,526 @@
+Synopsys Lattice Technology Mapper, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 77MB peak: 80MB)
+
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N:"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Found counter in view:work.acog_mem(verilog) inst CNT[31:0]
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":60:25:60:40|Found 32 bit by 32 bit '==' comparator, 'port_cnt_eq_d_o'
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":61:25:61:53|Found 32 bit by 32 bit '==' comparator, 'port_peq_pina_o'
+
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 92MB peak: 93MB)
+
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.CNT[31:0],  because it is equivalent to instance cog0.acog_mem.CNT[31:0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[22],  because it is equivalent to instance cog0.acog_mem.latched_i
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[17],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[16],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[15],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[14],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[13],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[12],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[11],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[10],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[9],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[8],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[7],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[6],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[5],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[4],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[3],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[2],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[1],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[0],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[0]
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 89MB peak: 94MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 92MB peak: 114MB)
+
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[0],  because it is equivalent to instance cog1.idecode.opcode_o[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[1],  because it is equivalent to instance cog1.idecode.opcode_o[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[2],  because it is equivalent to instance cog1.idecode.opcode_o[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[3],  because it is equivalent to instance cog1.idecode.opcode_o[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[4],  because it is equivalent to instance cog1.idecode.opcode_o[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[5],  because it is equivalent to instance cog1.idecode.opcode_o[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[6],  because it is equivalent to instance cog1.idecode.opcode_o[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[7],  because it is equivalent to instance cog1.idecode.opcode_o[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[8],  because it is equivalent to instance cog1.idecode.opcode_o[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[0],  because it is equivalent to instance cog1.idecode.opcode_o[9]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[1],  because it is equivalent to instance cog1.idecode.opcode_o[10]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[2],  because it is equivalent to instance cog1.idecode.opcode_o[11]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[3],  because it is equivalent to instance cog1.idecode.opcode_o[12]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[4],  because it is equivalent to instance cog1.idecode.opcode_o[13]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[5],  because it is equivalent to instance cog1.idecode.opcode_o[14]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[6],  because it is equivalent to instance cog1.idecode.opcode_o[15]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[7],  because it is equivalent to instance cog1.idecode.opcode_o[16]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[8],  because it is equivalent to instance cog1.idecode.opcode_o[17]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog1.idecode.opcode_o[22],  because it is equivalent to instance cog1.acog_mem.latched_i
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog1.alu.addsub.q_o_0[31:0] from cog1.alu.addsub.un1_d_in[31:0] 
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog0.alu.addsub.q_o_0[31:0] from cog0.alu.addsub.un1_d_in[31:0] 
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:26s; Memory used current: 95MB peak: 114MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 95MB peak: 114MB)
+
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.s_data_neg_o[0],  because it is equivalent to instance cog1.acog_mem.s_data_o[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog0.acog_mem.s_data_neg_o[0],  because it is equivalent to instance cog0.acog_mem.s_data_o[0]
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 94MB peak: 114MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 94MB peak: 114MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:36s; Memory used current: 114MB peak: 137MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[3]" with "319" loads has been replicated "3" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[3]" with "297" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[2]" with "285" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[2]" with "281" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[0]" with "248" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[26]" with "240" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[0]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[1]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[26]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[1]" with "237" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[28]" with "220" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[28]" with "217" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[4]" with "213" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[4]" with "200" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog1.wback.flag_c" with "153" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog0.wback.flag_c" with "152" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[27]" with "124" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[27]" with "123" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+Net buffering Report for view:work.AProp(verilog):
+Added 0 Buffers
+Added 32 Registers via replication
+Added 15 LUTs via replication
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:38s; Memory used current: 114MB peak: 137MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+Replicating cog0.acog_mem.s_data_o_1[4], loads=121, segments=18
+Replicating cog1.idecode.opcode_o_2[26], loads=106, segments=12
+Replicating cog1.acog_mem.s_data_o_2[2], loads=112, segments=15
+Replicating cog0.acog_mem.s_data_o_2[2], loads=112, segments=13
+Replicating cog1.acog_mem.s_data_o_2[3], loads=122, segments=18
+Replicating cog0.acog_mem.s_data_o_3[3], loads=105, segments=16
+Replicating cog0.acog_mem.s_data_o[4], loads=102, segments=15
+replication done = 7
+Replicating cog0.acog_mem.N_1055_i, loads=133, segments=14
+Replicating cog1.acog_mem.N_1055_i, loads=106, segments=10
+replication done = 2
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 118MB peak: 137MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 852 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+====================================================================== Non-Gated/Non-Generated Clocks =======================================================================
+Clock Tree ID                                                                                    Driving Element     Drive Element Type     Fanout     Sample Instance       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:"@|S:clk_in@|E:cog0_acog_mem_INAio[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001"     clk_in              port                   852        cog0_acog_mem_INAio[0]
+=============================================================================================================================================================================
+===== Gated/Generated Clocks =====
+************** None **************
+----------------------------------
+==================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base X:\ACog\03_Lattice\AProp\AProp_AProp.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:42s; Memory used current: 119MB peak: 137MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09L-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:44s; Memory used current: 124MB peak: 137MB)
+
+@W: MT420 |Found inferred clock AProp|clk_in with period 1000.00ns. Please declare a user-defined clock on object "p:clk_in"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 19 11:19:03 2014
+#
+
+
+Top view:               AProp
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 981.374
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+AProp|clk_in       1.0 MHz       53.7 MHz      1000.000      18.626        981.374     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------
+AProp|clk_in  AProp|clk_in  |  1000.000    981.374  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: AProp|clk_in
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                    Arrival            
+Instance                      Reference        Type        Pin     Net                    Time        Slack  
+                              Clock                                                                          
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.s_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[0]     1.406       981.374
+cog0.acog_mem.d_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[0]     1.331       981.449
+cog0.acog_mem.s_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[2]     1.432       981.491
+cog0.acog_mem.s_data_o[1]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[1]     1.405       981.519
+cog1.acog_mem.s_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[0]     1.401       981.601
+cog0.acog_mem.d_data_o[1]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[1]     1.305       981.618
+cog0.acog_mem.d_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[2]     1.305       981.618
+cog0.acog_mem.s_data_o[3]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[3]     1.403       981.663
+cog1.acog_mem.d_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[0]     1.333       981.669
+cog1.acog_mem.s_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[2]     1.424       981.722
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                            Required            
+Instance                            Reference        Type        Pin      Net           Time         Slack  
+                                    Clock                                                                   
+------------------------------------------------------------------------------------------------------------
+cog0.wback.flag_z                   AProp|clk_in     FD1P3AX     D        alu_z         1000.089     981.374
+cog1.wback.flag_z                   AProp|clk_in     FD1P3AX     D        alu_z         1000.089     981.601
+cog1.wback.flag_c                   AProp|clk_in     FD1P3AX     D        alu_c         999.894      982.381
+cog1.wback.flag_c_1                 AProp|clk_in     FD1P3AX     D        alu_c         999.894      982.381
+cog0.wback.flag_c                   AProp|clk_in     FD1P3AX     D        alu_c         1000.089     983.139
+cog0.wback.flag_c_1                 AProp|clk_in     FD1P3AX     D        alu_c_1       1000.089     983.139
+cog0.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB4     alu_q[31]     998.247      983.345
+cog1.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB4     alu_q[31]     998.247      983.350
+cog0.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC       DIB0     alu_q[0]      998.247      983.481
+cog0.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB2     alu_q[29]     998.247      983.560
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      18.715
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     981.374
+
+    Number of logic level(s):                29
+    Starting point:                          cog0.acog_mem.s_data_o[0] / Q
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of     
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s) 
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.s_data_o[0]                     FD1P3AX      Q        Out     1.406     1.406       -          
+acog_s_from_mem[0]                            Net          -        -       -         -           83         
+cog0.alu.cmpsx.partial_d_minus_s_cry_0_0      CCU2D        A1       In      0.000     1.406       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_0_0      CCU2D        COUT     Out     1.545     2.951       -          
+partial_d_minus_s_cry_0                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_1_0      CCU2D        CIN      In      0.000     2.951       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_1_0      CCU2D        COUT     Out     0.143     3.094       -          
+partial_d_minus_s_cry_2                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_3_0      CCU2D        CIN      In      0.000     3.094       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_3_0      CCU2D        COUT     Out     0.143     3.236       -          
+partial_d_minus_s_cry_4                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_5_0      CCU2D        CIN      In      0.000     3.236       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_5_0      CCU2D        COUT     Out     0.143     3.379       -          
+partial_d_minus_s_cry_6                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_7_0      CCU2D        CIN      In      0.000     3.379       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_7_0      CCU2D        COUT     Out     0.143     3.522       -          
+partial_d_minus_s_cry_8                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_9_0      CCU2D        CIN      In      0.000     3.522       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_9_0      CCU2D        COUT     Out     0.143     3.665       -          
+partial_d_minus_s_cry_10                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_11_0     CCU2D        CIN      In      0.000     3.665       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_11_0     CCU2D        COUT     Out     0.143     3.808       -          
+partial_d_minus_s_cry_12                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_13_0     CCU2D        CIN      In      0.000     3.808       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_13_0     CCU2D        COUT     Out     0.143     3.950       -          
+partial_d_minus_s_cry_14                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_15_0     CCU2D        CIN      In      0.000     3.950       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_15_0     CCU2D        COUT     Out     0.143     4.093       -          
+partial_d_minus_s_cry_16                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_17_0     CCU2D        CIN      In      0.000     4.093       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_17_0     CCU2D        COUT     Out     0.143     4.236       -          
+partial_d_minus_s_cry_18                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_19_0     CCU2D        CIN      In      0.000     4.236       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_19_0     CCU2D        COUT     Out     0.143     4.379       -          
+partial_d_minus_s_cry_20                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_21_0     CCU2D        CIN      In      0.000     4.379       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_21_0     CCU2D        COUT     Out     0.143     4.521       -          
+partial_d_minus_s_cry_22                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_23_0     CCU2D        CIN      In      0.000     4.521       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_23_0     CCU2D        COUT     Out     0.143     4.664       -          
+partial_d_minus_s_cry_24                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_25_0     CCU2D        CIN      In      0.000     4.664       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_25_0     CCU2D        COUT     Out     0.143     4.807       -          
+partial_d_minus_s_cry_26                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_27_0     CCU2D        CIN      In      0.000     4.807       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_27_0     CCU2D        COUT     Out     0.143     4.950       -          
+partial_d_minus_s_cry_28                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_29_0     CCU2D        CIN      In      0.000     4.950       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_29_0     CCU2D        COUT     Out     0.143     5.093       -          
+partial_d_minus_s_cry_30                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_31_0     CCU2D        CIN      In      0.000     5.093       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_31_0     CCU2D        S1       Out     1.765     6.858       -          
+flag_c_maxs                                   Net          -        -       -         -           6          
+cog0.alu.addsub.q_o_0_sqmuxa_1                ORCALUT4     C        In      0.000     6.858       -          
+cog0.alu.addsub.q_o_0_sqmuxa_1                ORCALUT4     Z        Out     1.017     7.875       -          
+q_o_0_sqmuxa_1                                Net          -        -       -         -           1          
+cog0.alu.addsub.un1_q_o102_3                  ORCALUT4     B        In      0.000     7.875       -          
+cog0.alu.addsub.un1_q_o102_3                  ORCALUT4     Z        Out     1.344     9.219       -          
+un1_q_o102_3                                  Net          -        -       -         -           25         
+cog0.alu.addsub.un1_q_o102_3_RNI4GPQ          ORCALUT4     C        In      0.000     9.219       -          
+cog0.alu.addsub.un1_q_o102_3_RNI4GPQ          ORCALUT4     Z        Out     1.265     10.483      -          
+N_1357                                        Net          -        -       -         -           8          
+cog0.alu.addsub.q_o_16_RNO[0]                 ORCALUT4     C        In      0.000     10.483      -          
+cog0.alu.addsub.q_o_16_RNO[0]                 ORCALUT4     Z        Out     1.017     11.500      -          
+N_496                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_16[0]                     ORCALUT4     B        In      0.000     11.500      -          
+cog0.alu.addsub.q_o_16[0]                     ORCALUT4     Z        Out     1.017     12.517      -          
+N_691                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_18[0]                     ORCALUT4     B        In      0.000     12.517      -          
+cog0.alu.addsub.q_o_18[0]                     ORCALUT4     Z        Out     1.017     13.534      -          
+N_759                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_5[0]                      ORCALUT4     C        In      0.000     13.534      -          
+cog0.alu.addsub.q_o_5[0]                      ORCALUT4     Z        Out     1.233     14.767      -          
+alu_q[0]                                      Net          -        -       -         -           6(16777222)
+cog0.alu.addsub.q_is_zero_9                   ORCALUT4     A        In      0.000     14.767      -          
+cog0.alu.addsub.q_is_zero_9                   ORCALUT4     Z        Out     1.017     15.783      -          
+q_is_zero_9                                   Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero_17                  ORCALUT4     A        In      0.000     15.783      -          
+cog0.alu.addsub.q_is_zero_17                  ORCALUT4     Z        Out     1.017     16.800      -          
+q_is_zero_17                                  Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero_28                  ORCALUT4     A        In      0.000     16.800      -          
+cog0.alu.addsub.q_is_zero_28                  ORCALUT4     Z        Out     1.017     17.817      -          
+q_is_zero_28                                  Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero                     ORCALUT4     D        In      0.000     17.817      -          
+cog0.alu.addsub.q_is_zero                     ORCALUT4     Z        Out     0.449     18.266      -          
+q_is_zero                                     Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_u_0_0                ORCALUT4     D        In      0.000     18.266      -          
+cog0.alu.alogic.flag_z_o_u_0_0                ORCALUT4     Z        Out     0.449     18.715      -          
+alu_z                                         Net          -        -       -         -           1          
+cog0.wback.flag_z                             FD1P3AX      D        In      0.000     18.715      -          
+=============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 836 of 6864 (12%)
+PIC Latch:       0
+I/O cells:       34
+
+
+Details:
+BB:             32
+CCU2D:          489
+DP8KC:          8
+FD1P3AX:        756
+FD1P3IX:        8
+FD1S3AX:        32
+FD1S3IX:        8
+GSR:            1
+IB:             2
+IFS1P3DX:       32
+INV:            71
+L6MUX21:        165
+ORCALUT4:       4654
+PFUMX:          939
+PUR:            1
+VHI:            17
+VLO:            35
+false:          2
+true:           20
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:45s; Memory used current: 32MB peak: 137MB)
+
+Process took 0h:00m:47s realtime, 0h:00m:45s cputime
+# Wed Mar 19 11:19:04 2014
+
+###########################################################]

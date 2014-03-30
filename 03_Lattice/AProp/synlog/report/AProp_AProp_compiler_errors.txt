@@ -1,0 +1,2 @@
+@E: CG791 :"F:\02_Elektronik\033_AProp\01_Verilog\acog_mem.v":80:45:80:45|Could not resolve hierarchical name 'acog_latched_opcode[8:0]'.
+

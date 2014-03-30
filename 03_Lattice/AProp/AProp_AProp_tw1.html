@@ -1,0 +1,402 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file aprop_aprop_map.ncd.
+Design name: AProp
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond Version 2.1.0.103</big></U></B>
+Wed Mar 19 11:19:25 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o AProp_AProp.tw1 AProp_AProp_map.ncd AProp_AProp.prf 
+Design file:     aprop_aprop_map.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "clk_in_c" 63.520000 MHz (4096 errors)</FONT></A></LI>
+</FONT>            4096 items scored, 4096 timing errors detected.
+Warning:  37.625MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "clk_in_c" 63.520000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 10.835ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cog0/acog_mem/d_data_o[16]  (from clk_in_c +)
+   Destination:    FF         Data in        cog0/wback/flag_z  (to clk_in_c +)
+
+   Delay:              26.412ns  (34.6% logic, 65.4% route), 19 logic levels.
+
+ Constraint Details:
+
+     26.412ns physical path delay cog0/acog_mem/SLICE_497 to cog0/SLICE_691 exceeds
+     15.743ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 15.577ns) by 10.835ns
+
+ Physical Path Details:
+
+      Data path cog0/acog_mem/SLICE_497 to cog0/SLICE_691:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_497.CLK to */SLICE_497.Q0 cog0/acog_mem/SLICE_497 (from clk_in_c)
+ROUTE        31   e 1.234 */SLICE_497.Q0 to *SLICE_2564.A0 cog0/acog_d_from_mem[16]
+CTOF_DEL    ---     0.495 *SLICE_2564.A0 to *SLICE_2564.F0 cog0/alu/SLICE_2564
+ROUTE         1   e 1.234 *SLICE_2564.F0 to */SLICE_393.B1 cog0/alu/flag_c_o_8_lt16
+C1TOFCO_DE  ---     0.889 */SLICE_393.B1 to *SLICE_393.FCO cog0/alu/SLICE_393
+ROUTE         1   e 0.001 *SLICE_393.FCO to *SLICE_392.FCI cog0/alu/flag_c_o_8_cry[16]
+FCITOFCO_D  ---     0.162 *SLICE_392.FCI to *SLICE_392.FCO cog0/alu/SLICE_392
+ROUTE         1   e 0.001 *SLICE_392.FCO to *SLICE_391.FCI cog0/alu/flag_c_o_8_cry[20]
+FCITOFCO_D  ---     0.162 *SLICE_391.FCI to *SLICE_391.FCO cog0/alu/SLICE_391
+ROUTE         1   e 0.001 *SLICE_391.FCO to *SLICE_390.FCI cog0/alu/flag_c_o_8_cry[24]
+FCITOFCO_D  ---     0.162 *SLICE_390.FCI to *SLICE_390.FCO cog0/alu/SLICE_390
+ROUTE         1   e 0.001 *SLICE_390.FCO to *SLICE_389.FCI cog0/alu/flag_c_o_8_cry[28]
+FCITOF1_DE  ---     0.643 *SLICE_389.FCI to */SLICE_389.F1 cog0/alu/SLICE_389
+ROUTE         3   e 1.234 */SLICE_389.F1 to *SLICE_3050.C0 cog0/alu/flag_c_o_8
+CTOF_DEL    ---     0.495 *SLICE_3050.C0 to *SLICE_3050.F0 cog0/alu/addsub/SLICE_3050
+ROUTE         1   e 1.234 *SLICE_3050.F0 to *SLICE_2467.D0 cog0/alu/addsub/q_o_0_sqmuxa_7
+CTOF_DEL    ---     0.495 *SLICE_2467.D0 to *SLICE_2467.F0 cog0/alu/addsub/SLICE_2467
+ROUTE         1   e 1.234 *SLICE_2467.F0 to *SLICE_2431.A1 cog0/alu/addsub/un1_q_o102_3_0
+CTOF_DEL    ---     0.495 *SLICE_2431.A1 to *SLICE_2431.F1 cog0/alu/SLICE_2431
+ROUTE        30   e 1.234 *SLICE_2431.F1 to *SLICE_2435.C1 cog0/alu/un1_q_o102_3
+CTOF_DEL    ---     0.495 *SLICE_2435.C1 to *SLICE_2435.F1 cog0/alu/SLICE_2435
+ROUTE         8   e 1.234 *SLICE_2435.F1 to *SLICE_2960.C1 cog0/alu/N_1357
+CTOF_DEL    ---     0.495 *SLICE_2960.C1 to *SLICE_2960.F1 cog0/alu/SLICE_2960
+ROUTE         1   e 1.234 *SLICE_2960.F1 to *SLICE_2432.B0 cog0/alu/alogic/N_498
+CTOF_DEL    ---     0.495 *SLICE_2432.B0 to *SLICE_2432.F0 cog0/alu/SLICE_2432
+ROUTE         1   e 1.234 *SLICE_2432.F0 to */SLICE_552.B0 cog0/alu/alogic/N_693
+CTOOFX_DEL  ---     0.721 */SLICE_552.B0 to *LICE_552.OFX0 cog0/SLICE_552
+ROUTE         6   e 1.234 *LICE_552.OFX0 to */SLICE_568.A1 cog0/alu_q[2]
+CTOF_DEL    ---     0.495 */SLICE_568.A1 to */SLICE_568.F1 cog0/SLICE_568
+ROUTE         1   e 1.234 */SLICE_568.F1 to *SLICE_2451.B0 cog0/alu/addsub/q_is_zero_19
+CTOF_DEL    ---     0.495 *SLICE_2451.B0 to *SLICE_2451.F0 cog0/alu/addsub/SLICE_2451
+ROUTE         1   e 1.234 *SLICE_2451.F0 to *SLICE_2450.B0 cog0/alu/addsub/q_is_zero_25
+CTOF_DEL    ---     0.495 *SLICE_2450.B0 to *SLICE_2450.F0 cog0/alu/addsub/SLICE_2450
+ROUTE         1   e 1.234 *SLICE_2450.F0 to *SLICE_2449.D0 cog0/alu/addsub/q_is_zero_28
+CTOF_DEL    ---     0.495 *SLICE_2449.D0 to *SLICE_2449.F0 cog0/alu/addsub/SLICE_2449
+ROUTE         1   e 1.234 *SLICE_2449.F0 to */SLICE_691.D0 cog0/alu/q_is_zero
+CTOF_DEL    ---     0.495 */SLICE_691.D0 to */SLICE_691.F0 cog0/SLICE_691
+ROUTE         1   e 0.001 */SLICE_691.F0 to *SLICE_691.DI0 cog0/alu_z (to clk_in_c)
+                  --------
+                   26.412   (34.6% logic, 65.4% route), 19 logic levels.
+
+Warning:  37.625MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in_c" 63.520000 MHz  |             |             |
+;                                       |   63.520 MHz|   37.625 MHz|  19 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+cog0/alu/addsub/q_is_zero_28            |       1|    2240|     54.69%
+                                        |        |        |
+cog0/alu_z                              |       1|    2240|     54.69%
+                                        |        |        |
+cog0/alu/q_is_zero                      |       1|    2240|     54.69%
+                                        |        |        |
+cog1/alu_z                              |       1|    1856|     45.31%
+                                        |        |        |
+cog1/alu/q_is_zero                      |       1|    1856|     45.31%
+                                        |        |        |
+cog1/alu/addsub/q_is_zero_28            |       1|    1840|     44.92%
+                                        |        |        |
+cog0/alu/un1_q_o102_3                   |      30|    1650|     40.28%
+                                        |        |        |
+cog0/alu/addsub/q_is_zero_25            |       1|    1611|     39.33%
+                                        |        |        |
+cog0/alu/addsub/q_o_0_sqmuxa_7          |       1|    1430|     34.91%
+                                        |        |        |
+cog0/alu/addsub/un1_q_o102_3_0          |       1|    1430|     34.91%
+                                        |        |        |
+cog0/alu/flag_c_o_8                     |       3|    1426|     34.81%
+                                        |        |        |
+cog0/alu/flag_c_o_8_cry[28]             |       1|    1370|     33.45%
+                                        |        |        |
+cog1/alu/addsub/q_is_zero_25            |       1|    1366|     33.35%
+                                        |        |        |
+cog0/alu/addsub/q_is_zero_19            |       1|    1343|     32.79%
+                                        |        |        |
+cog1/alu/un1_q_o102_3                   |      30|    1294|     31.59%
+                                        |        |        |
+cog1/alu/addsub/q_o_0_sqmuxa_7          |       1|    1146|     27.98%
+                                        |        |        |
+cog1/alu/addsub/un1_q_o102_3_0          |       1|    1146|     27.98%
+                                        |        |        |
+cog1/alu/flag_c_o_8                     |       3|    1144|     27.93%
+                                        |        |        |
+cog0/alu/flag_c_o_8_cry[24]             |       1|    1132|     27.64%
+                                        |        |        |
+cog1/alu/addsub/q_is_zero_19            |       1|    1100|     26.86%
+                                        |        |        |
+cog1/alu/flag_c_o_8_cry[28]             |       1|    1096|     26.76%
+                                        |        |        |
+cog1/alu/flag_c_o_8_cry[24]             |       1|     912|     22.27%
+                                        |        |        |
+cog0/alu/N_1357                         |       8|     856|     20.90%
+                                        |        |        |
+cog0/alu/flag_c_o_8_cry[20]             |       1|     812|     19.82%
+                                        |        |        |
+cog0/alu_q[27]                          |       6|     771|     18.82%
+                                        |        |        |
+cog1/alu_q[27]                          |       6|     768|     18.75%
+                                        |        |        |
+cog1/alu/N_1357                         |       8|     748|     18.26%
+                                        |        |        |
+cog1/alu/flag_c_o_8_cry[20]             |       1|     656|     16.02%
+                                        |        |        |
+cog0/alu/addsub/q_is_zero_17            |       1|     629|     15.36%
+                                        |        |        |
+cog0/alu/addsub/q_is_zero_9             |       1|     613|     14.97%
+                                        |        |        |
+cog0/alu/addsub/N_752                   |       1|     553|     13.50%
+                                        |        |        |
+cog1/alu/addsub/N_752                   |       1|     550|     13.43%
+                                        |        |        |
+cog0/alu/addsub/q_addsub[27]            |       1|     534|     13.04%
+                                        |        |        |
+cog0/alu/addsub/N_650                   |       1|     534|     13.04%
+                                        |        |        |
+cog1/alu/addsub/q_addsub[27]            |       1|     534|     13.04%
+                                        |        |        |
+cog1/alu/addsub/N_650                   |       1|     534|     13.04%
+                                        |        |        |
+cog0/alu/q_o_sn_N_41_i_1                |      32|     494|     12.06%
+                                        |        |        |
+cog1/alu/addsub/q_is_zero_17            |       1|     474|     11.57%
+                                        |        |        |
+cog0/alu/flag_c_o_8_cry[16]             |       1|     468|     11.43%
+                                        |        |        |
+cog1/alu/addsub/q_is_zero_9             |       1|     458|     11.18%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 525
+   Covered under: FREQUENCY NET "clk_in_c" 63.520000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 4096  Score: 35306686
+Cumulative negative slack: 35306686
+
+Constraints cover 2121678 paths, 1 nets, and 20504 connections (96.7% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond Version 2.1.0.103</big></U></B>
+Wed Mar 19 11:19:28 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o AProp_AProp.tw1 AProp_AProp_map.ncd AProp_AProp.prf 
+Design file:     aprop_aprop_map.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "clk_in_c" 63.520000 MHz (0 errors)</A></LI>            4096 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "clk_in_c" 63.520000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.443ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cog0/acog_mem/CNT[29]  (from clk_in_c +)
+   Destination:    FF         Data in        cog0/acog_mem/CNT[29]  (to clk_in_c +)
+
+   Delay:               0.430ns  (53.5% logic, 46.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.430ns physical path delay cog0/acog_mem/SLICE_474 to cog0/acog_mem/SLICE_474 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.443ns
+
+ Physical Path Details:
+
+      Data path cog0/acog_mem/SLICE_474 to cog0/acog_mem/SLICE_474:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.131 *SLICE_474.CLK to */SLICE_474.Q0 cog0/acog_mem/SLICE_474 (from clk_in_c)
+ROUTE         5   e 0.199 */SLICE_474.Q0 to */SLICE_474.A0 cog1.acog_mem.CNT[29]
+CTOF_DEL    ---     0.099 */SLICE_474.A0 to */SLICE_474.F0 cog0/acog_mem/SLICE_474
+ROUTE         1   e 0.001 */SLICE_474.F0 to *SLICE_474.DI0 cog0/acog_mem/CNT_s[29] (to clk_in_c)
+                  --------
+                    0.430   (53.5% logic, 46.5% route), 2 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in_c" 63.520000 MHz  |             |             |
+;                                       |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 525
+   Covered under: FREQUENCY NET "clk_in_c" 63.520000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2121678 paths, 1 nets, and 20947 connections (98.8% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 35306686 (setup), 0 (hold)
+Cumulative negative slack: 35306686 (35306686+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

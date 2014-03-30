@@ -1,0 +1,11 @@
+C:\lscc\diamond\2.1\synpbase\bin\m_gen_lattice.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  X:\ACog\03_Lattice\AProp  -part LCMXO2_7000HE  -package TG144C  -grade -4   -maxfan 100    -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1  -use_rename_in_edif 1     -summaryfile X:\ACog\03_Lattice\AProp\synlog\report\AProp_AProp_fpga_mapper.xml -top_level_module  AProp  -flow mapping  -oedif  X:\ACog\03_Lattice\AProp\AProp_AProp.edi  -freq 1.000  X:\ACog\03_Lattice\AProp\synwork\AProp_AProp_premap.srd  -devicelib  C:\lscc\diamond\2.1\synpbase\lib\lucent\machxo2.v  -devicelib  C:\lscc\diamond\2.1\synpbase\lib\lucent\pmi_def.v  -ologparam  X:\ACog\03_Lattice\AProp\syntmp\AProp_AProp.plg  -osyn  X:\ACog\03_Lattice\AProp\AProp_AProp.srm  -prjdir  X:\ACog\03_Lattice\AProp\  -prjname  proj_1  -log  X:\ACog\03_Lattice\AProp\AProp_AProp.srf 
+rc:1 success:1
+X:\ACog\03_Lattice\AProp\AProp_AProp.edi|o|1395224343|4960110
+X:\ACog\03_Lattice\AProp\synwork\AProp_AProp_premap.srd|i|1395224296|91584
+C:\lscc\diamond\2.1\synpbase\lib\lucent\machxo2.v|i|1347614694|51592
+C:\lscc\diamond\2.1\synpbase\lib\lucent\pmi_def.v|i|1352708792|40586
+X:\ACog\03_Lattice\AProp\syntmp\AProp_AProp.plg|o|1395224344|1493
+X:\ACog\03_Lattice\AProp\AProp_AProp.srm|o|1395224341|612268
+X:\ACog\03_Lattice\AProp\AProp_AProp.srf|o|1395224344|53215
+C:\lscc\diamond\2.1\synpbase\bin\m_gen_lattice.exe|i|1355961342|20296192
+C:\lscc\diamond\2.1\synpbase\bin64\m_gen_lattice.exe|i|1355963184|23682560

@@ -1,0 +1,46 @@
+Synopsys Lattice Technology Pre-mapping, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@L: F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp_scck.rpt 
+Printing clock  summary report in "F:\02_Elektronik\033_AProp\03_Lattice\AProp\AProp_scck.rpt" file 
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 51MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 50MB peak: 51MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 60MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 59MB peak: 62MB)
+
+@W: MT462 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":58:3:66:9|Net cog0.idecode.un1_execute30 appears to be an unidentified clock source. Assuming default frequency. 
+
+
+Clock Summary
+**************
+
+Start            Requested     Requested     Clock        Clock                
+Clock            Frequency     Period        Type         Group                
+-------------------------------------------------------------------------------
+AProp|clk_in     103.4 MHz     9.675         inferred     Autoconstr_clkgroup_0
+===============================================================================
+
+@W: MT531 :"f:\02_elektronik\033_aprop\01_verilog\acog_id.v":51:2:51:5|Found signal identified as System clock which controls 1 sequential elements including cog0.idecode.execute.  Using this clock, which has no specified timing constraint, can prevent conversion of gated or generated clocks and can adversely impact design performance. 
+@W: MT529 :"f:\02_elektronik\033_aprop\03_lattice\cog0_mem.v":72:10:72:23|Found inferred clock AProp|clk_in which controls 276 sequential elements including cog0.acog_mem.mem.cog0_mem_0_0_3. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+syn_allowed_resources : blockrams=26  set on top level netlist AProp
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 44MB peak: 77MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Mar 05 10:23:44 2014
+
+###########################################################]

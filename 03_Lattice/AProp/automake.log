@@ -1,0 +1,1569 @@
+
+synpwrap -prj "AProp_AProp_synplify.tcl" -log "AProp_AProp.srf"
+Copyright (C) 1992-2012 Lattice Semiconductor Corporation. All rights reserved.
+Lattice Diamond Version 2.1.0.103
+
+==contents of AProp_AProp.srf
+Synopsys Lattice Technology Mapper, Version maplat201209latp1, Build 002R, Built Dec 20 2012 01:51:42
+Copyright (C) 1994-2012, Synopsys Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version G-2012.09L-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+@N: MF249 |Running in 32-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 49MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 58MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 58MB peak: 60MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: FA239 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|ROM mask[30:1] mapped in logic.
+@N: MO106 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":762:2:762:5|Found ROM, 'mask[30:1]', 32 words by 30 bits 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 77MB peak: 80MB)
+
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog0.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing sequential instance cog1.idecode.opcode_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N:"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Found counter in view:work.acog_mem(verilog) inst CNT[31:0]
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":60:25:60:40|Found 32 bit by 32 bit '==' comparator, 'port_cnt_eq_d_o'
+@N: MF179 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":61:25:61:53|Found 32 bit by 32 bit '==' comparator, 'port_peq_pina_o'
+
+Finished factoring (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 92MB peak: 93MB)
+
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[31] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[30] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[29] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[28] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[27] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[26] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[25] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[24] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[23] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[22] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[21] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[20] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[19] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[18] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[17] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[16] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[15] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[14] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[13] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[12] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[11] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[10] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[9] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[8] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[7] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[6] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[5] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[4] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[3] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[2] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[1] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@N: BN362 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog0.acog_mem.d_rshift_o[0] in hierarchy view:work.AProp(verilog) because there are no references to its outputs 
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing sequential instance cog1.acog_mem.CNT[31:0],  because it is equivalent to instance cog0.acog_mem.CNT[31:0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[22],  because it is equivalent to instance cog0.acog_mem.latched_i
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[17],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[16],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[15],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[14],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[13],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[12],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[11],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[10],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[9],  because it is equivalent to instance cog0.acog_mem.latched_dest_addr[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[8],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[7],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[6],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[5],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[4],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[3],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[2],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[1],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog0.idecode.opcode_o[0],  because it is equivalent to instance cog0.acog_mem.latched_source_addr[0]
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 89MB peak: 94MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 92MB peak: 114MB)
+
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[0],  because it is equivalent to instance cog1.idecode.opcode_o[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[1],  because it is equivalent to instance cog1.idecode.opcode_o[1]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[2],  because it is equivalent to instance cog1.idecode.opcode_o[2]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[3],  because it is equivalent to instance cog1.idecode.opcode_o[3]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[4],  because it is equivalent to instance cog1.idecode.opcode_o[4]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[5],  because it is equivalent to instance cog1.idecode.opcode_o[5]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[6],  because it is equivalent to instance cog1.idecode.opcode_o[6]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[7],  because it is equivalent to instance cog1.idecode.opcode_o[7]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_source_addr[8],  because it is equivalent to instance cog1.idecode.opcode_o[8]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[0],  because it is equivalent to instance cog1.idecode.opcode_o[9]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[1],  because it is equivalent to instance cog1.idecode.opcode_o[10]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[2],  because it is equivalent to instance cog1.idecode.opcode_o[11]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[3],  because it is equivalent to instance cog1.idecode.opcode_o[12]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[4],  because it is equivalent to instance cog1.idecode.opcode_o[13]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[5],  because it is equivalent to instance cog1.idecode.opcode_o[14]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[6],  because it is equivalent to instance cog1.idecode.opcode_o[15]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[7],  because it is equivalent to instance cog1.idecode.opcode_o[16]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.latched_dest_addr[8],  because it is equivalent to instance cog1.idecode.opcode_o[17]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Removing instance cog1.idecode.opcode_o[22],  because it is equivalent to instance cog1.acog_mem.latched_i
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog1.alu.addsub.q_o_0[31:0] from cog1.alu.addsub.un1_d_in[31:0] 
+@N: FX404 :"x:\acog\03_lattice\..\01_verilog\acog_alu.v":301:2:301:5|Found addmux in view:work.AProp(verilog) inst cog0.alu.addsub.q_o_0[31:0] from cog0.alu.addsub.un1_d_in[31:0] 
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:27s; CPU Time elapsed 0h:00m:26s; Memory used current: 95MB peak: 114MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 95MB peak: 114MB)
+
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog1.acog_mem.s_data_neg_o[0],  because it is equivalent to instance cog1.acog_mem.s_data_o[0]
+@W: BN132 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Removing instance cog0.acog_mem.s_data_neg_o[0],  because it is equivalent to instance cog0.acog_mem.s_data_o[0]
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:28s; CPU Time elapsed 0h:00m:27s; Memory used current: 94MB peak: 114MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:30s; Memory used current: 94MB peak: 114MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:37s; CPU Time elapsed 0h:00m:36s; Memory used current: 114MB peak: 137MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.N_1055_i" with "129" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[3]" with "319" loads has been replicated "3" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[3]" with "297" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[2]" with "285" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[2]" with "281" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[0]" with "248" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[26]" with "240" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[0]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[1]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[26]" with "238" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[1]" with "237" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[28]" with "220" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[28]" with "217" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog1.acog_mem.s_data_o[4]" with "213" loads has been replicated "2" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_mem.v":66:0:66:5|Instance "cog0.acog_mem.s_data_o[4]" with "200" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog1.wback.flag_c" with "153" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_wback.v":36:0:36:5|Instance "cog0.wback.flag_c" with "152" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog1.idecode.opcode_o[27]" with "124" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+@N: FX103 :"x:\acog\03_lattice\..\01_verilog\acog_id.v":71:0:71:5|Instance "cog0.idecode.opcode_o[27]" with "123" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+Net buffering Report for view:work.AProp(verilog):
+Added 0 Buffers
+Added 32 Registers via replication
+Added 15 LUTs via replication
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:39s; CPU Time elapsed 0h:00m:38s; Memory used current: 114MB peak: 137MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+Replicating cog0.acog_mem.s_data_o_1[4], loads=121, segments=18
+Replicating cog1.idecode.opcode_o_2[26], loads=106, segments=12
+Replicating cog1.acog_mem.s_data_o_2[2], loads=112, segments=15
+Replicating cog0.acog_mem.s_data_o_2[2], loads=112, segments=13
+Replicating cog1.acog_mem.s_data_o_2[3], loads=122, segments=18
+Replicating cog0.acog_mem.s_data_o_3[3], loads=105, segments=16
+Replicating cog0.acog_mem.s_data_o[4], loads=102, segments=15
+replication done = 7
+Replicating cog0.acog_mem.N_1055_i, loads=133, segments=14
+Replicating cog1.acog_mem.N_1055_i, loads=106, segments=10
+replication done = 2
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:42s; CPU Time elapsed 0h:00m:41s; Memory used current: 118MB peak: 137MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+1 non-gated/non-generated clock tree(s) driving 852 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+====================================================================== Non-Gated/Non-Generated Clocks =======================================================================
+Clock Tree ID                                                                                    Driving Element     Drive Element Type     Fanout     Sample Instance       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:"@|S:clk_in@|E:cog0_acog_mem_INAio[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001"     clk_in              port                   852        cog0_acog_mem_INAio[0]
+=============================================================================================================================================================================
+===== Gated/Generated Clocks =====
+************** None **************
+----------------------------------
+==================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base X:\ACog\03_Lattice\AProp\AProp_AProp.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:44s; CPU Time elapsed 0h:00m:42s; Memory used current: 119MB peak: 137MB)
+
+Writing EDIF Netlist and constraint files
+G-2012.09L-1 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:44s; Memory used current: 124MB peak: 137MB)
+
+@W: MT420 |Found inferred clock AProp|clk_in with period 1000.00ns. Please declare a user-defined clock on object "p:clk_in"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Mar 19 11:19:03 2014
+#
+
+
+Top view:               AProp
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 981.374
+
+                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-----------------------------------------------------------------------------------------------------------------------
+AProp|clk_in       1.0 MHz       53.7 MHz      1000.000      18.626        981.374     inferred     Inferred_clkgroup_0
+=======================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                      |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------
+Starting      Ending        |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------
+AProp|clk_in  AProp|clk_in  |  1000.000    981.374  |  No paths    -      |  No paths    -      |  No paths    -    
+====================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: AProp|clk_in
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                    Arrival            
+Instance                      Reference        Type        Pin     Net                    Time        Slack  
+                              Clock                                                                          
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.s_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[0]     1.406       981.374
+cog0.acog_mem.d_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[0]     1.331       981.449
+cog0.acog_mem.s_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[2]     1.432       981.491
+cog0.acog_mem.s_data_o[1]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[1]     1.405       981.519
+cog1.acog_mem.s_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[0]     1.401       981.601
+cog0.acog_mem.d_data_o[1]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[1]     1.305       981.618
+cog0.acog_mem.d_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[2]     1.305       981.618
+cog0.acog_mem.s_data_o[3]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[3]     1.403       981.663
+cog1.acog_mem.d_data_o[0]     AProp|clk_in     FD1P3AX     Q       acog_d_from_mem[0]     1.333       981.669
+cog1.acog_mem.s_data_o[2]     AProp|clk_in     FD1P3AX     Q       acog_s_from_mem[2]     1.424       981.722
+=============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                            Required            
+Instance                            Reference        Type        Pin      Net           Time         Slack  
+                                    Clock                                                                   
+------------------------------------------------------------------------------------------------------------
+cog0.wback.flag_z                   AProp|clk_in     FD1P3AX     D        alu_z         1000.089     981.374
+cog1.wback.flag_z                   AProp|clk_in     FD1P3AX     D        alu_z         1000.089     981.601
+cog1.wback.flag_c                   AProp|clk_in     FD1P3AX     D        alu_c         999.894      982.381
+cog1.wback.flag_c_1                 AProp|clk_in     FD1P3AX     D        alu_c         999.894      982.381
+cog0.wback.flag_c                   AProp|clk_in     FD1P3AX     D        alu_c         1000.089     983.139
+cog0.wback.flag_c_1                 AProp|clk_in     FD1P3AX     D        alu_c_1       1000.089     983.139
+cog0.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB4     alu_q[31]     998.247      983.345
+cog1.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB4     alu_q[31]     998.247      983.350
+cog0.acog_mem.mem.mem_1_mem_0_0     AProp|clk_in     DP8KC       DIB0     alu_q[0]      998.247      983.481
+cog0.acog_mem.mem.mem_1_mem_0_3     AProp|clk_in     DP8KC       DIB2     alu_q[29]     998.247      983.560
+============================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            -0.089
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         1000.089
+
+    - Propagation time:                      18.715
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     981.374
+
+    Number of logic level(s):                29
+    Starting point:                          cog0.acog_mem.s_data_o[0] / Q
+    Ending point:                            cog0.wback.flag_z / D
+    The start point is clocked by            AProp|clk_in [rising] on pin CK
+    The end   point is clocked by            AProp|clk_in [rising] on pin CK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of     
+Name                                          Type         Name     Dir     Delay     Time        Fan Out(s) 
+-------------------------------------------------------------------------------------------------------------
+cog0.acog_mem.s_data_o[0]                     FD1P3AX      Q        Out     1.406     1.406       -          
+acog_s_from_mem[0]                            Net          -        -       -         -           83         
+cog0.alu.cmpsx.partial_d_minus_s_cry_0_0      CCU2D        A1       In      0.000     1.406       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_0_0      CCU2D        COUT     Out     1.545     2.951       -          
+partial_d_minus_s_cry_0                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_1_0      CCU2D        CIN      In      0.000     2.951       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_1_0      CCU2D        COUT     Out     0.143     3.094       -          
+partial_d_minus_s_cry_2                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_3_0      CCU2D        CIN      In      0.000     3.094       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_3_0      CCU2D        COUT     Out     0.143     3.236       -          
+partial_d_minus_s_cry_4                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_5_0      CCU2D        CIN      In      0.000     3.236       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_5_0      CCU2D        COUT     Out     0.143     3.379       -          
+partial_d_minus_s_cry_6                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_7_0      CCU2D        CIN      In      0.000     3.379       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_7_0      CCU2D        COUT     Out     0.143     3.522       -          
+partial_d_minus_s_cry_8                       Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_9_0      CCU2D        CIN      In      0.000     3.522       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_9_0      CCU2D        COUT     Out     0.143     3.665       -          
+partial_d_minus_s_cry_10                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_11_0     CCU2D        CIN      In      0.000     3.665       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_11_0     CCU2D        COUT     Out     0.143     3.808       -          
+partial_d_minus_s_cry_12                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_13_0     CCU2D        CIN      In      0.000     3.808       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_13_0     CCU2D        COUT     Out     0.143     3.950       -          
+partial_d_minus_s_cry_14                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_15_0     CCU2D        CIN      In      0.000     3.950       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_15_0     CCU2D        COUT     Out     0.143     4.093       -          
+partial_d_minus_s_cry_16                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_17_0     CCU2D        CIN      In      0.000     4.093       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_17_0     CCU2D        COUT     Out     0.143     4.236       -          
+partial_d_minus_s_cry_18                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_19_0     CCU2D        CIN      In      0.000     4.236       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_19_0     CCU2D        COUT     Out     0.143     4.379       -          
+partial_d_minus_s_cry_20                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_21_0     CCU2D        CIN      In      0.000     4.379       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_21_0     CCU2D        COUT     Out     0.143     4.521       -          
+partial_d_minus_s_cry_22                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_23_0     CCU2D        CIN      In      0.000     4.521       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_23_0     CCU2D        COUT     Out     0.143     4.664       -          
+partial_d_minus_s_cry_24                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_25_0     CCU2D        CIN      In      0.000     4.664       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_25_0     CCU2D        COUT     Out     0.143     4.807       -          
+partial_d_minus_s_cry_26                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_27_0     CCU2D        CIN      In      0.000     4.807       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_27_0     CCU2D        COUT     Out     0.143     4.950       -          
+partial_d_minus_s_cry_28                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_29_0     CCU2D        CIN      In      0.000     4.950       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_29_0     CCU2D        COUT     Out     0.143     5.093       -          
+partial_d_minus_s_cry_30                      Net          -        -       -         -           1          
+cog0.alu.cmpsx.partial_d_minus_s_cry_31_0     CCU2D        CIN      In      0.000     5.093       -          
+cog0.alu.cmpsx.partial_d_minus_s_cry_31_0     CCU2D        S1       Out     1.765     6.858       -          
+flag_c_maxs                                   Net          -        -       -         -           6          
+cog0.alu.addsub.q_o_0_sqmuxa_1                ORCALUT4     C        In      0.000     6.858       -          
+cog0.alu.addsub.q_o_0_sqmuxa_1                ORCALUT4     Z        Out     1.017     7.875       -          
+q_o_0_sqmuxa_1                                Net          -        -       -         -           1          
+cog0.alu.addsub.un1_q_o102_3                  ORCALUT4     B        In      0.000     7.875       -          
+cog0.alu.addsub.un1_q_o102_3                  ORCALUT4     Z        Out     1.344     9.219       -          
+un1_q_o102_3                                  Net          -        -       -         -           25         
+cog0.alu.addsub.un1_q_o102_3_RNI4GPQ          ORCALUT4     C        In      0.000     9.219       -          
+cog0.alu.addsub.un1_q_o102_3_RNI4GPQ          ORCALUT4     Z        Out     1.265     10.483      -          
+N_1357                                        Net          -        -       -         -           8          
+cog0.alu.addsub.q_o_16_RNO[0]                 ORCALUT4     C        In      0.000     10.483      -          
+cog0.alu.addsub.q_o_16_RNO[0]                 ORCALUT4     Z        Out     1.017     11.500      -          
+N_496                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_16[0]                     ORCALUT4     B        In      0.000     11.500      -          
+cog0.alu.addsub.q_o_16[0]                     ORCALUT4     Z        Out     1.017     12.517      -          
+N_691                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_18[0]                     ORCALUT4     B        In      0.000     12.517      -          
+cog0.alu.addsub.q_o_18[0]                     ORCALUT4     Z        Out     1.017     13.534      -          
+N_759                                         Net          -        -       -         -           1          
+cog0.alu.addsub.q_o_5[0]                      ORCALUT4     C        In      0.000     13.534      -          
+cog0.alu.addsub.q_o_5[0]                      ORCALUT4     Z        Out     1.233     14.767      -          
+alu_q[0]                                      Net          -        -       -         -           6(16777222)
+cog0.alu.addsub.q_is_zero_9                   ORCALUT4     A        In      0.000     14.767      -          
+cog0.alu.addsub.q_is_zero_9                   ORCALUT4     Z        Out     1.017     15.783      -          
+q_is_zero_9                                   Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero_17                  ORCALUT4     A        In      0.000     15.783      -          
+cog0.alu.addsub.q_is_zero_17                  ORCALUT4     Z        Out     1.017     16.800      -          
+q_is_zero_17                                  Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero_28                  ORCALUT4     A        In      0.000     16.800      -          
+cog0.alu.addsub.q_is_zero_28                  ORCALUT4     Z        Out     1.017     17.817      -          
+q_is_zero_28                                  Net          -        -       -         -           1          
+cog0.alu.addsub.q_is_zero                     ORCALUT4     D        In      0.000     17.817      -          
+cog0.alu.addsub.q_is_zero                     ORCALUT4     Z        Out     0.449     18.266      -          
+q_is_zero                                     Net          -        -       -         -           1          
+cog0.alu.alogic.flag_z_o_u_0_0                ORCALUT4     D        In      0.000     18.266      -          
+cog0.alu.alogic.flag_z_o_u_0_0                ORCALUT4     Z        Out     0.449     18.715      -          
+alu_z                                         Net          -        -       -         -           1          
+cog0.wback.flag_z                             FD1P3AX      D        In      0.000     18.715      -          
+=============================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 836 of 6864 (12%)
+PIC Latch:       0
+I/O cells:       34
+
+
+Details:
+BB:             32
+CCU2D:          489
+DP8KC:          8
+FD1P3AX:        756
+FD1P3IX:        8
+FD1S3AX:        32
+FD1S3IX:        8
+GSR:            1
+IB:             2
+IFS1P3DX:       32
+INV:            71
+L6MUX21:        165
+ORCALUT4:       4654
+PFUMX:          939
+PUR:            1
+VHI:            17
+VLO:            35
+false:          2
+true:           20
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:45s; Memory used current: 32MB peak: 137MB)
+
+Process took 0h:00m:47s realtime, 0h:00m:45s cputime
+# Wed Mar 19 11:19:04 2014
+
+###########################################################]
+
+
+Synthesis exit by 0.
+
+edif2ngd  -l "MachXO2" -d LCMXO2-7000HE -path "X:/ACog/03_Lattice/AProp" -path "X:/ACog/03_Lattice"  "X:/ACog/03_Lattice/AProp/AProp_AProp.edi" "AProp_AProp.ngo"   
+edif2ngd:  version Diamond Version 2.1.0.103
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+WARNING - edif2ngd: Unsupported property is_pwr found - ignoring...
+  On or above line 281 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property is_pwr found - ignoring...
+  On or above line 289 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 1816 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 3498 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 5718 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 6678 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 7965 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 9404 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 11061 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 12651 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 17165 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 18251 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 29474 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 30513 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 32054 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 33774 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 36017 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 37006 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 38344 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 39931 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 41658 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 43322 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 47877 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 48994 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 59950 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 60985 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 66182 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 66897 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 67719 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 67915 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 78196 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 83501 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 84232 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 84626 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 84790 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 94990 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 97362 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 99376 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+WARNING - edif2ngd: Unsupported property orig_inst_of found - ignoring...
+  On or above line 100746 in file X:\ACog\03_Lattice\AProp\AProp_AProp.edi
+
+Writing the design to AProp_AProp.ngo...
+
+
+ngdbuild  -a "MachXO2" -d LCMXO2-7000HE  -p "C:/lscc/diamond/2.1/ispfpga/xo2c00/data"  -p "X:/ACog/03_Lattice/AProp" -p "X:/ACog/03_Lattice"  "AProp_AProp.ngo" "AProp_AProp.ngd"  	
+ngdbuild:  version Diamond Version 2.1.0.103
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+Reading 'AProp_AProp.ngo' ...
+Loading NGL library 'C:/lscc/diamond/2.1/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.1/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.1/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/2.1/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_n_s_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_n_s_31_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_n_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_n_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_s_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_s_31_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/sumxx/q_sum_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/q_o_1_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/q_o_1_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/q_o_1_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/partial_d_minus_s_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/partial_d_minus_s_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/cmpsx/partial_d_minus_s_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_x_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_x_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_x_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_add_x_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_add_x_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_sub_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_add_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_add_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/partial_add_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/q_o_0_s_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/q_o_0_s_31_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/addsub/q_o_0_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOA5' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOA6' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOA7' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOA8' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOB5' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOB6' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOB7' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/mem/mem_1_mem_0_3_DOB8' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_n_s_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_n_s_31_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_n_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_n_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_s_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_s_31_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/sumxx/q_sum_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/q_o_1_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/q_o_1_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/q_o_1_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/partial_d_minus_s_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/partial_d_minus_s_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/cmpsx/partial_d_minus_s_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_x_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_x_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_x_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_add_x_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_add_x_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_sub_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_add_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_add_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/partial_add_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/q_o_0_s_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/q_o_0_s_31_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/addsub/q_o_0_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOA5_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOA6_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOA7_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOA8_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOB5_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOB6_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOB7_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/mem/mem_1_mem_0_3_DOB8_0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_COUT_0[30]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[30]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[26]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[26]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[22]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[22]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[18]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[18]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[15]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[15]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[13]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[13]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[11]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[11]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[9]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[9]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[7]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[7]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[5]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[5]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[3]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[3]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[1]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[1]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S0_0[0]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/flag_c_o_8_cry_0_S1_0[0]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_COUT_0[30]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[30]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[26]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[26]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[22]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[22]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[18]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[18]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[15]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[15]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[13]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[13]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[11]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[11]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[9]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[9]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[7]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[7]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[5]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[5]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[3]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[3]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[1]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[1]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S0_0[0]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/un29_q_o_cry_0_S1_0[0]' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/q_djnz_cry_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/q_djnz_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/alu/acog_d_from_mem_i[0]' has no load
+WARNING - ngdbuild: logical net 'cog1/wback/pc_plus_1_o_cry_7_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/wback/pc_plus_1_o_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/wback/pc_plus_1_o_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_45_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_45_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_81_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_81_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_21_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_21_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_57_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_57_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_27_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_27_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_33_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_33_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_51_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_51_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_9_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_9_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_cnt_eq_d_o_0_I_1_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/N_1048_i' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_45_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_45_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_81_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_81_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_21_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_21_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_57_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_57_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_27_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_27_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_33_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_33_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_51_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_51_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_9_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_9_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/port_peq_pina_o_0_I_1_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/N_1049_i' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/s_data_neg_o_1_s_31_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/s_data_neg_o_1_s_31_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/s_data_neg_o_1_cry_0_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog1/acog_mem/s_data_neg_o_1_cry_0_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_COUT[30]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[30]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[26]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[26]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[22]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[22]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[18]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[18]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[15]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[15]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[13]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[13]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[11]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[11]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[9]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[9]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[7]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[7]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[5]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[5]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[3]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[3]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[1]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[1]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S0[0]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/flag_c_o_8_cry_0_S1[0]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_COUT[30]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[30]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[26]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[26]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[22]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[22]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[18]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[18]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[15]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[15]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[13]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[13]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[11]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[11]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[9]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[9]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[7]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[7]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[5]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[5]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[3]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[3]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[1]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[1]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S0[0]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/un29_q_o_cry_0_S1[0]' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/q_djnz_cry_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/q_djnz_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/alu/acog_d_from_mem_i[0]' has no load
+WARNING - ngdbuild: logical net 'cog0/wback/pc_plus_1_o_cry_7_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/wback/pc_plus_1_o_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/wback/pc_plus_1_o_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_45_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_45_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_81_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_81_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_21_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_21_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_57_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_57_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_27_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_27_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_33_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_33_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_51_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_51_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_9_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_9_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_cnt_eq_d_o_0_I_1_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/N_1048_i' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_45_0_COUT' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_45_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_81_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_81_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_21_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_21_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_57_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_57_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_27_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_27_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_33_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_33_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_51_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_51_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_9_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_9_0_S1' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/port_peq_pina_o_0_I_1_0_S0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/N_1049_i' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/s_data_neg_o_1_s_31_0_COUT_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/s_data_neg_o_1_s_31_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/s_data_neg_o_1_cry_0_0_S0_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/s_data_neg_o_1_cry_0_0_S1_0' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/CNT_s_0_COUT[31]' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/CNT_s_0_S1[31]' has no load
+WARNING - ngdbuild: logical net 'cog0/acog_mem/CNT_cry_0_S0[0]' has no load
+WARNING - ngdbuild: DRC complete with 271 warnings
+
+Design Results:
+   7249 blocks expanded
+complete the first expansion
+Writing 'AProp_AProp.ngd' ...
+
+map -a "MachXO2" -p LCMXO2-7000HE -t TQFP144 -s 4 -oc Commercial   "AProp_AProp.ngd" -o "AProp_AProp_map.ncd" -pr "AProp_AProp.prf" -mp "AProp_AProp.mrp" "X:/ACog/03_Lattice/AProp.lpf" -c 0            
+map:  version Diamond Version 2.1.0.103
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: AProp_AProp.ngd
+   Picdevice="LCMXO2-7000HE"
+
+   Pictype="TQFP144"
+
+   Picspeed=4
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-7000HETQFP144, Performance used: 4.
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1/ispfpga.
+Package Status:                     Final          Version 1.36
+
+Running general design DRC...
+Removing unused logic...
+Optimizing...
+20 CCU2 constant inputs absorbed.
+
+
+
+Design Summary:
+   Number of registers:    836
+      PFU registers:    804
+      PIO registers:    32
+   Number of SLICEs:          2852 out of  3432 (83%)
+      SLICEs(logic/ROM):       858 out of   858 (100%)
+      SLICEs(logic/ROM/RAM):  1994 out of  2574 (77%)
+          As RAM:            0 out of  2574 (0%)
+          As Logic/ROM:   1994 out of  2574 (77%)
+   Number of logic LUT4s:     4724
+   Number of distributed RAM:   0 (0 LUT4s)
+   Number of ripple logic:    489 (978 LUT4s)
+   Number of shift registers:   0
+   Total number of LUT4s:     5702
+   Number of PIO sites used: 34 out of 115 (30%)
+   Number of block RAMs:  8 out of 26 (31%)
+   Number of GSRs:  0 out of 1 (0%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  1
+     Net clk_in_c: 525 loads, 525 rising, 0 falling (Driver: PIO clk_in )
+   Number of Clock Enables:  51
+     Net cog0.idecode.save_d_from_alu_o7: 32 loads, 0 LSLICEs
+     Net cog1/wback/un1_flag_c7_i: 5 loads, 5 LSLICEs
+     Net cog1/wback/N_32_i: 1 loads, 1 LSLICEs
+     Net cog1/wback/N_30_i: 2 loads, 2 LSLICEs
+     Net cog1/un1_state_in_1: 22 loads, 22 LSLICEs
+     Net cog1/idecode/N_159: 1 loads, 1 LSLICEs
+     Net cog1/idecode/N_152: 3 loads, 3 LSLICEs
+     Net cog1/save_d_from_alu_o7: 16 loads, 16 LSLICEs
+     Net reset_in_c: 2 loads, 2 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r9: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r8: 10 loads, 10 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r7: 12 loads, 12 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r6: 11 loads, 11 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r5: 5 loads, 5 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r4: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r3: 4 loads, 4 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r2: 4 loads, 4 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r1: 2 loads, 2 LSLICEs
+     Net cog1/acog_mem/N_1055_i_r0: 3 loads, 3 LSLICEs
+     Net cog1/acog_mem/N_1055_i_1: 48 loads, 48 LSLICEs
+     Net cog1/acog_mem/un3_left_addr_mux_i: 1 loads, 1 LSLICEs
+     Net cog1/acog_mem/OUTB_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog1/acog_mem/OUTA_0_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog1/acog_mem/DIRB_1_sqmuxa: 26 loads, 26 LSLICEs
+     Net cog1/acog_mem/DIRA_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/wback/flag_c_0_sqmuxa: 2 loads, 2 LSLICEs
+     Net cog0/wback/flag_z_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net cog0/wback/un1_flag_c7_i: 5 loads, 5 LSLICEs
+     Net cog0/idecode/un1_state_in_1_i: 2 loads, 2 LSLICEs
+     Net cog0/save_d_from_alu_o8: 17 loads, 17 LSLICEs
+     Net cog0/idecode/un1_state_in_3_i: 1 loads, 1 LSLICEs
+     Net cog0/acog_mem/DIRA_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r13: 11 loads, 11 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r12: 5 loads, 5 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r11: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r10: 5 loads, 5 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r9: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r8: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r7: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r6: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r5: 17 loads, 17 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r4: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r3: 2 loads, 2 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r2: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r1: 3 loads, 3 LSLICEs
+     Net cog0/acog_mem/N_1055_i_r0: 4 loads, 4 LSLICEs
+     Net cog0/acog_mem/DIRB_1_sqmuxa: 26 loads, 26 LSLICEs
+     Net cog0/acog_mem/OUTB_1_sqmuxa: 16 loads, 16 LSLICEs
+     Net cog0/acog_mem/N_1055_i_1: 48 loads, 48 LSLICEs
+     Net cog0/acog_mem/un3_left_addr_mux_i: 1 loads, 1 LSLICEs
+     Net cog0/acog_mem/OUTA_0_sqmuxa: 16 loads, 16 LSLICEs
+   Number of LSRs:  3
+     Net cog0.idecode.save_d_from_alu_o7: 5 loads, 5 LSLICEs
+     Net cog1/save_d_from_alu_o7: 6 loads, 6 LSLICEs
+     Net reset_in_c: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net cog0/acog_s_from_mem[2]: 99 loads
+     Net cog1/acog_s_from_mem[3]: 99 loads
+     Net cog1/acog_s_from_mem_1[3]: 99 loads
+     Net cog0/acog_latched_opcode_2[26]: 98 loads
+     Net cog1/acog_s_from_mem_1[2]: 97 loads
+     Net cog0/acog_s_from_mem_1[2]: 95 loads
+     Net cog1/acog_s_from_mem[2]: 94 loads
+     Net cog0/acog_s_from_mem_2[1]: 91 loads
+     Net cog1/acog_s_from_mem_2[1]: 91 loads
+     Net cog0/acog_s_from_mem_2[0]: 88 loads
+ 
+   Number of warnings:  0
+   Number of errors:    0
+
+
+Total CPU Time: 4 secs  
+Total REAL Time: 6 secs  
+Peak Memory Usage: 65 MB
+
+Dumping design to file AProp_AProp_map.ncd.
+
+trce -f "AProp_AProp.mt" -o "AProp_AProp.tw1" "AProp_AProp_map.ncd" "AProp_AProp.prf"
+trce:  version Diamond Version 2.1.0.103
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file aprop_aprop_map.ncd.
+Design name: AProp
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond Version 2.1.0.103
+Wed Mar 19 11:19:25 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o AProp_AProp.tw1 AProp_AProp_map.ncd AProp_AProp.prf 
+Design file:     aprop_aprop_map.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 35306686
+Cumulative negative slack: 35306686
+
+Constraints cover 2121678 paths, 1 nets, and 20504 connections (96.7% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond Version 2.1.0.103
+Wed Mar 19 11:19:28 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o AProp_AProp.tw1 AProp_AProp_map.ncd AProp_AProp.prf 
+Design file:     aprop_aprop_map.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2121678 paths, 1 nets, and 20947 connections (98.8% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 35306686 (setup), 0 (hold)
+Cumulative negative slack: 35306686 (35306686+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 6 secs 
+
+mpartrce -p "AProp_AProp.p2t" -f "AProp_AProp.p3t" -tf "AProp_AProp.pt" "AProp_AProp_map.ncd" "AProp_AProp.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "AProp_AProp_map.ncd"
+Wed Mar 19 11:19:30 2014
+
+PAR: Place And Route Diamond Version 2.1.0.103.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF AProp_AProp_map.ncd AProp_AProp.dir/5_1.ncd AProp_AProp.prf
+Preference file: AProp_AProp.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file AProp_AProp_map.ncd.
+Design name: AProp
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application par from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)      34/336          10% used
+                     34/115          29% bonded
+   IOLOGIC           32/336           9% used
+
+   SLICE           2852/3432         83% used
+
+   EBR                8/26           30% used
+
+
+Number of Signals: 6160
+Number of Connections: 21207
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_in_c (driver: clk_in, clk load #: 525)
+
+
+The following 8 signals are selected to use the secondary clock routing resources:
+    cog1/acog_mem/N_1055_i_1 (driver: cog1/acog_mem/SLICE_2583, clk load #: 0, sr load #: 0, ce load #: 48)
+    cog0/acog_mem/N_1055_i_1 (driver: cog0/acog_mem/SLICE_2592, clk load #: 0, sr load #: 0, ce load #: 48)
+    cog0.idecode.save_d_from_alu_o7 (driver: cog0/acog_mem/SLICE_2805, clk load #: 0, sr load #: 5, ce load #: 32)
+    cog1/acog_mem/DIRB_1_sqmuxa (driver: cog1/acog_mem/SLICE_2209, clk load #: 0, sr load #: 0, ce load #: 26)
+    cog0/acog_mem/DIRB_1_sqmuxa (driver: cog0/acog_mem/SLICE_2496, clk load #: 0, sr load #: 0, ce load #: 26)
+    cog1/un1_state_in_1 (driver: cog1/acog_mem/SLICE_2724, clk load #: 0, sr load #: 0, ce load #: 22)
+    cog1/save_d_from_alu_o7 (driver: cog1/SLICE_2679, clk load #: 0, sr load #: 6, ce load #: 16)
+    cog0/save_d_from_alu_o8 (driver: cog0/SLICE_2803, clk load #: 0, sr load #: 0, ce load #: 17)
+
+No signal is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+.............
+Finished Placer Phase 0.  REAL time: 17 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 2914639.
+Finished Placer Phase 1.  REAL time: 42 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  2823833
+Finished Placer Phase 2.  REAL time: 46 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Quadrants All (TL, TR, BL, BR) - Global Clocks:
+  PRIMARY "clk_in_c" from comp "clk_in" on CLK_PIN site "55 (PB23A)", clk load = 525
+  SECONDARY "cog0.idecode.save_d_from_alu_o7" from F1 on comp "cog0/acog_mem/SLICE_2805" on site "R21C18A", clk load = 0, ce load = 32, sr load = 5
+  SECONDARY "cog1/un1_state_in_1" from F1 on comp "cog1/acog_mem/SLICE_2724" on site "R14C20A", clk load = 0, ce load = 22, sr load = 0
+  SECONDARY "cog1/save_d_from_alu_o7" from F0 on comp "cog1/SLICE_2679" on site "R15C40B", clk load = 0, ce load = 16, sr load = 6
+  SECONDARY "cog1/acog_mem/N_1055_i_1" from F1 on comp "cog1/acog_mem/SLICE_2583" on site "R21C20C", clk load = 0, ce load = 48, sr load = 0
+  SECONDARY "cog1/acog_mem/DIRB_1_sqmuxa" from F0 on comp "cog1/acog_mem/SLICE_2209" on site "R15C40C", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "cog0/save_d_from_alu_o8" from F1 on comp "cog0/SLICE_2803" on site "R14C18A", clk load = 0, ce load = 17, sr load = 0
+  SECONDARY "cog0/acog_mem/DIRB_1_sqmuxa" from F0 on comp "cog0/acog_mem/SLICE_2496" on site "R21C18C", clk load = 0, ce load = 26, sr load = 0
+  SECONDARY "cog0/acog_mem/N_1055_i_1" from F1 on comp "cog0/acog_mem/SLICE_2592" on site "R21C18B", clk load = 0, ce load = 48, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 8 out of 8 (100%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   34 out of 336 (10.1%) PIO sites used.
+   34 out of 115 (29.6%) bonded PIO sites used.
+   Number of PIO comps: 34; differential: 0
+   Number of Vref pins used: 0
+
+I/O Bank Usage Summary:
++----------+----------------+------------+-----------+
+| I/O Bank | Usage          | Bank Vccio | Bank Vref |
++----------+----------------+------------+-----------+
+| 0        | 6 / 28 ( 21%)  | 2.5V       | -         |
+| 1        | 1 / 29 (  3%)  | 2.5V       | -         |
+| 2        | 20 / 29 ( 68%) | 2.5V       | -         |
+| 3        | 1 / 9 ( 11%)   | 2.5V       | -         |
+| 4        | 6 / 10 ( 60%)  | 2.5V       | -         |
+| 5        | 0 / 10 (  0%)  | -          | -         |
++----------+----------------+------------+-----------+
+
+Total placer CPU time: 44 secs 
+
+Dumping design to file AProp_AProp.dir/5_1.ncd.
+
+0 connections routed; 21207 unrouted.
+Starting router resource preassignment
+
+Completed router resource preassignment. Real time: 54 secs 
+
+Start NBR router at 11:20:25 03/19/14
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design. Thanks.                                       
+*****************************************************************
+
+Start NBR special constraint process at 11:20:25 03/19/14
+
+Start NBR section for initial routing
+Level 1, iteration 1
+352(0.09%) conflicts; 18280(86.20%) untouched conns; 56205491 (nbr) score; 
+Estimated worst slack/total negative slack: -8.887ns/-56205.492ns; real time: 1 mins 11 secs 
+Level 2, iteration 1
+1185(0.31%) conflicts; 14376(67.79%) untouched conns; 47143724 (nbr) score; 
+Estimated worst slack/total negative slack: -8.978ns/-47143.724ns; real time: 1 mins 29 secs 
+Level 3, iteration 1
+1116(0.30%) conflicts; 2340(11.03%) untouched conns; 53224547 (nbr) score; 
+Estimated worst slack/total negative slack: -9.068ns/-53224.547ns; real time: 1 mins 42 secs 
+Level 4, iteration 1
+1034(0.27%) conflicts; 0(0.00%) untouched conn; 54452439 (nbr) score; 
+Estimated worst slack/total negative slack: -9.154ns/-54452.439ns; real time: 1 mins 54 secs 
+Info: Initial congestion level at 75% usage is 10
+Info: Initial congestion area  at 75% usage is 285 (28.50%)
+
+Start NBR section for normal routing
+Level 4, iteration 1
+258(0.07%) conflicts; 0(0.00%) untouched conn; 63813278 (nbr) score; 
+Estimated worst slack/total negative slack: -9.672ns/-63813.279ns; real time: 2 mins 9 secs 
+Level 4, iteration 2
+119(0.03%) conflicts; 0(0.00%) untouched conn; 63348906 (nbr) score; 
+Estimated worst slack/total negative slack: -9.197ns/-63348.906ns; real time: 2 mins 15 secs 
+Level 4, iteration 3
+65(0.02%) conflicts; 0(0.00%) untouched conn; 64275840 (nbr) score; 
+Estimated worst slack/total negative slack: -9.743ns/-64275.841ns; real time: 2 mins 18 secs 
+Level 4, iteration 4
+42(0.01%) conflicts; 0(0.00%) untouched conn; 64275840 (nbr) score; 
+Estimated worst slack/total negative slack: -9.743ns/-64275.841ns; real time: 2 mins 20 secs 
+Level 4, iteration 5
+21(0.01%) conflicts; 0(0.00%) untouched conn; 65278163 (nbr) score; 
+Estimated worst slack/total negative slack: -9.957ns/-65278.164ns; real time: 2 mins 22 secs 
+Level 4, iteration 6
+16(0.00%) conflicts; 0(0.00%) untouched conn; 65278163 (nbr) score; 
+Estimated worst slack/total negative slack: -9.957ns/-65278.164ns; real time: 2 mins 23 secs 
+Level 4, iteration 7
+6(0.00%) conflicts; 0(0.00%) untouched conn; 65330536 (nbr) score; 
+Estimated worst slack/total negative slack: -9.256ns/-65330.537ns; real time: 2 mins 24 secs 
+Level 4, iteration 8
+2(0.00%) conflicts; 0(0.00%) untouched conn; 65330536 (nbr) score; 
+Estimated worst slack/total negative slack: -9.256ns/-65330.537ns; real time: 2 mins 24 secs 
+Level 4, iteration 9
+0(0.00%) conflict; 0(0.00%) untouched conn; 65529518 (nbr) score; 
+Estimated worst slack/total negative slack: -9.256ns/-65529.519ns; real time: 2 mins 25 secs 
+
+Start NBR section for performance tunning (iteration 1)
+Level 4, iteration 1
+9(0.00%) conflicts; 0(0.00%) untouched conn; 65056893 (nbr) score; 
+Estimated worst slack/total negative slack: -9.197ns/-65056.894ns; real time: 2 mins 25 secs 
+Level 4, iteration 2
+2(0.00%) conflicts; 0(0.00%) untouched conn; 65210382 (nbr) score; 
+Estimated worst slack/total negative slack: -9.197ns/-65210.383ns; real time: 2 mins 26 secs 
+Level 4, iteration 3
+0(0.00%) conflict; 0(0.00%) untouched conn; 65209632 (nbr) score; 
+Estimated worst slack/total negative slack: -9.197ns/-65209.633ns; real time: 2 mins 26 secs 
+
+Start NBR section for re-routing
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 64329395 (nbr) score; 
+Estimated worst slack/total negative slack: -9.197ns/-64329.396ns; real time: 2 mins 37 secs 
+
+Start NBR section for post-routing
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 14166 (66.80%)
+  Estimated worst slack : -9.197ns
+  Timing score : 31215625
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+WARNING - par: Hold timing correction is skipped because the worst (setup) slack(-9.197ns) is worse than the default value(0.000ns).
+------------------------------------------------------------------------------------------------------------------------------------
+
+Total CPU time 2 mins 36 secs 
+Total REAL time: 2 mins 43 secs 
+Completely routed.
+End of route.  21207 routed (100.00%); 0 unrouted.
+Checking DRC ... 
+No errors found.
+
+Hold time timing score: 0, hold timing errors: 0
+
+Timing score: 31215625 
+
+Dumping design to file AProp_AProp.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -9.197
+PAR_SUMMARY::Timing score<setup/<ns>> = 31215.625
+PAR_SUMMARY::Worst  slack<hold /<ns>> = <n/a>
+PAR_SUMMARY::Timing score<hold /<ns>> = <n/a>
+
+Total CPU  time to completion: 2 mins 39 secs 
+Total REAL time to completion: 2 mins 47 secs 
+
+par done!
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "AProp_AProp.pt" -o "AProp_AProp.twr" "AProp_AProp.ncd" "AProp_AProp.prf"
+trce:  version Diamond Version 2.1.0.103
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file aprop_aprop.ncd.
+Design name: AProp
+NCD version: 3.2
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/2.1/ispfpga.
+Package Status:                     Final          Version 1.36
+Performance Hardware Data Status:   Final)         Version 23.4
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond Version 2.1.0.103
+Wed Mar 19 11:22:22 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o AProp_AProp.twr AProp_AProp.ncd AProp_AProp.prf 
+Design file:     aprop_aprop.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 31215625
+Cumulative negative slack: 31215625
+
+Constraints cover 2121678 paths, 1 nets, and 20947 connections (98.8% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond Version 2.1.0.103
+Wed Mar 19 11:22:23 2014
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 4 -sphld m -o AProp_AProp.twr AProp_AProp.ncd AProp_AProp.prf 
+Design file:     aprop_aprop.ncd
+Preference file: aprop_aprop.prf
+Device,speed:    LCMXO2-7000HE,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2121678 paths, 1 nets, and 20947 connections (98.8% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 31215625 (setup), 0 (hold)
+Cumulative negative slack: 31215625 (31215625+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total time: 5 secs 

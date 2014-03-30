@@ -1,0 +1,16 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat201209latp1, Build 002R.
+#
+
+# Period Constraints
+FREQUENCY PORT "clk_in" 62.2 MHz;
+# Output Constraints
+# Input Constraints
+# Point-to-point Delay Constraints 
+
+
+
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

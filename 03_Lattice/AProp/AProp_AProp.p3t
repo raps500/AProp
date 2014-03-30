@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "AProp_AProp.log"
+-o "AProp_AProp.csv"
+-pr "AProp_AProp.prf"

@@ -1,0 +1,32 @@
+SCUBA, Version Diamond_2.1_Production (100)
+Wed Mar 05 09:53:28 2014
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2012 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\2.1\ispfpga\bin\nt\scuba.exe -w -n cog0_mem -lang verilog -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ramdp -device LCMXO2-7000HE -aaddr_width 9 -widtha 32 -baddr_width 9 -widthb 32 -anum_words 512 -bnum_words 512 -cascade -1 -memfile f:/02_elektronik/033_aprop/01_verilog/cog_mem.mem -memformat orca -writemodeA NORMAL -writemodeB NORMAL -e 
+    Circuit name     : cog0_mem
+    Module type      : RAM_DP_TRUE
+    Module Version   : 7.1
+    Ports            : 
+    Inputs       : DataInA[31:0], DataInB[31:0], AddressA[8:0], AddressB[8:0], ClockA, ClockB, ClockEnA, ClockEnB, WrA, WrB, ResetA, ResetB
+    Outputs      : QA[31:0], QB[31:0]
+    I/O buffer       : not inserted
+    Memory file      : f:/02_elektronik/033_aprop/01_verilog/cog_mem.mem
+    EDIF output      : suppressed
+    Verilog output   : cog0_mem.v
+    Verilog template : cog0_mem_tmpl.v
+    Verilog testbench: tb_cog0_mem_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : cog0_mem.srp
+    Estimated Resource Usage:
+            EBR : 4
+  
+END   SCUBA Module Synthesis
+

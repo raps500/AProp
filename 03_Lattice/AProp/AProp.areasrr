@@ -1,0 +1,241 @@
+----------------------------------------------------------------------
+Report for cell AProp.verilog
+
+Register bits: 288 of 6864 (4%)
+Latch bits:      1
+PIC Latch:       0
+I/O cells:       66
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 BB       64       100.0
+                              CCU2D       56       100.0
+                              DP8KC        4       100.0
+                            FD1P3AX      184       100.0
+                            FD1P3IX        4       100.0
+                             FD1S1D        1       100.0
+                            FD1S3AX       32       100.0
+                            FD1S3IX        4       100.0
+                                GSR        1       100.0
+                                 IB        2       100.0
+                           IFS1P3DX       59       100.0
+                                INV       61       100.0
+                            L6MUX21       17       100.0
+                           OFS1P3DX        5       100.0
+                           ORCALUT4     1541       100.0
+                              PFUMX      268       100.0
+                                PUR        1       100.0
+                                VHI        7       100.0
+                                VLO       14       100.0
+SUB MODULES 
+                               ACog        1       100.0
+                        acog_addsub        1       100.0
+                           acog_alu        1       100.0
+                            acog_id        1       100.0
+                         acog_logic        1       100.0
+                           acog_mem        1       100.0
+                           acog_seq        1       100.0
+                         acog_wback        1       100.0
+                         barrel_rol        1       100.0
+                         barrel_ror        1       100.0
+                         barrel_sar        1       100.0
+                         barrel_shl        1       100.0
+                         barrel_shr        1       100.0
+                           cog0_mem        1       100.0
+                            
+                         TOTAL          2339           
+----------------------------------------------------------------------
+Report for cell ACog.netlist
+     Instance path:  cog0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       56       100.0
+                              DP8KC        4       100.0
+                            FD1P3AX      184       100.0
+                            FD1P3IX        4       100.0
+                             FD1S1D        1       100.0
+                            FD1S3AX       32       100.0
+                            FD1S3IX        4       100.0
+                                INV       61       100.0
+                            L6MUX21       17       100.0
+                           ORCALUT4     1541       100.0
+                              PFUMX      268       100.0
+                                VHI        6        85.7
+                                VLO       13        92.9
+SUB MODULES 
+                        acog_addsub        1       100.0
+                           acog_alu        1       100.0
+                            acog_id        1       100.0
+                         acog_logic        1       100.0
+                           acog_mem        1       100.0
+                           acog_seq        1       100.0
+                         acog_wback        1       100.0
+                         barrel_rol        1       100.0
+                         barrel_ror        1       100.0
+                         barrel_sar        1       100.0
+                         barrel_shl        1       100.0
+                         barrel_shr        1       100.0
+                           cog0_mem        1       100.0
+                            
+                         TOTAL          2204           
+----------------------------------------------------------------------
+Report for cell acog_alu.netlist
+     Instance path:  cog0.alu
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       34        60.7
+                            L6MUX21       17       100.0
+                           ORCALUT4     1086        70.5
+                              PFUMX      237        88.4
+                                VHI        1        14.3
+                                VLO        7        50.0
+SUB MODULES 
+                        acog_addsub        1       100.0
+                         acog_logic        1       100.0
+                         barrel_rol        1       100.0
+                         barrel_ror        1       100.0
+                         barrel_sar        1       100.0
+                         barrel_shl        1       100.0
+                         barrel_shr        1       100.0
+                            
+                         TOTAL          1389           
+----------------------------------------------------------------------
+Report for cell barrel_sar.netlist
+     Instance path:  cog0.alu.sar
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4      116         7.5
+                              PFUMX       17         6.3
+                                VLO        1         7.1
+                            
+                         TOTAL           134           
+----------------------------------------------------------------------
+Report for cell barrel_shr.netlist
+     Instance path:  cog0.alu.shr
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4      128         8.3
+                              PFUMX       39        14.6
+                                VLO        1         7.1
+                            
+                         TOTAL           168           
+----------------------------------------------------------------------
+Report for cell barrel_shl.netlist
+     Instance path:  cog0.alu.shl
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4      162        10.5
+                              PFUMX       39        14.6
+                                VLO        1         7.1
+                            
+                         TOTAL           202           
+----------------------------------------------------------------------
+Report for cell barrel_ror.netlist
+     Instance path:  cog0.alu.ror
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4      152         9.9
+                              PFUMX       32        11.9
+                                VLO        1         7.1
+                            
+                         TOTAL           185           
+----------------------------------------------------------------------
+Report for cell barrel_rol.netlist
+     Instance path:  cog0.alu.rol
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                           ORCALUT4      158        10.3
+                              PFUMX       28        10.4
+                                VLO        1         7.1
+                            
+                         TOTAL           187           
+----------------------------------------------------------------------
+Report for cell acog_logic.netlist
+     Instance path:  cog0.alu.alogic
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            L6MUX21       17       100.0
+                           ORCALUT4      327        21.2
+                              PFUMX       80        29.9
+                                VLO        1         7.1
+                            
+                         TOTAL           425           
+----------------------------------------------------------------------
+Report for cell acog_addsub.netlist
+     Instance path:  cog0.alu.addsub
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       34        60.7
+                           ORCALUT4       43         2.8
+                              PFUMX        2         0.7
+                                VHI        1        14.3
+                                VLO        1         7.1
+                            
+                         TOTAL            81           
+----------------------------------------------------------------------
+Report for cell acog_wback.netlist
+     Instance path:  cog0.wback
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D        5         8.9
+                            FD1P3AX       11         6.0
+                           ORCALUT4       32         2.1
+                                VHI        1        14.3
+                                VLO        1         7.1
+                            
+                         TOTAL            50           
+----------------------------------------------------------------------
+Report for cell acog_id.netlist
+     Instance path:  cog0.idecode
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1P3AX       40        21.7
+                            FD1P3IX        4       100.0
+                             FD1S1D        1       100.0
+                            FD1S3IX        2        50.0
+                                INV        1         1.6
+                           ORCALUT4       18         1.2
+                                VHI        1        14.3
+                                VLO        1         7.1
+                            
+                         TOTAL            68           
+----------------------------------------------------------------------
+Report for cell acog_seq.netlist
+     Instance path:  cog0.seq
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3IX        2        50.0
+                                INV        1         1.6
+                           ORCALUT4        1         0.1
+                                VHI        1        14.3
+                                VLO        1         7.1
+                            
+                         TOTAL             6           
+----------------------------------------------------------------------
+Report for cell acog_mem.netlist
+     Instance path:  cog0.acog_mem
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2D       17        30.4
+                              DP8KC        4       100.0
+                            FD1P3AX      133        72.3
+                            FD1S3AX       32       100.0
+                                INV       59        96.7
+                           ORCALUT4      345        22.4
+                              PFUMX       31        11.6
+                                VHI        2        28.6
+                                VLO        2        14.3
+SUB MODULES 
+                           cog0_mem        1       100.0
+                            
+                         TOTAL           626           
+----------------------------------------------------------------------
+Report for cell cog0_mem.netlist
+     Instance path:  cog0.acog_mem.mem
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              DP8KC        4       100.0
+                           ORCALUT4        3         0.2
+                                VHI        1        14.3
+                                VLO        1         7.1
+                            
+                         TOTAL             9           
