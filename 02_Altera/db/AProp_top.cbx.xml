@@ -1,6 +1,10 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="AProp_top">
-		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|ACog:cog0|acog_mem:acog_mem|cog_mem_altera:comb_2880|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_art2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|ACog:cog0|acog_alu:alu|acog_muls:muls|altera_mult_add:acog_muls_inst" CBX_FILE_NAME="altera_mult_add_ec68.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|ACog:cog1|acog_mem:acog_mem|cog_mem_altera:cog_mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_art2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|HUB:hub|hub_mem_altera:mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_p433.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|ACog:cog0|acog_mem:acog_mem|cog_mem_altera:cog_mem|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_art2.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|AProp|ACog:cog1|acog_alu:alu|acog_muls:muls|altera_mult_add:acog_muls_inst" CBX_FILE_NAME="altera_mult_add_ec68.v"/>
 	</PROJECT>
 </LOG_ROOT>

@@ -23,6 +23,10 @@
 module ACog(
 	input wire 			clk_in,
 	input wire 			reset_in,	
+	input wire [31:0]	CNT_in,
+	// debug interface
+	output reg [95:0] debug_data_o,
+	output wire debug_data_valid_o, // debug data is made available on wback state
 	// Ports access 
 	input wire [31:0] 	port_a_in,
 	input wire [31:0] 	port_b_in,
@@ -31,10 +35,10 @@ module ACog(
 	output wire [31:0] 	port_a_dir_o,
 	output wire [31:0] 	port_b_dir_o,
 	// HUB access 
+	output wire [4:0] 	hub_op_o,
 	output wire [`HUB_MEM_WIDTH-1:0] hub_addr_o,
 	input wire [31:0] 	hub_data_in,
-	output wire 		hub_read_o,
-	output wire 		hub_write_o,
+	output wire 			hub_data_rdy_o,
 	output wire [1:0] 	hub_sz_o,
 	output wire [31:0] 	hub_data_o,
 	input wire 			hub_ack_in
@@ -64,10 +68,31 @@ wire acog_cnt_eq_d; // CNT == D
 assign hub_addr_o = acog_s_from_mem[`HUB_MEM_WIDTH-1:0];
 assign hub_data_o = acog_d_from_mem;
 
+wire [4:0] hub_op;
+wire hub_data_rdy;
+assign hub_op_o = hub_op;
+assign hub_data_rdy_o = hub_data_rdy;
+
+/* Debug interface */
+
+assign debug_data_valid_o = 1;//acog_state == `ST_WBACK;
+always @(posedge clk_in)
+	begin
+		if (debug_data_valid_o)
+			begin
+				debug_data_o[95:92] <= acog_state;
+				debug_data_o[91:80] <= acog_pc;
+				debug_data_o[79:48] <= acog_latched_opcode;
+				debug_data_o[47:32] <= hub_addr_o[15:0];
+				debug_data_o[31: 0] <= hub_data_in;
+			end
+	end
+
 acog_mem acog_mem(
 	.clk_in(clk_in),
 	.reset_in(reset_in),
 	.state_in(acog_state),
+	.CNT_in(CNT_in),
 	// fetch channel
 	.f_addr_in(acog_pc),
 	.f_data_o(acog_opcode),
@@ -112,10 +137,9 @@ acog_seq seq(
 	.port_peq_pinb_in(acog_port_peq_pinb),
 	.port_cnt_eq_d_in(acog_cnt_eq_d), // CNT equals D
 	.execute_in(acog_execute),
+	.hub_op_in(hub_op),
 	.hub_ack_in(hub_ack_in),
-	.hub_read_o(hub_read_o),
-	.hub_write_o(hub_write_o),
-	.hub_tfr_sz_o(hub_sz_o)
+	.hub_data_rdy_o(hub_data_rdy)
 	);
 
 acog_if ifetch(
@@ -137,7 +161,9 @@ acog_id idecode(
 	.save_pc_from_s_o(save_pc_from_s),         /* jump taken */
 	.opcode_o(acog_latched_opcode),
 	.execute_o(acog_execute),
-	.save_d_from_hub_o(save_d_from_hub)
+	.save_d_from_hub_o(save_d_from_hub),
+	.hub_op_o(hub_op),
+	.hub_tfr_sz_o(hub_sz_o)
 	);
 
 acog_wback wback(

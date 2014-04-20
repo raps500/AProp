@@ -1,21 +1,21 @@
-Fitter Status : Successful - Thu Mar 20 16:37:09 2014
+Fitter Status : Successful - Tue Apr 15 07:58:15 2014
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : AProp_top
 Top-level Entity Name : AProp
 Family : Cyclone V
 Device : 5CEFA2F23I7
 Timing Models : Final
-Logic utilization (in ALMs) : 1,240 / 9,430 ( 13 % )
-Total registers : 439
-Total pins : 34 / 224 ( 15 % )
+Logic utilization (in ALMs) : 1,493 / 9,430 ( 16 % )
+Total registers : 816
+Total pins : 69 / 224 ( 31 % )
 Total virtual pins : 0
-Total block memory bits : 16,384 / 1,802,240 ( < 1 % )
-Total DSP Blocks : 0 / 25 ( 0 % )
+Total block memory bits : 1,064,960 / 1,802,240 ( 59 % )
+Total DSP Blocks : 1 / 25 ( 4 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI PMA RX ATT Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
 Total HSSI PMA TX ATT Serializers : 0
-Total PLLs : 1 / 4 ( 25 % )
+Total PLLs : 0 / 4 ( 0 % )
 Total DLLs : 0 / 4 ( 0 % )

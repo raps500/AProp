@@ -27,7 +27,7 @@ module acog_alu(
 wire [31:0] q_addsub, q_sar, q_shl, q_shr, q_ror, q_rol, q_rev;
 wire [31:0] q_logic, q_mux, q_sum, q_rcl, q_rcr;
 wire [31:0] s_abs, q_cmps, q_sumxx, s_negated, q_waitcnt;
-wire [31:0] q_mul, q_muls;
+wire [31:0] q_muls;
 wire [32:0] q_cmpsub, q_djnz;
 wire flag_c_addsub, flag_c_logic, flag_c_rcl, flag_c_rcr, flag_c_cmps;
 wire flag_c_sumxx, flag_uborrow;
@@ -76,7 +76,7 @@ barrel_rcr rcr(.a(d_in), .flag_c(flag_c_in), .q(q_rcr), .shift(s_in[4:0]));
 barrel_rol rol(.a(d_in), .q(q_rol), .shift(s_in[4:0]));
 barrel_ror ror(.a(d_in), .q(q_ror), .shift(s_in[4:0]));
 barrel_shl shl(.a(d_lshift_in), .q(q_shl), .shift(s_in[4:0]));
-barrel_shr shr(.a(d_in), .q_shr(q_shr), .q_sar(q_sar), .shift(s_in[4:0]));
+barrel_shr shr(.a(d_rshift_in), .q_shr(q_shr), .q_sar(q_sar), .shift(s_in[4:0]));
 barrel_rev rev(.d_in(d_in), .s_in(s_in[4:0]), .q_o(q_rev));
 
 acog_sum sumxx(.opcode_in(opcode_in),
@@ -88,6 +88,21 @@ acog_sum sumxx(.opcode_in(opcode_in),
 	.q_o(q_sumxx),
 	.flag_c_o(flag_c_sumxx) );
 
+`ifdef ALTERA_CV
+/* for MUL & MULS 
+ * signa/signb are 1 when a&b are signed numbers, uses bit 0 of opcode_in (bit 26 of opcode)
+ */
+
+acog_muls muls(
+		.result(q_muls),  //  result.result
+		.dataa_0(s_in[15:0]), // dataa_0.dataa_0
+		.datab_0(d_in[15:0]), // datab_0.datab_0
+		.signa(opcode_in[0]),   //   signa.signa
+		.signb(opcode_in[0])    //   signb.signb
+	);
+
+`endif
+	
 // BIG Q MUX
 always @(*)
 	begin
@@ -111,8 +126,7 @@ always @(*)
 			`I_MIN: q_o = d_in > s_in ? d_in:s_in;
 			`I_MAXS: q_o = flag_c_maxs ? d_in:s_in;
 			`I_MINS: q_o = (!flag_c_maxs) ? d_in:s_in;
-			`I_MUL: q_o = q_mul;
-			`I_MULS: q_o = q_muls;
+			`I_MUL,`I_MULS: q_o = q_muls;
 			`I_NEG: q_o = s_negative_in;
 			`I_NEGC: if (flag_c_in) q_o = s_negative_in;
 			`I_NEGNC: if (!flag_c_in) q_o = s_negative_in;
@@ -130,12 +144,12 @@ always @(*)
 			`I_JMPRET: q_o = { 23'b010111_0001_1111_000000000, pc_plus_1_in };
 			`I_TJZ, `I_TJNZ: q_o = d_in;
 			`I_WAITCNT: q_o = q_addsub;//q_waitcnt;
+			default: q_o = s_in; // MOV
 		endcase
 	end
 // BIG C MUX
 always @(*)
 	begin
-		flag_c_o = s_in[31]; // MOV
 		case (opcode_in)
 			//`I_ABS: s_in[31];
 			//`I_ABSNEG: s_in[31];
@@ -164,6 +178,7 @@ always @(*)
 			`I_SAR: flag_c_o = d_in[0];
 			// `I_TJZ, `I_TNJZ: // undefined behaviour :(
 			`I_WAITCNT: flag_c_o = flag_c_addsub;//flag_c_waitcnt;
+			default: flag_c_o = s_in[31]; // MOV
 		endcase
 	end
 assign q_is_zero = q_o == 32'h0;
@@ -171,13 +186,13 @@ assign s_is_zero = s_in == 32'h0;
 // BIG Z MUX
 always @(*)
 	begin
-		flag_z_o = q_is_zero;
 		case (opcode_in)
-			`I_ADDSX, `I_ADDX, `I_SUBSX, `I_SUBX: flag_z_o = q_is_zero & flag_z_in;
-			`I_CMPSX: flag_z_o = q_is_zero & flag_z_in;
+			`I_ADDSX, `I_ADDX, `I_SUBSX, `I_SUBX: flag_z_o = (q_addsub == 32'h0) & flag_z_in;
+			`I_CMPSX: flag_z_o = (q_cmps == 32'h0) & flag_z_in;
 			`I_MAX, `I_MIN, `I_MAXS, `I_MINS: flag_z_o = s_is_zero;
 			`I_MOVD, `I_MOVI, `I_MOVS: flag_z_o = d_is_zero_in; // real tests give Z=1 only when the written whole D is zero
 			`I_TJZ, `I_TJNZ: flag_z_o = d_is_zero_in; // Original D
+			default: flag_z_o = q_is_zero;
 		endcase
 	end
 
@@ -302,29 +317,29 @@ assign q_cmpsub_o = partial_sub[32] ? partial_sub:{ 1'b0, d_in};
 
 always @(*)
 	begin
-		q_o = partial_add[31:0];
 		case (opcode_in)
 			`I_ADD: q_o = partial_add[31:0];
-			`I_ADDABS: q_o = q_addabs;
+			`I_ADDABS: q_o = q_addabs[31:0];
 			`I_ADDS,
 			`I_ADDSX,
-			`I_ADDX: q_o = partial_add_x;
-			`I_CMPSUB: q_o = partial_sub[32] ? { 1'b0, d_in}:partial_sub;
+			`I_ADDX: q_o = partial_add_x[31:0];
+			`I_CMPSUB: q_o = partial_sub[32] ? d_in:partial_sub[31:0];
 			`I_SUB: q_o = partial_sub[31:0];
-			`I_SUBABS: q_o = q_subabs;
+			`I_SUBABS: q_o = q_subabs[31:0];
 			`I_SUBS,
 			`I_SUBSX,
-			`I_SUBX: q_o = partial_sub_x;
+			`I_SUBX: q_o = partial_sub_x[31:0];
 			`I_WAITCNT: q_o = partial_add[31:0];
+			default:
+				q_o = partial_add[31:0];
 		endcase
 	end
 	
 always @(*)
 	begin
-		flag_c_o = partial_add[31:0];
 		case (opcode_in)
 			`I_ADD: flag_c_o = partial_add[32];
-			// ADDABS C is complemented unsigned borrow whe S<0 or unsigned carry for S>=0
+			// ADDABS C is complemented unsigned borrow when S<0 or unsigned carry for S>=0
 			`I_ADDABS: flag_c_o = s_in[31] ? partial_sub[32]:partial_add[32];
 			`I_ADDS: flag_c_o = av;
 			`I_ADDSX: flag_c_o = av;
@@ -337,6 +352,8 @@ always @(*)
 			`I_SUBSX: flag_c_o = sv;
 			`I_SUBX: flag_c_o = partial_sub_x[32];
 			`I_WAITCNT: flag_c_o = partial_add[32];
+			default:
+				flag_c_o = partial_add[32];
 		endcase
 	end
 endmodule
@@ -726,39 +743,15 @@ assign q_sar = a[31] ? mask | rq:rq;
 
 always @(a, shift)
 	begin
-		case (shift)
-			5'h00: rq = a; 
-			5'h01: rq = {  1'b0, a[31:1] };
-			5'h02: rq = {  2'b0, a[31:2] };
-			5'h03: rq = {  3'b0, a[31:3] };
-			5'h04: rq = {  4'b0, a[31:4] };
-			5'h05: rq = {  5'b0, a[31:5] };
-			5'h06: rq = {  6'b0, a[31:6] };
-			5'h07: rq = {  7'b0, a[31:7] };
-			5'h08: rq = {  8'b0, a[31:8] };
-			5'h09: rq = {  9'b0, a[31:9] };
-			5'h0a: rq = { 10'b0, a[31:10] };
-			5'h0b: rq = { 11'b0, a[31:11] };
-			5'h0c: rq = { 12'b0, a[31:12] };
-			5'h0d: rq = { 13'b0, a[31:13] };
-			5'h0e: rq = { 14'b0, a[31:14] };
-			5'h0f: rq = { 15'b0, a[31:15] };
-			5'h10: rq = { 16'b0, a[31:16] };
-			5'h11: rq = { 17'b0, a[31:17] };
-			5'h12: rq = { 18'b0, a[31:18] };
-			5'h13: rq = { 19'b0, a[31:19] };
-			5'h14: rq = { 20'b0, a[31:20] };
-			5'h15: rq = { 21'b0, a[31:21] };
-			5'h16: rq = { 22'b0, a[31:22] };
-			5'h17: rq = { 23'b0, a[31:23] };
-			5'h18: rq = { 24'b0, a[31:24] };
-			5'h19: rq = { 25'b0, a[31:25] };
-			5'h1a: rq = { 26'b0, a[31:26] };
-			5'h1b: rq = { 27'b0, a[31:27] };
-			5'h1c: rq = { 28'b0, a[31:28] };
-			5'h1d: rq = { 29'b0, a[31:29] };
-			5'h1e: rq = { 30'b0, a[31:30] };
-			5'h1f: rq = { 31'b0, a[31:31] };
+		case (shift[4:2])
+			3'h0: rq = a; 
+			3'h1: rq = {  4'b0, a[31: 4] };
+			3'h2: rq = {  8'b0, a[31: 8] };
+			3'h3: rq = { 12'b0, a[31:12] };
+			3'h4: rq = { 16'b0, a[31:16] };
+			3'h5: rq = { 20'b0, a[31:20] };
+			3'h6: rq = { 24'b0, a[31:24] };
+			3'h7: rq = { 28'b0, a[31:28] };
 		endcase
 	end
 	

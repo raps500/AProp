@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CEFA2F23) Path("D:/tmp/ACog/02_Altera/output_files/") File("AProp_top.sof") MfrSpec(OpMask(1));
+		Device PartName(5CEFA2F23) Path("D:/tmp/ACog/AProp/02_Altera/output_files/") File("AProp_top.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

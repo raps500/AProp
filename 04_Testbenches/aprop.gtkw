@@ -1,0 +1,95 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Mon Apr 07 14:55:54 2014
+[*]
+[dumpfile] "D:\tmp\ACog\AProp\04_Testbenches\aprop.vcd"
+[dumpfile_mtime] "Mon Apr 07 13:50:33 2014"
+[dumpfile_size] 27332642
+[savefile] "D:\tmp\ACog\AProp\04_Testbenches\aprop"
+[timestart] 0
+[size] 1579 697
+[pos] -1 -1
+*-7.000000 618 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb.
+[treeopen] tb.prop.
+[treeopen] tb.prop.cog0.
+[treeopen] tb.prop.hub.
+[sst_width] 197
+[signals_width] 270
+[sst_expanded] 1
+[sst_vpaned_height] 187
+@22
+tb.prop.cog0.CNT_in[31:0]
+@28
+tb.prop.cog0.acog_cnt_eq_d
+@22
+tb.prop.cog0.acog_d_from_mem[31:0]
+@28
+tb.prop.cog0.acog_d_is_one
+tb.prop.cog0.acog_d_is_zero
+@22
+tb.prop.cog0.acog_d_lshift_mem[31:0]
+tb.prop.cog0.acog_d_rshift_mem[31:0]
+@28
+tb.prop.cog0.acog_execute
+@22
+tb.prop.cog0.acog_latched_opcode[31:0]
+tb.prop.cog0.acog_opcode[31:0]
+@28
+tb.prop.cog0.clk_in
+@29
+tb.prop.cog0.acog_state[1:0]
+@22
+tb.prop.cog0.acog_pc[8:0]
+tb.prop.cog0.acog_pc_plus_1[8:0]
+@28
+tb.prop.cog0.acog_port_peq_pina
+tb.prop.cog0.acog_port_peq_pinb
+tb.prop.cog0.acog_port_pne_pina
+tb.prop.cog0.acog_port_pne_pinb
+@22
+tb.prop.cog0.acog_s_from_mem[31:0]
+tb.prop.cog0.acog_s_from_mem_negative[31:0]
+@28
+tb.prop.cog0.alu_c
+@22
+tb.prop.cog0.alu_q[31:0]
+@28
+tb.prop.cog0.alu_z
+tb.prop.cog0.hub_ack_in
+@22
+tb.prop.cog0.hub_addr_o[16:0]
+tb.prop.cog0.hub_data_in[31:0]
+tb.prop.cog0.hub_data_o[31:0]
+@28
+tb.prop.cog0.hub_data_rdy_o
+@22
+tb.prop.cog0.hub_op[4:0]
+tb.prop.cog0.hub_op_o[4:0]
+@28
+tb.prop.cog0.hub_sz_o[1:0]
+@22
+tb.prop.cog0.port_a_dir_o[31:0]
+tb.prop.cog0.port_a_in[31:0]
+tb.prop.cog0.port_a_o[31:0]
+tb.prop.cog0.port_b_dir_o[31:0]
+tb.prop.cog0.port_b_in[31:0]
+tb.prop.cog0.port_b_o[31:0]
+@28
+tb.prop.cog0.reg_c
+tb.prop.cog0.reg_z
+tb.prop.cog0.reset_in
+tb.prop.cog0.save_c
+tb.prop.cog0.save_d_from_alu
+tb.prop.cog0.save_d_from_hub
+tb.prop.cog0.save_d_from_pc_plus_1
+tb.prop.cog0.save_pc_from_pc_plus_1
+tb.prop.cog0.save_pc_from_s
+tb.prop.cog0.save_z
+tb.prop.cog0.seq.read_rdy
+tb.prop.hub.hub_write_left
+@22
+tb.prop.hub.hub_data_left_in[31:0]
+tb.prop.hub.hub_data_left_o[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

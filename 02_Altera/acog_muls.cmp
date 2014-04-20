@@ -1,0 +1,184 @@
+	component acog_muls is
+		generic (
+			number_of_multipliers        : integer := 1;
+			width_a                      : integer := 16;
+			width_b                      : integer := 16;
+			width_result                 : integer := 32;
+			representation_a             : string  := "UNSIGNED";
+			port_signa                   : string  := "PORT_UNUSED";
+			signed_register_a            : string  := "UNREGISTERED";
+			signed_aclr_a                : string  := "NONE";
+			port_signb                   : string  := "PORT_UNUSED";
+			representation_b             : string  := "UNSIGNED";
+			signed_register_b            : string  := "UNREGISTERED";
+			signed_aclr_b                : string  := "NONE";
+			output_register              : string  := "UNREGISTERED";
+			output_aclr                  : string  := "NONE";
+			multiplier1_direction        : string  := "ADD";
+			port_addnsub1                : string  := "PORT_UNUSED";
+			addnsub_multiplier_register1 : string  := "UNREGISTERED";
+			addnsub_multiplier_aclr1     : string  := "NONE";
+			multiplier3_direction        : string  := "ADD";
+			port_addnsub3                : string  := "PORT_UNUSED";
+			addnsub_multiplier_register3 : string  := "UNREGISTERED";
+			addnsub_multiplier_aclr3     : string  := "NONE";
+			input_register_a0            : string  := "UNREGISTERED";
+			input_register_a1            : string  := "UNREGISTERED";
+			input_register_a2            : string  := "UNREGISTERED";
+			input_register_a3            : string  := "UNREGISTERED";
+			input_aclr_a0                : string  := "NONE";
+			input_aclr_a1                : string  := "NONE";
+			input_aclr_a2                : string  := "NONE";
+			input_aclr_a3                : string  := "NONE";
+			input_register_b0            : string  := "UNREGISTERED";
+			input_register_b1            : string  := "UNREGISTERED";
+			input_register_b2            : string  := "UNREGISTERED";
+			input_register_b3            : string  := "UNREGISTERED";
+			input_aclr_b0                : string  := "NONE";
+			input_aclr_b1                : string  := "NONE";
+			input_aclr_b2                : string  := "NONE";
+			input_aclr_b3                : string  := "NONE";
+			scanouta_register            : string  := "UNREGISTERED";
+			scanouta_aclr                : string  := "NONE";
+			input_source_a0              : string  := "DATAA";
+			input_source_a1              : string  := "DATAA";
+			input_source_a2              : string  := "DATAA";
+			input_source_a3              : string  := "DATAA";
+			input_source_b0              : string  := "DATAB";
+			input_source_b1              : string  := "DATAB";
+			input_source_b2              : string  := "DATAB";
+			input_source_b3              : string  := "DATAB";
+			multiplier_register0         : string  := "UNREGISTERED";
+			multiplier_register1         : string  := "UNREGISTERED";
+			multiplier_register2         : string  := "UNREGISTERED";
+			multiplier_register3         : string  := "UNREGISTERED";
+			multiplier_aclr0             : string  := "NONE";
+			multiplier_aclr1             : string  := "NONE";
+			multiplier_aclr2             : string  := "NONE";
+			multiplier_aclr3             : string  := "NONE";
+			preadder_mode                : string  := "SIMPLE";
+			preadder_direction_0         : string  := "ADD";
+			preadder_direction_1         : string  := "ADD";
+			preadder_direction_2         : string  := "ADD";
+			preadder_direction_3         : string  := "ADD";
+			width_c                      : integer := 16;
+			input_register_c0            : string  := "UNREGISTERED";
+			input_register_c1            : string  := "UNREGISTERED";
+			input_register_c2            : string  := "UNREGISTERED";
+			input_register_c3            : string  := "UNREGISTERED";
+			input_aclr_c0                : string  := "NONE";
+			input_aclr_c1                : string  := "NONE";
+			input_aclr_c2                : string  := "NONE";
+			input_aclr_c3                : string  := "NONE";
+			width_coef                   : integer := 18;
+			coefsel0_register            : string  := "UNREGISTERED";
+			coefsel1_register            : string  := "UNREGISTERED";
+			coefsel2_register            : string  := "UNREGISTERED";
+			coefsel3_register            : string  := "UNREGISTERED";
+			coefsel0_aclr                : string  := "NONE";
+			coefsel1_aclr                : string  := "NONE";
+			coefsel2_aclr                : string  := "NONE";
+			coefsel3_aclr                : string  := "NONE";
+			coef0_0                      : integer := 0;
+			coef0_1                      : integer := 0;
+			coef0_2                      : integer := 0;
+			coef0_3                      : integer := 0;
+			coef0_4                      : integer := 0;
+			coef0_5                      : integer := 0;
+			coef0_6                      : integer := 0;
+			coef0_7                      : integer := 0;
+			coef1_0                      : integer := 0;
+			coef1_1                      : integer := 0;
+			coef1_2                      : integer := 0;
+			coef1_3                      : integer := 0;
+			coef1_4                      : integer := 0;
+			coef1_5                      : integer := 0;
+			coef1_6                      : integer := 0;
+			coef1_7                      : integer := 0;
+			coef2_0                      : integer := 0;
+			coef2_1                      : integer := 0;
+			coef2_2                      : integer := 0;
+			coef2_3                      : integer := 0;
+			coef2_4                      : integer := 0;
+			coef2_5                      : integer := 0;
+			coef2_6                      : integer := 0;
+			coef2_7                      : integer := 0;
+			coef3_0                      : integer := 0;
+			coef3_1                      : integer := 0;
+			coef3_2                      : integer := 0;
+			coef3_3                      : integer := 0;
+			coef3_4                      : integer := 0;
+			coef3_5                      : integer := 0;
+			coef3_6                      : integer := 0;
+			coef3_7                      : integer := 0;
+			accumulator                  : string  := "NO";
+			accum_direction              : string  := "ADD";
+			use_sload_accum_port         : string  := "NO";
+			loadconst_value              : integer := 64;
+			accum_sload_register         : string  := "UNREGISTERED";
+			accum_sload_aclr             : string  := "NONE";
+			double_accum                 : string  := "NO";
+			width_chainin                : integer := 1;
+			chainout_adder               : string  := "NO";
+			systolic_delay1              : string  := "UNREGISTERED";
+			systolic_aclr1               : string  := "NONE";
+			systolic_delay3              : string  := "UNREGISTERED";
+			systolic_aclr3               : string  := "NONE";
+			selected_device_family       : string  := ""
+		);
+		port (
+			result                : out std_logic_vector(31 downto 0);                    -- result
+			dataa                 : in  std_logic_vector(15 downto 0) := (others => 'X'); -- dataa_0
+			datab                 : in  std_logic_vector(15 downto 0) := (others => 'X'); -- datab_0
+			signa                 : in  std_logic                     := 'X';             -- signa
+			signb                 : in  std_logic                     := 'X';             -- signb
+			scaninb               : in  std_logic_vector(15 downto 0) := (others => 'X'); -- scaninb
+			sourcea               : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- sourcea
+			sourceb               : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- sourceb
+			scanoutb              : out std_logic_vector(15 downto 0);                    -- scanoutb
+			mult01_round          : in  std_logic                     := 'X';             -- mult01_round
+			mult23_round          : in  std_logic                     := 'X';             -- mult23_round
+			mult01_saturation     : in  std_logic                     := 'X';             -- mult01_saturation
+			mult23_saturation     : in  std_logic                     := 'X';             -- mult23_saturation
+			addnsub1_round        : in  std_logic                     := 'X';             -- addnsub1_round
+			addnsub3_round        : in  std_logic                     := 'X';             -- addnsub3_round
+			mult0_is_saturated    : out std_logic;                                        -- mult0_is_saturated
+			mult1_is_saturated    : out std_logic;                                        -- mult1_is_saturated
+			mult2_is_saturated    : out std_logic;                                        -- mult2_is_saturated
+			mult3_is_saturated    : out std_logic;                                        -- mult3_is_saturated
+			output_round          : in  std_logic                     := 'X';             -- output_round
+			chainout_round        : in  std_logic                     := 'X';             -- chainout_round
+			output_saturate       : in  std_logic                     := 'X';             -- output_saturate
+			chainout_saturate     : in  std_logic                     := 'X';             -- chainout_saturate
+			chainout_sat_overflow : out std_logic;                                        -- chainout_sat_overflow
+			zero_chainout         : in  std_logic                     := 'X';             -- zero_chainout
+			rotate                : in  std_logic                     := 'X';             -- rotate
+			shift_right           : in  std_logic                     := 'X';             -- shift_right
+			zero_loopback         : in  std_logic                     := 'X';             -- zero_loopback
+			addnsub1              : in  std_logic                     := 'X';             -- addnsub1
+			addnsub3              : in  std_logic                     := 'X';             -- addnsub3
+			clock0                : in  std_logic                     := 'X';             -- clk
+			clock1                : in  std_logic                     := 'X';             -- clk
+			clock2                : in  std_logic                     := 'X';             -- clk
+			clock3                : in  std_logic                     := 'X';             -- clk
+			ena0                  : in  std_logic                     := 'X';             -- ena0
+			ena1                  : in  std_logic                     := 'X';             -- ena1
+			ena2                  : in  std_logic                     := 'X';             -- ena2
+			ena3                  : in  std_logic                     := 'X';             -- ena3
+			aclr0                 : in  std_logic                     := 'X';             -- aclr0
+			aclr1                 : in  std_logic                     := 'X';             -- aclr1
+			aclr2                 : in  std_logic                     := 'X';             -- aclr2
+			aclr3                 : in  std_logic                     := 'X';             -- aclr3
+			scanina               : in  std_logic_vector(15 downto 0) := (others => 'X'); -- scanina
+			scanouta              : out std_logic_vector(15 downto 0);                    -- scanouta
+			coefsel0              : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- coefsel0
+			coefsel1              : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- coefsel1
+			coefsel2              : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- coefsel2
+			coefsel3              : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- coefsel3
+			datac                 : in  std_logic_vector(15 downto 0) := (others => 'X'); -- datac
+			accum_sload           : in  std_logic                     := 'X';             -- accum_sload
+			sload_accum           : in  std_logic                     := 'X';             -- sload_accum
+			chainin               : in  std_logic_vector(0 downto 0)  := (others => 'X')  -- chainin
+		);
+	end component acog_muls;
+

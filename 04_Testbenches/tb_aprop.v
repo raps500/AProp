@@ -25,7 +25,7 @@ initial
 		reset = 1;
 		#61
 		reset = 0;
-		#160000
+		#5000000
 		$finish;
 	end
 	

@@ -19,7 +19,9 @@ module acog_id(
 	output reg save_pc_from_s_o, // jump, djnz, tjnz, tjz
 	output reg [31:0] opcode_o,
 	output reg execute_o,
-	output reg save_d_from_hub_o
+	output reg save_d_from_hub_o,
+	output reg [4:0] hub_op_o, 		// HUB opcodes
+	output reg [1:0] hub_tfr_sz_o
 	);
 
 reg execute;
@@ -65,10 +67,18 @@ always @(posedge clk_in)
 			`ST_DECODE:
 				begin
 					case (opcode)
+						`I_HUBOP:
+							begin
+								save_pc_from_pc_plus_1_o <= 1'b1; 
+								save_d_from_hub_o <= opcode_in[`OP_R]; // asserted on reads
+								hub_op_o <= { 2'b01, opcode_in[2:0] };
+							end
 						`I_RDBYTE, `I_RDWORD, `I_RDLONG:
 							begin
-								save_pc_from_pc_plus_1_o <= 1'b1; // NOP
-								save_d_from_hub_o <= opcode_in[`OP_R]; // assrted on reads
+								save_pc_from_pc_plus_1_o <= 1'b1; 
+								save_d_from_hub_o <= opcode_in[`OP_R]; // asserted on reads
+								hub_op_o <= { 1'b1, opcode_in[`OP_R], 3'b000 }; // Hub memory opcode, read/*write, the rest is ignored
+								hub_tfr_sz_o <= opcode_in[27:26]; // transfer size
 							end
 							
 						`I_JMPRET: 
